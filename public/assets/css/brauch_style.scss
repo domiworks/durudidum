@@ -1,69 +1,76 @@
 /* ==========================================================================
    SASS Functions
    ========================================================================== */
- 
-@mixin dimension($val, $vil){
-	width: $val;
-	height: $vil; 
-}
 
-@mixin font-family($val){
-	
-}
- 
-@mixin box-sizing($val){
-    box-sizing: $val;  
+   @mixin dimension($val, $vil){
+   	width: $val;
+   	height: $vil; 
+   }
+
+   @mixin font-family($val){
+
+   }
+
+   @mixin box-sizing($val){
+   	box-sizing: $val;  
     -moz-box-sizing: $val; /*Firefox 1-3*/  
     -webkit-box-sizing: $val; /* Safari */  
 }
 
 @function substraction($some-number, $another-number){
-  @return $some-number + $another-number
+	@return $some-number + $another-number
 }
 
 @mixin transition ($val){
 	-webkit-transition: all ease-in-out $val;
-    -moz-transition: all ease-in-out $val;
-    -o-transition: all ease-in-out $val;
-    transition: all ease-in-out $val;
+	-moz-transition: all ease-in-out $val;
+	-o-transition: all ease-in-out $val;
+	transition: all ease-in-out $val;
 }
 
 @mixin border-radius($val){
 	-webkit-border-radius: $val;
-    -moz-border-radius: $val;
-    -o-border-radius: $val;
-    border-radius: $val;
+	-moz-border-radius: $val;
+	-o-border-radius: $val;
+	border-radius: $val;
 }
-  
+@mixin box-shadow($hor, $vert, $blur, $spread, $col){
+	-moz-box-shadow:    $hor $vert $blur $spread $col;
+ 	-webkit-box-shadow: $hor $vert $blur $spread $col;
+  	box-shadow:         $hor $vert $blur $spread $col;
+}
+
 /* ==========================================================================
    Common
    ========================================================================== */
 
-.s_tbl{
-	
-	display: table;
-	width: 100%;
-	height: inherit;
-	
-	.s_cl{
-		
-		@include dimension(100%, inherit);
-		display: table-cell;
-		vertical-align: middle;
-		text-align: center;
-		position: relative;
-	}
-}
+   .s_tbl{
 
-hr {
-	border-top: 1px solid #ccc;
-}
+   	display: table;
+   	width: 100%;
+   	height: inherit;
+
+   	.s_cl{
+
+   		@include dimension(100%, inherit);
+   		display: table-cell;
+   		vertical-align: middle;
+   		text-align: center;
+   		position: relative;
+   	}
+   }
+
+   hr {
+   	border-top: 1px solid #ccc;
+   }
+
+   $fontcol: #3f3f3f;
 
 
 /* ==========================================================================
    Pop up
    ========================================================================== */
-.pop_up_super_c {
+/*.pop_up_super_c {
 	width: 100%;
 	height: 100%;
 	position: fixed;
@@ -72,8 +79,8 @@ hr {
 	top: 0px;
 	left: 0px;
 	overflow: auto;
-}
-.pop_up_tbl {
+}*/
+.s_tbl {
 	width: 100%;
 	height: 100%;
 	display: table;
@@ -81,17 +88,299 @@ hr {
 	overflow-y: hidden;
 	vertical-align: middle;
 }
-.pop_up_cell {
+.s_cell {
 	display: table-cell;
 	vertical-align: middle;
 }
 
 /* ==========================================================================
-   Admin panel
+   Style
    ========================================================================== */
-  
-  header {
-  	@include dimension(100%, 90px);
-  	background-color: #fff;
-  	display: block;
-  }
+
+   html, body {
+   	font-family: "Helvetica Neue", 'hnreg', sans-serif;
+   	-webkit-text-size-adjust: 100%;
+   	-ms-text-size-adjust: 100%;
+
+   	color: $fontcol;
+   }
+
+   a {
+   	text-decoration: none !important;
+   }
+
+   header {
+   	@include dimension(100%, 90px);
+   	background-color: #fff;
+   	display: block;
+   }
+
+   .header_logo {
+   	background: url('../img/header_logo.svg') no-repeat;
+   	background-size: 200px 24px;
+   	@include dimension(200px, 24px);
+   	display: block;
+   	line-height: 90px;
+   }
+
+   .s_nav {
+   	text-align: center;
+	   	*{
+	   		font-family: hnbold;
+	   		list-style-type: none;
+	   	}
+
+	   	li {
+	   		display: inline-block;
+
+	   		a{
+	   			color: $fontcol;
+	   			line-height: 90px;
+	   			height: 90px;
+	   			display: block;
+	   			padding-left: 28px;
+	   			padding-right: 28px;
+	   			@include box-sizing(border-box);
+	   		} 
+	   	}
+	   	li:hover {
+	   		display: inline-block;
+
+	   		a{
+	   			line-height: 90px;
+	   			height: 90px;
+	   			display: block;
+	   			padding-left: 28px;
+	   			padding-right: 28px;
+	   			@include box-sizing(border-box);
+	   			border-bottom: 6px #c8e052 solid;
+	   		} 
+	   	}
+
+	   	.s_a_active {
+	   		line-height: 90px;
+	   		height: 90px;
+	   		display: block;
+	   		padding-left: 28px;
+	   		padding-right: 28px;
+	   		@include box-sizing(border-box);
+	   		border-bottom: 6px #c8e052 solid;
+	   	}
+
+   }
+
+.s_nav_log {
+   	text-align: right;
+	   	*{
+	   		font-family: hnbold;
+	   		list-style-type: none;
+	   	}
+
+	   	li {
+	   		display: inline-block;
+
+	   		a{
+	   			color: $fontcol;
+	   			line-height: 90px;
+	   			height: 90px;
+	   			display: block;
+	   			padding-left: 5px;
+	   			padding-right: 5px;
+	   			@include box-sizing(border-box);
+	   		} 
+	   	}
+	   	li:hover {
+	   		display: inline-block;
+
+	   		a{
+	   			line-height: 90px;
+	   			height: 90px;
+	   			display: block;
+	   			padding-left: 5px;
+	   			padding-right: 5px;
+	   			@include box-sizing(border-box);
+	   			border-bottom: 6px #c8e052 solid;
+	   		} 
+	   	}
+
+	   	.s_a_active {
+	   		line-height: 90px;
+	   		height: 90px;
+	   		display: block;
+	   		padding-left: 5px;
+	   		padding-right: 5px;
+	   		@include box-sizing(border-box);
+	   		border-bottom: 6px #c8e052 solid;
+	   	}
+
+   }
+
+
+
+
+.s_big_scenery {
+	@include dimension(100%, 572px);
+	display: block;
+	position: absolute;
+	background: url('../img/scenery.jpg') no-repeat center center fixed; 
+	  -webkit-background-size: cover;
+	  -moz-background-size: cover;
+	  -o-background-size: cover;
+	  background-size: cover;
+}
+
+.s_logo_only_white {
+	@include dimension(100px, 100px);
+	display: block;
+	background: url('../img/logo_only_white.svg') no-repeat;
+	background-size: 100px 100px;
+	margin-left: auto;
+	margin-right: auto;
+
+}
+
+.s_tagline {
+	width: 100%;
+	text-align: center;
+	color: #fff;
+	font-family: hnbold;
+	font-size: 36px;
+	line-height: 40px;
+}
+
+.s_quick_search {
+	@include dimension(100%, auto);
+	display: block;
+	@include box-shadow(0px, 0px, 5px, 5px, rgba(53,53,53,0.25));
+	background: #fff;
+	overflow: hidden;
+
+	.s_quick_search_menu { 
+		padding: 0px;
+		overflow: hidden;
+		margin-bottom: 0px;
+
+		.s_quick_active {
+			*{
+				color: #fff;
+				background-color: #23d0e7;
+			}
+			border: 1px solid #23d0e7  !important;
+			
+		}
+
+		*{
+			text-transform: uppercase;
+			list-style-type: none;
+			font-family: hnreg;
+		}
+		li {
+			display: block;
+			float: left;
+
+
+			&:first-child {
+				border-left: 1px solid #dcdcdc;
+				border-top: 1px solid #dcdcdc;
+				border-bottom: 1px solid #dcdcdc;
+				@include box-sizing(border-box);
+				width: 33%;
+			}
+			&:nth-child(2) {
+				border-left: 1px solid #dcdcdc;
+				border-right: 1px solid #dcdcdc; 
+				border-top: 1px solid #dcdcdc;
+				border-bottom: 1px solid #dcdcdc;
+				@include box-sizing(border-box);
+				width: 34%;
+			}
+			&:nth-child(3) {
+				border-right: 1px solid #dcdcdc;
+				border-top: 1px solid #dcdcdc;
+				border-bottom: 1px solid #dcdcdc;
+				@include box-sizing(border-box);
+				width: 33%;
+			}
+
+			a{
+				color: $fontcol;
+				height: 73px;
+				line-height: 73px;
+				text-align: center;
+				width: 100%;
+				display: block;
+			}
+		}
+	}
+
+	.s_quick_search_form {
+		border: 1px solid #23d0e7;
+
+		.s_cell{
+			padding-bottom: 14px;
+			position: relative;
+			float: left;
+			&:first-child {
+				@include box-sizing(border-box);
+				width: 33%;
+				display: block;
+			}
+			&:nth-child(2) {
+				@include box-sizing(border-box);
+				width: 34%;
+				display: block;
+			}
+			&:nth-child(3) {
+				@include box-sizing(border-box);
+				width: 33%;
+				display: block;
+			}
+ 
+			.s_title {
+				width: 100%;
+				overflow: hidden;
+
+				.s_number {
+					font-family: hnbold;
+					font-size: 36px;
+					margin-left: 29px;
+					height: 43px;
+					float: left;
+				}
+				.s_caption {
+					height: 43px;
+					float: left;
+					margin-left: 8px;
+					margin-top: 8px;
+					font-size: 18px;
+
+					&:before {
+						content: "";
+						@include dimension(21px, 3px);
+						display: block;
+						position: absolute;
+						background-color: #23d0e7;
+						margin-top: 28px;
+					}
+				}
+			}
+
+			.s_seprtr {
+				@include dimension(1px, 200px);
+				display: block;
+				background-color: #dcdcdc;
+				position: absolute;
+				top: 23px;
+
+				&.s_left {
+					left: 0px;
+				}
+
+				&.s_right {
+					right: 0px;
+				}
+			}
+		}
+	}
+
+}

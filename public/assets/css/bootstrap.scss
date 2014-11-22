@@ -19,7 +19,7 @@ details,
 figcaption,
 figure,
 footer,
-header,
+header, 
 hgroup,
 main,
 nav,
@@ -2852,8 +2852,8 @@ fieldset[disabled] .btn-primary.active {
 }
 .btn-success {
   color: #fff;
-  background-color: #5cb85c;
-  border-color: #4cae4c;
+  background-color: #c8e052;//#5cb85c; 
+  border-color: #c8e052;//#4cae4c;
 }
 .btn-success:hover,
 .btn-success:focus,
