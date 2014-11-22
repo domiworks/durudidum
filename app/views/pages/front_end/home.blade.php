@@ -59,11 +59,12 @@
 										<form role="form">
 											<div class="form-group">
 												<label for="">Depart From</label>
-												<input type="text" class="form-control" id="" placeholder="">
+												<input type="text" class="form-control s_city_dest_input" id="" placeholder=""><span class="house_32"></span>
+
 											</div>
 											<div class="form-group">
 												<label for="">Arrive In</label>
-												<input type="text" class="form-control" id="" placeholder="">
+												<input type="text" class="form-control s_city_dest_input" id="" placeholder=""><span class="house_32"></span>
 											</div>
 										</form>
 									</div>
@@ -88,13 +89,53 @@
 										<form role="form">
 											<div class="form-group">
 												<label for="">Depart Date</label>
-												<input type="text" class="form-control" id="" placeholder="">
+												<input type="text" class="form-control s_flight_time_input" id="f_depart_date" placeholder=""><span class="clock_32"></span>
 											</div>
 											<div class="form-group">
 												<label for="">Return Date</label>
-												<input type="text" class="form-control" id="" placeholder="">
+												<input type="text" class="form-control s_flight_time_input" id="f_return_date" placeholder=""><span class="clock_32"></span>
 											</div>
 										</form>
+										<script>
+											jQuery('#f_depart_date').datetimepicker({
+											 lang:'en',
+											 i18n:{
+											  de:{
+											   months:[
+											    'January','February','March','April',
+											    'May','June','July','August',
+											    'September','October','November','December',
+											   ],
+											   dayOfWeek:[
+											    "Sun", "Mon", "Tue", "Wed", 
+											    "Thur", "Fri", "Sat",
+											   ]
+											  }
+											 },
+											 timepicker:false,
+											 format:'d.m.Y',
+ 											minDate:'0',//yesterday is minimum date(for today use 0 or -1970/01/01)
+											});
+											jQuery('#f_return_date').datetimepicker({
+											 lang:'en',
+											 i18n:{
+											  de:{
+											   months:[
+											    'January','February','March','April',
+											    'May','June','July','August',
+											    'September','October','November','December',
+											   ],
+											   dayOfWeek:[
+											    "Sun", "Mon", "Tue", "Wed", 
+											    "Thur", "Fri", "Sat",
+											   ]
+											  }
+											 },
+											 timepicker:false,
+											 format:'d.m.Y',
+ 											minDate:'0',//yesterday is minimum date(for today use 0 or -1970/01/01)
+											});
+										</script>
 									</div>
 								</div>
 							</div>

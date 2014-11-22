@@ -9,7 +9,9 @@
 	
 		<!-- Style -->
 		<link href="{{ asset('assets/css/all.css') }}" rel="stylesheet">
+		<link href="{{ asset('assets/js/datetimepicker/jquery.datetimepicker.css') }}" rel="stylesheet">
 
 		<script src="{{ asset('assets/js/jquery-1.11.1.min.js') }}"></script>
 		<script src="{{ asset('assets/js/jquery-migrate-1.2.1.min.js') }}"></script>
 		<script src="{{ asset('assets/js/bootstrap.min.js') }}"></script>
+		<script src="{{ asset('assets/js/datetimepicker/jquery.datetimepicker.js') }}"></script>

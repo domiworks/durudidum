@@ -94,6 +94,32 @@
 }
 
 /* ==========================================================================
+   Icons
+   ========================================================================== */
+
+   .clock_32 {
+   		@include dimension(32px, 32px);
+   		display: block;
+   		background: url('../img/clock_32.svg') no-repeat;
+   		background-size: 32px 32px;
+
+		position: absolute;
+		margin-top: -33px;
+		margin-left: 1px;
+   }
+
+   .house_32 {
+   		@include dimension(32px, 32px);
+   		display: block;
+   		background: url('../img/house_32.svg') no-repeat;
+   		background-size: 32px 32px;
+
+		position: absolute;
+		margin-top: -33px;
+		margin-left: 1px;
+   }
+
+/* ==========================================================================
    Style
    ========================================================================== */
 
@@ -244,7 +270,7 @@
 	width: 100%;
 	text-align: center;
 	color: #fff;
-	font-family: hnbold;
+	font-family: oslite;
 	font-size: 36px;
 	line-height: 40px;
 }
@@ -252,7 +278,7 @@
 .s_quick_search {
 	@include dimension(100%, auto);
 	display: block;
-	@include box-shadow(0px, 0px, 5px, 5px, rgba(53,53,53,0.25));
+	@include box-shadow(0px, 0px, 5px, 1px, rgba(53,53,53,0.25));
 	background: #fff;
 	overflow: hidden;
 
@@ -278,7 +304,7 @@
 		li {
 			display: block;
 			float: left;
-			font-size: 18px;
+			font-size: 16px;//18px;
 
 
 			&:first-child {
@@ -385,4 +411,11 @@
 		}
 	}
 
+}
+
+.s_city_dest_input {
+	text-indent: 20px;
+}
+.s_flight_time_input {
+	text-indent: 20px;
 }
