@@ -1,0 +1,97 @@
+/* ==========================================================================
+   SASS Functions
+   ========================================================================== */
+ 
+@mixin dimension($val, $vil){
+	width: $val;
+	height: $vil; 
+}
+
+@mixin font-family($val){
+	
+}
+ 
+@mixin box-sizing($val){
+    box-sizing: $val;  
+    -moz-box-sizing: $val; /*Firefox 1-3*/  
+    -webkit-box-sizing: $val; /* Safari */  
+}
+
+@function substraction($some-number, $another-number){
+  @return $some-number + $another-number
+}
+
+@mixin transition ($val){
+	-webkit-transition: all ease-in-out $val;
+    -moz-transition: all ease-in-out $val;
+    -o-transition: all ease-in-out $val;
+    transition: all ease-in-out $val;
+}
+
+@mixin border-radius($val){
+	-webkit-border-radius: $val;
+    -moz-border-radius: $val;
+    -o-border-radius: $val;
+    border-radius: $val;
+}
+  
+/* ==========================================================================
+   Common
+   ========================================================================== */
+
+.s_tbl{
+	
+	display: table;
+	width: 100%;
+	height: inherit;
+	
+	.s_cl{
+		
+		@include dimension(100%, inherit);
+		display: table-cell;
+		vertical-align: middle;
+		text-align: center;
+		position: relative;
+	}
+}
+
+hr {
+	border-top: 1px solid #ccc;
+}
+
+
+/* ==========================================================================
+   Pop up
+   ========================================================================== */
+.pop_up_super_c {
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	z-index: 999999;
+	background-color: rgba(0,0,0,0.8);
+	top: 0px;
+	left: 0px;
+	overflow: auto;
+}
+.pop_up_tbl {
+	width: 100%;
+	height: 100%;
+	display: table;
+	z-index: 1999999;
+	overflow-y: hidden;
+	vertical-align: middle;
+}
+.pop_up_cell {
+	display: table-cell;
+	vertical-align: middle;
+}
+
+/* ==========================================================================
+   Admin panel
+   ========================================================================== */
+  
+  header {
+  	@include dimension(100%, 90px);
+  	background-color: #fff;
+  	display: block;
+  }
