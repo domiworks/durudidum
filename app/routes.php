@@ -16,6 +16,11 @@ Route::group(array('prefix' => 'test'), function()
     // home
 	Route::get('/home', function()
 	{
-		return View::make('pages.front_end.home');
+		return View::make('pages.front_end.home.home');
+	});
+	// search_flight_hotel
+	Route::get('/search_flight_hotel', function()
+	{
+		return View::make('pages.front_end.search_flight_hotel.search_flight_hotel');
 	});
 });

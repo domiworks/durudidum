@@ -139,6 +139,7 @@
    	@include dimension(100%, 90px);
    	background-color: #fff;
    	display: block;
+	@include box-shadow(0px, 0px, 5px, 1px, rgba(239,239,239,1));
    }
 
    .header_logo {
@@ -419,3 +420,36 @@
 .s_flight_time_input {
 	text-indent: 20px;
 }
+
+
+/* ==========================================================================
+   Search Flight Hotel
+   ========================================================================== */
+
+ .s_flight_sched_row {
+ 	width: 100%;
+ 	height: auto;
+ 	overflow: hidden;
+ 	margin-bottom: 10px;
+ }
+
+.s_hotel_pic, .s_maskapai_pic {
+	margin-right: 15px;
+}
+
+ .s_hotel_name {
+ 	font-size: 18px;
+ 	font-family: hnbold;
+ 	display: block;
+ }
+ .s_hotel_city {
+ 	font-size: 12px;
+ 	font-family: hnreg;
+ }
+
+ .s_maskapai_name, .s_flight_hour {
+ 	font-size: 14px;
+ 	font-family: hnbold;
+ 	line-height: 32px;
+ 	display: inline-block;
+ }
