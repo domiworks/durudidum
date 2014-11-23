@@ -61,80 +61,47 @@
 				<thead>
 					<tr>
 						<th>
-							Airline
-						</th>
-						<th>
-							Departure
-						</th>
-						<th>
-							Arrival
-						</th>
-						<th>
-							Facility
-						</th>
-						<th>
-							Duration
-						</th>
-						<th>
-							Price / Person
 						</th>
 						<th>
 						</th>
-					</tr>
-				</thead>
-				<tbody class="f_tbody_search_flight">
-					<tr data-toggle="modal" data-target=".pop_up_view_flight">
-						<td>
-							<img src="" class="" width="64" height="64">
-							Garuda Indonesia
-						</td>
-						<td>
-							14:45 Jakarta (CGK)
-						</td>
-						<td>
-							17:35 Bali
-						</td>
-						<td>
-							<img src="" width="32" height="32">
-						</td>
-						<td>
-							1h 50m Non-stop
-						</td>
-						<td>
-							IDR 525.000
-						</td>
-						<td>
-							<a href="#" class="btn btn-warning">Book Now!</a>
-						</td>
-					</tr>
-					<tr data-toggle="modal" data-target=".pop_up_view_flight">
-						<td>
-							<img src="" class="" width="64" height="64">
-							Garuda Indonesia 
-						</td>
-						<td>
-							14:45 Jakarta (CGK)
-						</td>
-						<td>
-							17:35 Bali
-						</td>
-						<td>
-							<img src="" width="32" height="32">
-						</td>
-						<td>
-							1h 50m Non-stop
-						</td>
-						<td>
-							IDR 525.000
-						</td>
-						<td>
-							<a href="#" class="btn btn-warning">Book Now!</a>
-						</td>
-					</tr>
-				</tbody>
-			</table>
-		</div>
+						<th>
+						</th>
+					</th>
+					<th>
+					</th>
+					<th>
+					</th>
+				</tr>
+			</thead>
+			<tbody class="f_tbody_search_hotel">
+				<tr data-toggle="modal" data-target=".pop_up_view_hotel">
+					<td>
+						<img src="" width="100" height="100" class="s_hotel_pic pull-left">
+
+					</td>
+					<td>
+						<span class="s_hotel_name">Nama Hotel</span>
+						<span class="s_hotel_city">Nama Kota, Negara</span>
+						<span class="s_rating">♣♣♣♣♣</span>
+					</td>
+					<td>
+						<img src="" width="32" height="32">
+						<img src="" width="32" height="32">
+					</td>
+					<td>
+						7.8/10
+					</td>
+					<td>
+						IDR 525.000
+					</td>
+					<td>
+						<a href="#" class="btn btn-warning">Book Now!</a>
+					</td>
+				</tr>
+			</tbody>
+		</table>
 	</div>
+</div>
 </div>
 
 <div class="container" style="margin-top: 30px;">
@@ -148,5 +115,5 @@
 </div>
 </section>
 
-@include('pages.front_end.search_flight.pop_up_view_flight')
+@include('pages.front_end.search_hotel.pop_up_view_hotel')
 @stop

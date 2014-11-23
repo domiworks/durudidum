@@ -28,4 +28,9 @@ Route::group(array('prefix' => 'test'), function()
 	{
 		return View::make('pages.front_end.search_flight.search_flight');
 	});
+	// search_hotel
+	Route::get('/search_hotel', function()
+	{
+		return View::make('pages.front_end.search_hotel.search_hotel');
+	});
 });
