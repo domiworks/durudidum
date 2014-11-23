@@ -15,22 +15,22 @@
 						Round Trip (or not)
 					</span>
 					<span>
-						IATA Asal
+						IATA Asal (JKT)
 					</span>
 					<span>
-						Kota Asal
+						Kota Asal (Jakarta, Indonesia)
 					</span>
 					<span>
-						IATA Tujuan
+						IATA Tujuan (LAX)
 					</span>
 					<span>
-						Kota Tujuan
+						Kota Tujuan (Los Angeles, USA)
 					</span>
 					<span>
-						Waktu Pergi
+						Waktu Pergi (24 Dec 2014)
 					</span>
 					<span>
-						Waktu Pulang
+						Waktu Pulang (24 Jan 2015)
 					</span>
 
 				</div>
