@@ -61,47 +61,54 @@
 				<thead>
 					<tr>
 						<th>
+							Picture
 						</th>
 						<th>
+							Name
 						</th>
 						<th>
+							Facility
 						</th>
-					</th>
-					<th>
-					</th>
-					<th>
-					</th>
-				</tr>
-			</thead>
-			<tbody class="f_tbody_search_hotel">
-				<tr data-toggle="modal" data-target=".pop_up_view_hotel">
-					<td>
-						<img src="" width="100" height="100" class="s_hotel_pic pull-left">
+						<th>
+							Review
+						</th>
+						<th>
+							Price
+						</th>
+						<th>
+							Book Now!
+						</th>
+					</tr>
+				</thead>
+				<tbody class="f_tbody_search_hotel">
+					<tr data-toggle="modal" data-target=".pop_up_view_hotel">
+						<td>
+							<img src="" width="100" height="100" class="s_hotel_pic pull-left">
 
-					</td>
-					<td>
-						<span class="s_hotel_name">Nama Hotel</span>
-						<span class="s_hotel_city">Nama Kota, Negara</span>
-						<span class="s_rating">♣♣♣♣♣</span>
-					</td>
-					<td>
-						<img src="" width="32" height="32">
-						<img src="" width="32" height="32">
-					</td>
-					<td>
-						7.8/10
-					</td>
-					<td>
-						IDR 525.000
-					</td>
-					<td>
-						<a href="#" class="btn btn-warning">Book Now!</a>
-					</td>
-				</tr>
-			</tbody>
-		</table>
+						</td>
+						<td>
+							<span class="s_hotel_name">Nama Hotel</span>
+							<span class="s_hotel_city">Nama Kota, Negara</span>
+							<span class="s_rating">★★★★☆</span>
+						</td>
+						<td>
+							<img src="" width="32" height="32">
+							<img src="" width="32" height="32">
+						</td>
+						<td>
+							7.8/10
+						</td>
+						<td>
+							IDR 525.000
+						</td>
+						<td>
+							<a href="#" class="btn btn-warning">Book Now!</a>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
 	</div>
-</div>
 </div>
 
 <div class="container" style="margin-top: 30px;">
