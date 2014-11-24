@@ -57,7 +57,7 @@
 <div class="container">
 	<div class="row">
 		<div class="col-md-12">
-			<table class="table">
+			<table class="table table-hover">
 				<thead>
 					<tr>
 						<th width="45%">
@@ -73,28 +73,24 @@
 				</thead>
 				<tbody>
 					<tr>
-						<td>
-							<a href="javascript:void(0)" data-toggle="modal" data-target=".pop_up_view_hotel">
-								<img src="" width="100" height="100" class="s_hotel_pic pull-left">
-								<div>
-									<span class="s_hotel_name">Nama Hotel</span>
-									<span class="s_hotel_city">Nama Kota, Negara</span>
-								</div>
-							</a>
+						<td data-toggle="modal" data-target=".pop_up_view_hotel">
+							<img src="" width="100" height="100" class="s_hotel_pic pull-left">
+							<div>
+								<span class="s_hotel_name">Nama Hotel</span>
+								<span class="s_hotel_city">Nama Kota, Negara</span>
+							</div>
 						</td>
-						<td>
-							<a href="javascript:void(0)" data-toggle="modal" data-target=".pop_up_view_flight">
-								<div class="s_flight_sched_row">
-									<img src="" width="32" height="32" class="s_maskapai_pic pull-left">
-									<span class="s_maskapai_name">Nama Maskapai</span>
-									<span class="s_flight_hour">00:00 - 00:00</span>
-								</div>
-								<div class="s_flight_sched_row">
-									<img src="" width="32" height="32" class="s_maskapai_pic pull-left">
-									<span class="s_maskapai_name">Nama Maskapai</span>
-									<span class="s_flight_hour">00:00 - 00:00</span>
-								</div>
-							</a>
+						<td data-toggle="modal" data-target=".pop_up_view_flight">
+							<div class="s_flight_sched_row">
+								<img src="" width="32" height="32" class="s_maskapai_pic pull-left">
+								<span class="s_maskapai_name">Nama Maskapai</span>
+								<span class="s_flight_hour">00:00 - 00:00</span>
+							</div>
+							<div class="s_flight_sched_row">
+								<img src="" width="32" height="32" class="s_maskapai_pic pull-left">
+								<span class="s_maskapai_name">Nama Maskapai</span>
+								<span class="s_flight_hour">00:00 - 00:00</span>
+							</div>
 						</td> 
 						<td>
 							<button class="btn btn-warning">
@@ -103,58 +99,49 @@
 						</td> 
 					</tr>
 					<tr>
-						<td>
-							<a href="javascript:void(0)" data-toggle="modal" data-target=".pop_up_view_hotel">
-								<img src="" width="100" height="100" class="s_hotel_pic pull-left">
-								<div>
-									<span class="s_hotel_name">Nama Hotel</span>
-									<span class="s_hotel_city">Nama Kota, Negara</span>
-								</div>
-							</a>
+						<td data-toggle="modal" data-target=".pop_up_view_hotel">
+							<img src="" width="100" height="100" class="s_hotel_pic pull-left">
+							<div>
+								<span class="s_hotel_name">Nama Hotel</span>
+								<span class="s_hotel_city">Nama Kota, Negara</span>
+							</div>
 						</td>
-						<td>
-							<a href="javascript:void(0)" data-toggle="modal" data-target=".pop_up_view_flight">
-								<div class="s_flight_sched_row">
-									<img src="" width="32" height="32" class="s_maskapai_pic pull-left">
-									<span class="s_maskapai_name">Nama Maskapai</span>
-									<span class="s_flight_hour">00:00 - 00:00</span>
-								</div>
-								<div class="s_flight_sched_row">
-									<img src="" width="32" height="32" class="s_maskapai_pic pull-left">
-									<span class="s_maskapai_name">Nama Maskapai</span>
-									<span class="s_flight_hour">00:00 - 00:00</span>
-								</div>
-							</a>
+						<td data-toggle="modal" data-target=".pop_up_view_flight">
+							<div class="s_flight_sched_row">
+								<img src="" width="32" height="32" class="s_maskapai_pic pull-left">
+								<span class="s_maskapai_name">Nama Maskapai</span>
+								<span class="s_flight_hour">00:00 - 00:00</span>
+							</div>
+							<div class="s_flight_sched_row">
+								<img src="" width="32" height="32" class="s_maskapai_pic pull-left">
+								<span class="s_maskapai_name">Nama Maskapai</span>
+								<span class="s_flight_hour">00:00 - 00:00</span>
+							</div>
 						</td> 
 						<td>
 							<button class="btn btn-warning">
 								Book 
 							</button> 
 						</td> 
-					</tr>
-					<tr>
-						<td>
-							<a href="javascript:void(0)" data-toggle="modal" data-target=".pop_up_view_hotel">
-								<img src="" width="100" height="100" class="s_hotel_pic pull-left">
-								<div>
-									<span class="s_hotel_name">Nama Hotel</span>
-									<span class="s_hotel_city">Nama Kota, Negara</span>
-								</div>
-							</a>
+					</tr>					<tr>
+						<td data-toggle="modal" data-target=".pop_up_view_hotel">
+							<img src="" width="100" height="100" class="s_hotel_pic pull-left">
+							<div>
+								<span class="s_hotel_name">Nama Hotel</span>
+								<span class="s_hotel_city">Nama Kota, Negara</span>
+							</div>
 						</td>
-						<td>
-							<a href="javascript:void(0)" data-toggle="modal" data-target=".pop_up_view_flight">
-								<div class="s_flight_sched_row">
-									<img src="" width="32" height="32" class="s_maskapai_pic pull-left">
-									<span class="s_maskapai_name">Nama Maskapai</span>
-									<span class="s_flight_hour">00:00 - 00:00</span>
-								</div>
-								<div class="s_flight_sched_row">
-									<img src="" width="32" height="32" class="s_maskapai_pic pull-left">
-									<span class="s_maskapai_name">Nama Maskapai</span>
-									<span class="s_flight_hour">00:00 - 00:00</span>
-								</div>
-							</a>
+						<td data-toggle="modal" data-target=".pop_up_view_flight">
+							<div class="s_flight_sched_row">
+								<img src="" width="32" height="32" class="s_maskapai_pic pull-left">
+								<span class="s_maskapai_name">Nama Maskapai</span>
+								<span class="s_flight_hour">00:00 - 00:00</span>
+							</div>
+							<div class="s_flight_sched_row">
+								<img src="" width="32" height="32" class="s_maskapai_pic pull-left">
+								<span class="s_maskapai_name">Nama Maskapai</span>
+								<span class="s_flight_hour">00:00 - 00:00</span>
+							</div>
 						</td> 
 						<td>
 							<button class="btn btn-warning">

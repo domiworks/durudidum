@@ -13,11 +13,11 @@
     <div class="container">
         <div class="row-fluid" style="padding-top:20px;">
 
-            <h1>Review Pemesanan</h1>
-            <div class="alert alert-success" role="alert">Harga telah dikonfirmasi. Periksa kembali pemesanan Anda lalu tekan tombol Lanjut ke Pembayaran</div>
+            <h1>Pembayaran</h1>
+            <div class="alert alert-success" role="alert">Mohon selesaikan pembayaran untuk menghindari pembatalan oleh maskapai.</div>
             <div class="col-md-8" >
                 <div class="row">
-                    <h3>Rincian Penerbangan</h3>
+                    <h3>Pilihlah Metode Pembayaran:</h3>
                     <div class="col-md-12" style="margin-bottom:5px;">Penerbangan: <span>Senin, 24 Nov 2014</span></div>
 					
                     <div class="col-md-12">
