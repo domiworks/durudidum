@@ -23,14 +23,29 @@ Route::group(array('prefix' => 'test'), function()
 	{
 		return View::make('pages.front_end.search_flight_hotel.search_flight_hotel');
 	});
-	// search_flight
-	Route::get('/search_flight', function()
+	// search_flight_hotel
+	Route::get('/booking_flight', function()
 	{
-		return View::make('pages.front_end.search_flight.search_flight');
+		return View::make('pages.front_end.booking_form.booking_flight');
 	});
-	// search_hotel
-	Route::get('/search_hotel', function()
+	Route::get('/booking_review_flight', function()
 	{
-		return View::make('pages.front_end.search_hotel.search_hotel');
+		return View::make('pages.front_end.booking_form.booking_review_flight');
+	});
+	Route::get('/booking_hotel', function()
+	{
+		return View::make('pages.front_end.booking_form.booking_hotel');
+	});
+	Route::get('/booking_review_hotel', function()
+	{
+		return View::make('pages.front_end.booking_form.booking_review_hotel');
+	});
+	Route::get('/payment_hotel', function()
+	{
+		return View::make('pages.front_end.payment.payment_hotel');
+	});
+	Route::get('/payment_flight', function()
+	{
+		return View::make('pages.front_end.payment.payment_flight');
 	});
 });
