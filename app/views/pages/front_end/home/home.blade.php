@@ -50,7 +50,7 @@
 						01
 					</div>
 					<div class="s_quick_search_form" id="f_2">
-						<div class="s_cell">
+						<div class="s_cell_1-3">
 							<div class="s_title">
 								<span class="s_number">
 									01
@@ -78,7 +78,7 @@
 							</div>
 
 						</div>
-						<div class="s_cell">
+						<div class="s_cell_1-3">
 							<span class="s_seprtr s_left"></span>
 							<span class="s_seprtr s_right"></span>
 							<div class="s_title">
@@ -146,7 +146,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="s_cell">
+						<div class="s_cell_1-3">
 							<div class="s_title">
 								<span class="s_number">
 									03
@@ -183,9 +183,23 @@
 									</div>
 								</div>
 								<div class="row">
-									<div class="col-xs-9 col-xs-push-2">
+									<div class="col-xs-3 col-xs-push-2">
 										<form role="form">
 											<div class="form-group">
+												<label for="">Rooms</label>
+												<select class="form-control"> 
+													<option>1</option>
+													<option>2</option>
+													<option>3</option>
+													<option>4</option>
+												</select>
+											</div>
+										</form>
+									</div>
+									<div class="col-xs-6 col-xs-push-2">
+										<form role="form">
+											<div class="form-group">
+												<label for="">&nbsp;</label>
 												<button class="btn btn-success col-xs-12">
 													Find Your Ticket
 												</button>
