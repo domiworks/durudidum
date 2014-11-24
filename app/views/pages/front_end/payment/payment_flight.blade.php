@@ -18,106 +18,78 @@
             <div class="col-md-8" >
                 <div class="row">
                     <h3>Pilihlah Metode Pembayaran:</h3>
-                    <div class="col-md-12" style="margin-bottom:5px;">Penerbangan: <span>Senin, 24 Nov 2014</span></div>
-					
+
                     <div class="col-md-12">
-                        <table style="border-left:3px solid;">
-                            <tr>
-                             
-                                <td colspan="3"><span>Jakarta(CKG)</span></td>
-                            </tr>
-                            <tr>
-                                
-                                <td rowspan="2">logo2</td>
-                                <td rowspan="2">XX</td>
-                                <td>14:45|Senin</td>
+                        <div class="radio">
+                            <label>
+                                <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+                                Paypal
+                            </label>
+                        </div>
+                        <div class="radio">
+                            <label>
+                                <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+                                Other
+                            </label>
+                        </div>
 
-                            </tr>
-                            <tr>
-                                
-                                <td>16:45|Senin</td>
-                            </tr>
-                        </table>
-                        <table style="border-left:3px solid;">
-                            <tr>
-                               
-                                <td colspan="3"><span>Bali / Denpasar (DPS)</span></td>
-                            </tr>
-                        </table>
                     </div>
-                    <p style="color:#aaa;font-size=10px;">Semua waktu adalah waktu lokal bandara</p>
+
                 </div>
-				<div class="row">
-                <div class="col-md-6">
-                    <h3>Rincian Penerbangan</h3>
-                    <table>
-                        <tr>
-                            <td>Lion Air (Dewasa) <span class="noPass">x1</span>:</td>
-                            <td><strong>Rp</strong></td>
-                            <td><strong>525.100</strong></td>
-                        </tr>
-                        <tr >
-                            <td>Harga Bagasi:</td>
-                            <td><strong>Rp</strong></td>
-                            <td>0</td>
-                        </tr>
-                        <tr>
-                            <td>Transit Service:</td>
-                            <td><strong>Rp</strong></td>
-                            <td>0</td>
-                        </tr>
-                        <tr>
-                            <td style="color: #23B452">Biaya transaksi:</td>
-                            <td></td>
-                            <td><strong>GRATIS</strong></td>
-                        </tr>
-                    </table>
-                    <table>
-                        <tr>
-                            <td>Total:</td>
-                            <td >Rp 525.100</td>
-                        </tr>
-                    </table>
-                    <p>
-                        Maskapai tetap dapat meng-update harga.<br>Harga final akan Anda dapatkan di halaman<br>review pembayaran.
-                    </p>
-                </div>
-                <div class="col-md-6">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="priceSummaryContainer">
+                            <h2>Rincian Harga</h2>
+                            <table class="priceSummaryTable">
+                                <tbody><tr>
+                                        <td>Citilink (Dewasa) <span class="noPass">x1</span>:</td>
+                                        <td><strong>Rp</strong></td>
+                                        <td class="priceContent hargaDewasa"><strong>646.700</strong></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Bagasi CGK - DPS:</td>
+                                        <td><strong>Rp</strong></td>
+                                        <td class="priceContent"><strong>0</strong></td>
+                                    </tr>
+                                    <tr style="display: none;" id="totalBaggageFeeContainer">
+                                        <td>Harga Bagasi:</td>
+                                        <td><strong>Rp</strong></td>
+                                        <td class="priceContent" id="totalBaggageFee">0</td>
+                                    </tr>
+                                    <tr style="display: none;" id="transitServicePriceDetail">
+                                        <td>Transit Service:</td>
+                                        <td><strong>Rp</strong></td>
+                                        <td class="priceContent" id="totalTransitServiceFee">0</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="paymentFeelabel">Convenience Fee:</td>
+                                        <td><strong>Rp</strong></td>
+                                        <td class="priceContent paymentFee"><strong>-965</strong></td>
+                                    </tr>
+                                </tbody></table>
+                            <table class="priceTotalTable">
+                                <tbody><tr>
+                                        <td class="grandTotalLabel">Total:
+                                        </td>
+                                        <td class="grandTotal priceContent">Rp 645.735</td>
+                                    </tr>
+                                </tbody></table>
+                        </div>
 
-                    <h3>Daftar Penumpang</h3>
-
-                    <div>
-                        <div >
-                            <div >
-
-                                <table>
-                                    <tbody><tr>
-                                            <td class="numbering"><b>1</b></td>
-                                            <td colspan="2">Tuan</td>
-                                        </tr>
-                                        <tr>
-                                            <td></td>
-                                            <td class="fullName" colspan="2<b">asdasdas</td>
-                                        </tr>
-                                        <tr>
-                                            <td></td>
-                                            <td colspan="2" class="ticketType">Dewasa</td>
-                                        </tr>
-                                        <tr>
-                                            <td></td>
-                                            <td><span>Bagasi ke Bali</span>
-                                                <span class="baggageWeight">15 kg</span></td>
-                                        </tr>
-                                        <tr><td><br></td></tr>
-                                    </tbody></table>
-
-
+                    </div>
+                    <div class="col-md-6">
+                        <div id="paymentSubmitCntr">
+                            <div id="via_TRANSFER_submit" class="paymentSubmitItem">
+                                <span class="subtitle">Klik "Bayar Melalui Transfer" jika Anda benar memilih pembayaran via Transfer. Lakukan transfer sebelum batas waktu.</span>
+                                <div class="termsAgreeText">Dengan klik tombol "Bayar", Anda telah setuju dengan <a target="_blank" href="#">Syarat &amp; Ketentuan</a> dan <a target="_blank" href="#">Kebijakan Privasi</a>.</div>
+                                <button id="payNowTransferBtn" class="btn btn-danger">Bayar</button>
                             </div>
+
+
                         </div>
 
                     </div>
                 </div>
-				</div>
             </div>
 
 
@@ -125,23 +97,33 @@
 
             <div class="col-md-4">
 
-        <div id="right-review">
-          <div class="clearfix paymentGreyContainer">
-            <div class="paymentText">No. Pesanan</div>
-            <div class="paymentBookingId">35229138</div>
-          </div>
-          <div id="review_submit_right" class="paymentSubmitItem">
-            <h2>Lanjut ke Pembayaran</h2>
-            <div class="termsAgreeText">
-              Dengan mengklik tombol di bawah, Anda menyetujui
-              <a target="_blank" href="#">Syarat &amp; Ketentuan</a> dan <br>
-			  <a target="_blank" href="#">Kebijakan Privasi</a> Traveloka.com
-            </div>
-            <button class="btn btn-danger" id="goToPayment">Lanjut ke Pembayaran</button>
-          </div>
-                  </div>
-      
-			
+                <div id="right-review">
+                    <div class="clearfix paymentGreyContainer">
+                        <div class="paymentText">No. Pesanan</div>
+                        <div class="paymentBookingId">35229138</div>
+                    </div>
+                    <div id="bookingRouteWidget">
+                        <h2>Rincian Perjalanan</h2>
+                        <h3>Citilink</h3>
+                        <ul class="flightSegment">
+                            <li><span class="tvItalic">Jakarta</span> ke <span class="tvItalic">Bali / Denpasar</span></li>
+                            <li>
+                                <ul class="flightSegmentDetails">
+                                    <li>Selasa, 25 Nov 2014 [16:40 - 19:30]</li>
+                                </ul>
+                            </li>
+                            
+                        </ul>
+                        <h2>Daftar Penumpang</h2>
+                        <ul class="passSummaryList">
+                            <li>
+                                Mrs. tasvdhjawkd absdamw (dewasa)
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+
             </div>
         </div>
 
