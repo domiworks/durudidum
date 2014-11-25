@@ -26,8 +26,6 @@ class CreateHotelsTable extends Migration {
 			$table->longText('hotel_detail');
 			$table->longText('keterangan');
 			$table->longText('kebijakan_pembatalan');
-			$table->integer('kapasitas_kamar');
-			$table->integer('sisa_kamar');
 			$table->string('fasilitas_dasar')->nullable();
 			$table->string('fasilitas_lain')->nullable();
 			$table->integer('id_area')->unsigned();
