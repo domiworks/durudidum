@@ -1,5 +1,5 @@
 <?php
-
+use Carbon\Carbon;
 /*
 |--------------------------------------------------------------------------
 | Application Routes
@@ -10,6 +10,12 @@
 | and give it the Closure to execute when that URI is requested.
 |
 */
+Route::get('/tes', function (){
+	$keyword = "Kuta";
+	$result = WanderEvent::where('nama_area','=',$keyword)->get();
+	
+	echo $result;
+});
 
 Route::group(array('prefix' => 'test'), function()
 {
