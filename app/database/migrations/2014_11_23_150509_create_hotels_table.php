@@ -19,7 +19,7 @@ class CreateHotelsTable extends Migration {
 			$table->string('nama');
 			$table->string('alamat');
 			$table->string('telepon');
-			$table->string('jumlah_bintang');
+			$table->integer('jumlah_bintang');
 			$table->time('waktu_check_in');
 			$table->time('waktu_check_out');
 			$table->string('folder_gallery_path');

@@ -22,8 +22,8 @@ class CreateHotelOrdersTable extends Migration {
 			$table->integer('jumlah_kamar');
 			$table->decimal('total_harga',11,2);
 			$table->longText('catatan_khusus');
-			$table->date('tanngal_masuk');
-			$table->date('tanngal_keluar');
+			$table->date('tanggal_masuk');
+			$table->date('tanggal_keluar');
 			$table->timestamps();
 		});
 	}
