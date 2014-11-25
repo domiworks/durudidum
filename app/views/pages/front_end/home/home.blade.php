@@ -90,15 +90,15 @@
 										<form role="form">
 											<div class="form-group">
 												<label for="">Depart Date</label>
-												<input type="text" class="form-control s_flight_time_input" id="f_depart_date" placeholder=""><span class="clock_32"></span>
+												<input type="text" class="form-control s_flight_time_input" id="f_depart_date_only" placeholder=""><span class="clock_32"></span>
 											</div>
 											<div class="form-group">
 												<label for="">Return Date</label>
-												<input type="text" class="form-control s_flight_time_input" id="f_return_date" placeholder=""><span class="clock_32"></span>
+												<input type="text" class="form-control s_flight_time_input" id="f_return_date_only" placeholder=""><span class="clock_32"></span>
 											</div>
 										</form>
 										<script>
-										jQuery('#f_depart_date').datetimepicker({
+										jQuery('#f_depart_date_only').datetimepicker({
 											lang:'en',
 											i18n:{
 												de:{
@@ -117,7 +117,7 @@
 											format:'d.m.Y',
  											minDate:'0',//yesterday is minimum date(for today use 0 or -1970/01/01)
  										});
-										jQuery('#f_return_date').datetimepicker({
+										jQuery('#f_return_date_only').datetimepicker({
 											lang:'en',
 											i18n:{
 												de:{
@@ -178,20 +178,7 @@
 									</div>
 								</div>
 								<div class="row">
-									<div class="col-xs-3 col-xs-push-2">
-										<form role="form">
-											<div class="form-group">
-												<label for="">Rooms</label>
-												<select class="form-control"> 
-													<option>1</option>
-													<option>2</option>
-													<option>3</option>
-													<option>4</option>
-												</select>
-											</div>
-										</form>
-									</div>
-									<div class="col-xs-6 col-xs-push-2">
+									<div class="col-xs-9 col-xs-push-2">
 										<form role="form">
 											<div class="form-group">
 												<label for="">&nbsp;</label>
@@ -221,7 +208,7 @@
 									<div class="col-xs-8 col-xs-push-2">
 										<form role="form">
 											<div class="form-group">
-												<label for="">Depart Date</label>
+												<label for="">City Name</label>
 												<input type="text" class="form-control s_indent_20" id="" placeholder=""><span class="house_32"></span>
 											</div>
 										</form>
@@ -231,7 +218,7 @@
 									<div class="col-xs-4 col-xs-push-2">
 
 										<div class="form-group">
-											<label for="">Depart Date</label>
+											<label for="">Check-in Date</label>
 											<input type="text" class="form-control s_indent_20" id="f_checkin_date" placeholder=""><span class="clock_32"></span>
 										</div>
 									</div>
@@ -239,7 +226,7 @@
 
 
 										<div class="form-group">
-											<label for="">Return Date</label>
+											<label for="">Check-out Date</label>
 											<input type="text" class="form-control s_indent_20" id="f_checkout_date" placeholder=""><span class="clock_32"></span>
 										</div>
 									</div>
