@@ -11,8 +11,13 @@ use Carbon\Carbon;
 |
 */
 Route::get('/tes', function (){
-	$keyword = "Kuta";
-	$result = WanderEvent::where('nama_area','=',$keyword)->get();
+	$keyword = "soe";
+	$result = Airport::where('nama_bandara','LIKE','%'.$keyword.'%')->get();
+		
+	foreach($result as $res)
+	{
+		$res->city = City::find($res->id_kota);
+	}
 	
 	echo $result;
 });
