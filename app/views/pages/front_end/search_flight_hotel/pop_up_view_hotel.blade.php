@@ -28,8 +28,9 @@
 						<div role="tabpanel" class="tab-pane" id="f_t_2">
 							@include('pages.front_end.search_flight_hotel.tab_hotel_photos')
 						</div>
-						<div role="tabpanel" class="tab-pane" id="f_t_3">d</div>
-
+						<div role="tabpanel" class="tab-pane" id="f_t_3">
+							@include('pages.front_end.search_flight_hotel.tab_hotel_map')
+						</div>
 						<div role="tabpanel" class="tab-pane" id="f_t_4">
 							@include('pages.front_end.search_flight_hotel.tab_hotel_reviews')
 						</div>
@@ -46,9 +47,9 @@
 					</script>
 
 				</div>
-				<div class="modal-footer">
+				<!--<div class="modal-footer">
 					<button type="button" class="btn btn-default" data-dismiss="modal">Keluar</button>
-				</div>
+				</div>-->
 			</form>
 		</div>
 	</div>
