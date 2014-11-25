@@ -43,11 +43,312 @@
 							<a href="javascript:void(0)" id="f_2">Flight + Hotel</a>
 						</li>
 					</ul>
-					<div class="s_quick_search_form hidden" id="f_0"> 
-						00
+					
+					<div class="s_quick_search_form hidden" id="f_0">
+						<div class="s_cell_1-3">
+							<div class="s_title">
+								<span class="s_number">
+									01
+								</span>
+								<span class="s_caption">
+									City Destination
+								</span>
+							</div>
+							<div class="container-fluid" style="margin-top: 30px;">
+								<div class="row">
+									<div class="col-xs-9 col-xs-push-2">
+										<form role="form">
+											<div class="form-group">
+												<label for="">Depart From</label>
+												<input type="text" class="form-control s_city_dest_input" id="" placeholder=""><span class="house_32"></span>
+
+											</div>
+											<div class="form-group">
+												<label for="">Arrive In</label>
+												<input type="text" class="form-control s_city_dest_input" id="" placeholder=""><span class="house_32"></span>
+											</div>
+										</form>
+									</div>
+								</div>
+							</div>
+
+						</div>
+						<div class="s_cell_1-3">
+							<span class="s_seprtr s_left"></span>
+							<span class="s_seprtr s_right"></span>
+							<div class="s_title">
+								<span class="s_number">
+									02
+								</span>
+								<span class="s_caption">
+									Flight Time
+								</span>
+							</div>
+							<div class="container-fluid" style="margin-top: 30px;">
+								<div class="row">
+									<div class="col-xs-9 col-xs-push-2">
+										<form role="form">
+											<div class="form-group">
+												<label for="">Depart Date</label>
+												<input type="text" class="form-control s_flight_time_input" id="f_depart_date" placeholder=""><span class="clock_32"></span>
+											</div>
+											<div class="form-group">
+												<label for="">Return Date</label>
+												<input type="text" class="form-control s_flight_time_input" id="f_return_date" placeholder=""><span class="clock_32"></span>
+											</div>
+										</form>
+										<script>
+										jQuery('#f_depart_date').datetimepicker({
+											lang:'en',
+											i18n:{
+												de:{
+													months:[
+													'January','February','March','April',
+													'May','June','July','August',
+													'September','October','November','December',
+													],
+													dayOfWeek:[
+													"Sun", "Mon", "Tue", "Wed", 
+													"Thur", "Fri", "Sat",
+													]
+												}
+											},
+											timepicker:false,
+											format:'d.m.Y',
+ 											minDate:'0',//yesterday is minimum date(for today use 0 or -1970/01/01)
+ 										});
+										jQuery('#f_return_date').datetimepicker({
+											lang:'en',
+											i18n:{
+												de:{
+													months:[
+													'January','February','March','April',
+													'May','June','July','August',
+													'September','October','November','December',
+													],
+													dayOfWeek:[
+													"Sun", "Mon", "Tue", "Wed", 
+													"Thur", "Fri", "Sat",
+													]
+												}
+											},
+											timepicker:false,
+											format:'d.m.Y',
+ 											minDate:'0',//yesterday is minimum date(for today use 0 or -1970/01/01)
+ 										});
+										</script>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="s_cell_1-3">
+							<div class="s_title">
+								<span class="s_number">
+									03
+								</span>
+								<span class="s_caption">
+									Passenger Ticket
+								</span>
+							</div>
+							<div class="container-fluid" style="margin-top: 30px;">
+								<div class="row">
+									<div class="col-xs-3 col-xs-push-2">
+										<form role="form">
+											<div class="form-group">
+												<label for="">Adults</label>
+												<input type="text" class="form-control" id="" placeholder="">
+											</div>
+										</form>
+									</div>
+									<div class="col-xs-3 col-xs-push-2">
+										<form role="form">
+											<div class="form-group">
+												<label for="">Kids</label>
+												<input type="text" class="form-control" id="" placeholder="">
+											</div>
+										</form>
+									</div>
+									<div class="col-xs-3 col-xs-push-2">
+										<form role="form">
+											<div class="form-group">
+												<label for="">Infants</label>
+												<input type="text" class="form-control" id="" placeholder="">
+											</div>
+										</form>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-xs-3 col-xs-push-2">
+										<form role="form">
+											<div class="form-group">
+												<label for="">Rooms</label>
+												<select class="form-control"> 
+													<option>1</option>
+													<option>2</option>
+													<option>3</option>
+													<option>4</option>
+												</select>
+											</div>
+										</form>
+									</div>
+									<div class="col-xs-6 col-xs-push-2">
+										<form role="form">
+											<div class="form-group">
+												<label for="">&nbsp;</label>
+												<button class="btn btn-success col-xs-12">
+													Find Your Ticket
+												</button>
+											</div>
+										</form>
+									</div>
+								</div>
+							</div>
+						</div>
 					</div>
 					<div class="s_quick_search_form hidden" id="f_1">
-						01
+						<div class="s_cell_1-2">
+							<span class="s_seprtr s_right"></span>
+							<div class="s_title">
+								<span class="s_number">
+									01
+								</span>
+								<span class="s_caption">
+									City Destination
+								</span>
+							</div>
+							<div class="container-fluid" style="margin-top: 30px;">
+								<div class="row">
+									<div class="col-xs-8 col-xs-push-2">
+										<form role="form">
+											<div class="form-group">
+												<label for="">Depart Date</label>
+												<input type="text" class="form-control s_indent_20" id="" placeholder=""><span class="house_32"></span>
+											</div>
+										</form>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-xs-4 col-xs-push-2">
+
+										<div class="form-group">
+											<label for="">Depart Date</label>
+											<input type="text" class="form-control s_indent_20" id="f_checkin_date" placeholder=""><span class="clock_32"></span>
+										</div>
+									</div>
+									<div class="col-xs-4 col-xs-push-2">
+
+
+										<div class="form-group">
+											<label for="">Return Date</label>
+											<input type="text" class="form-control s_indent_20" id="f_checkout_date" placeholder=""><span class="clock_32"></span>
+										</div>
+									</div>
+									<script>
+									jQuery('#f_checkin_date').datetimepicker({
+										lang:'en',
+										i18n:{
+											de:{
+												months:[
+												'January','February','March','April',
+												'May','June','July','August',
+												'September','October','November','December',
+												],
+												dayOfWeek:[
+												"Sun", "Mon", "Tue", "Wed", 
+												"Thur", "Fri", "Sat",
+												]
+											}
+										},
+										timepicker:false,
+										format:'d.m.Y',
+ 											minDate:'0',//yesterday is minimum date(for today use 0 or -1970/01/01)
+ 										});
+									jQuery('#f_checkout_date').datetimepicker({
+										lang:'en',
+										i18n:{
+											de:{
+												months:[
+												'January','February','March','April',
+												'May','June','July','August',
+												'September','October','November','December',
+												],
+												dayOfWeek:[
+												"Sun", "Mon", "Tue", "Wed", 
+												"Thur", "Fri", "Sat",
+												]
+											}
+										},
+										timepicker:false,
+										format:'d.m.Y',
+ 											minDate:'0',//yesterday is minimum date(for today use 0 or -1970/01/01)
+ 										});
+									</script>
+								</div>
+							</div>
+						</div>
+						<div class="s_cell_1-2">
+							<div class="s_title">
+								<span class="s_number">
+									02
+								</span>
+								<span class="s_caption">
+									Passenger Ticket
+								</span>
+							</div>
+							<div class="container-fluid" style="margin-top: 30px;">
+								<div class="row">
+									<div class="col-xs-3 col-xs-push-2">
+										<form role="form">
+											<div class="form-group">
+												<label for="">Adults</label>
+												<input type="text" class="form-control" id="" placeholder="">
+											</div>
+										</form>
+									</div>
+									<div class="col-xs-3 col-xs-push-2">
+										<form role="form">
+											<div class="form-group">
+												<label for="">Kids</label>
+												<input type="text" class="form-control" id="" placeholder="">
+											</div>
+										</form>
+									</div>
+									<div class="col-xs-3 col-xs-push-2">
+										<form role="form">
+											<div class="form-group">
+												<label for="">Infants</label>
+												<input type="text" class="form-control" id="" placeholder="">
+											</div>
+										</form>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-xs-3 col-xs-push-2">
+										<form role="form">
+											<div class="form-group">
+												<label for="">Rooms</label>
+												<select class="form-control"> 
+													<option>1</option>
+													<option>2</option>
+													<option>3</option>
+													<option>4</option>
+												</select>
+											</div>
+										</form>
+									</div>
+									<div class="col-xs-6 col-xs-push-2">
+										<form role="form">
+											<div class="form-group">
+												<label for="">&nbsp;</label>
+												<button class="btn btn-success col-xs-12">
+													Find Your Ticket
+												</button>
+											</div>
+										</form>
+									</div>
+								</div>
+							</div>
+						</div>
 					</div>
 					<div class="s_quick_search_form" id="f_2">
 						<div class="s_cell_1-3">
@@ -211,14 +512,15 @@
 						</div>
 					</div>
 				</div>
+
 				<script>
-					$('body').on('click','.s_quick_search_menu > li > a', function(){
-						var id = $(this).attr('id');
-						$(this).parent().addClass('s_quick_active');
-						$(this).parent().siblings().removeClass('s_quick_active');
-						$(this).closest('.s_quick_search').children('.s_quick_search_form').addClass('hidden');
-						$(this).closest('.s_quick_search').children('#'+ id +'').removeClass('hidden');
-					});
+				$('body').on('click','.s_quick_search_menu > li > a', function(){
+					var id = $(this).attr('id');
+					$(this).parent().addClass('s_quick_active');
+					$(this).parent().siblings().removeClass('s_quick_active');
+					$(this).closest('.s_quick_search').children('.s_quick_search_form').addClass('hidden');
+					$(this).closest('.s_quick_search').children('#'+ id +'').removeClass('hidden');
+				});
 				</script>
 
 			</div>
