@@ -20,7 +20,7 @@ class CreateFlightOrdersTable extends Migration {
 			$table->string('titel');
 			$table->string('nama_pesanan');
 			$table->integer('jumlah_bagasi');
-			$table->string('jumlah_bagasi');
+			$table->integer('harga_bagasi');
 			$table->integer('id_user')->unsigned();
 			$table->integer('id_penerbangan')->unsigned();
 			$table->integer('jumlah_orang');
