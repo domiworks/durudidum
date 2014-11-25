@@ -22,7 +22,7 @@ class CreateHotelRoomsTable extends Migration {
 			$table->integer('sisa_kamar');
 			$table->integer('id_hotel')->unsigned();
 			$table->timestamps();
-		}
+		});
 		//pisahin hotel detail
 		
 		

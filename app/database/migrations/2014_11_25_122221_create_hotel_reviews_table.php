@@ -22,7 +22,7 @@ class CreateHotelReviewsTable extends Migration {
 			$table->integer('id_hotel')->unsigned();
 			$table->timestamps();
 		}
-	}
+	});
 
 	/**
 	 * Reverse the migrations.
