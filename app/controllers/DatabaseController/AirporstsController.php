@@ -7,6 +7,11 @@ class AirporstsController extends \BaseController
 	{
 		$result = Airport::where('nama_bandara','LIKE','%'.$keyword.'%')->get();
 		
+		foreach($result as $res)
+		{
+			$res->city = City::find($result->id_kota);
+		}
+		
 		return $result;
 	}
 }

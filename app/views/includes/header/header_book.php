@@ -1,6 +1,6 @@
-
-	<div class="container" style="border:1px solid;box-shadow: 1px 1px 1px 1px #000;">
-		<div class="row-fluid">
+<header>
+	<div class="container">
+		<div class="row">
 			<div class="col-md-3">
 				<div class="s_tbl">
 					<div class="s_cell" style="height: 90px;">
@@ -8,18 +8,32 @@
 					</div>
 				</div>
 			</div>
-			<div class="col-md-9">
-				<ul class="s_nav" style="text-align:right">
+			<div class="col-md-5">
+				<ul class="s_nav">
 					<li>
-						<span class="">Hotel</span>
+						<a href="#" class="s_a_active">Tickets</a>
 					</li>
 					<li>
-						<span class="">FLIGHT 1</span>
+						<a href="#">Services</a>
 					</li>
 					<li>
-						<span class="">FLIGHT 2</span>
+						<a href="#">Promotions</a>
+					</li>
+				</ul>
+			</div>
+			<div class="col-md-4">
+				<ul class="s_nav_log">
+					<li>
+						<a href="javascript:void(0)">Hotel</a>
+					</li>
+					<li>
+						<a href="javascript:void(0)">Flight 1</a>
+					</li>
+					<li>
+						<a href="javascript:void(0)">Flight 2</a>
 					</li>
 				</ul>
 			</div>
 		</div>
 	</div>
+</header>

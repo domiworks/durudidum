@@ -219,3 +219,23 @@ class DatabaseSeeder extends Seeder {
 			Hotel::create(array('nama_event' => 'Color Run', 'id_area' => '8', 'posted_by'=>'bewnico123','tanggal_event'=>'2014-11-30','deskripsi'=>'event description here'));
 		}
 	}
+	
+	class HotelRoomTableSeeder extends Seeder 
+	{
+
+		public function run()
+		{
+			DB::table('hotels')->delete();
+			Hotel::create(array('nama_event' => 'Color Run', 'id_area' => '8', 'posted_by'=>'bewnico123','tanggal_event'=>'2014-11-30','deskripsi'=>'event description here'));
+		}
+	}
+	
+	class HotelReviewTableSeeder extends Seeder 
+	{
+
+		public function run()
+		{
+			DB::table('hotels')->delete();
+			Hotel::create(array('nama_event' => 'Color Run', 'id_area' => '8', 'posted_by'=>'bewnico123','tanggal_event'=>'2014-11-30','deskripsi'=>'event description here'));
+		}
+	}
