@@ -54,4 +54,6 @@ Route::group(array('prefix' => 'test'), function()
 	{
 		return View::make('pages.front_end.payment.payment_flight');
 	});
+	Route::get('/getAirport', ['as' => 'allAirport', 'uses' => 'AirporstsController@getAllAirport']);
+	
 });
