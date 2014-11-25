@@ -7,20 +7,30 @@
 				
 			</div>
 			<form class="form-horizontal" role="form">								
-				<div class="modal-body">
+				<div class="modal-body nopad">
 
 					<ul class="nav nav-tabs" role="tablist" id="myTab">
-						<li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Home</a></li>
-						<li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Profile</a></li>
-						<li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">Messages</a></li>
-						<li role="presentation"><a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">Settings</a></li>
+						<li role="presentation" class="active"><a href="#f_t_0" aria-controls="home" role="tab" data-toggle="tab">Highlight</a></li>
+						<li role="presentation"><a href="#f_t_1" aria-controls="profile" role="tab" data-toggle="tab">Facilities &amp; Info</a></li>
+						<li role="presentation"><a href="#f_t_2" aria-controls="messages" role="tab" data-toggle="tab">Photos</a></li>
+						<li role="presentation"><a href="#f_t_3" aria-controls="settings" role="tab" data-toggle="tab">Map</a></li>
+						<li role="presentation"><a href="#f_t_4" aria-controls="settings" role="tab" data-toggle="tab">Traveller Reviews</a></li>
+						<li role="presentation"><a href="#f_t_5" aria-controls="settings" role="tab" data-toggle="tab">Rooms &amp; Rates</a></li>
 					</ul>
 
 					<div class="tab-content">
-						<div role="tabpanel" class="tab-pane active" id="home">a</div>
-						<div role="tabpanel" class="tab-pane" id="profile">b</div>
-						<div role="tabpanel" class="tab-pane" id="messages">c</div>
-						<div role="tabpanel" class="tab-pane" id="settings">d</div>
+						<div role="tabpanel" class="tab-pane active" id="f_t_0">
+							@include('pages.front_end.search_flight_hotel.tab_hotel_highlights')
+						</div>
+						<div role="tabpanel" class="tab-pane" id="f_t_1">
+							@include('pages.front_end.search_flight_hotel.tab_hotel_fac_info')
+						</div>
+						<div role="tabpanel" class="tab-pane" id="f_t_2">
+							@include('pages.front_end.search_flight_hotel.tab_hotel_photos')
+						</div>
+						<div role="tabpanel" class="tab-pane" id="f_t_3">d</div>
+						<div role="tabpanel" class="tab-pane" id="f_t_4">e</div>
+						<div role="tabpanel" class="tab-pane" id="f_t_5">f</div>
 					</div>
 
 					<script>
