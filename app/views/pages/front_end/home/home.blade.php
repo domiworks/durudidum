@@ -83,16 +83,31 @@
 								<span class="s_caption">
 									Flight Time
 								</span>
+								<div style="width: 140px; float: right;">
+									<div class="radio">
+										<label>
+											<input type="radio" name="trip_type" id="f_rad_oneway" value="option1" checked>
+											One-way
+										</label>
+									</div>
+									<div class="radio">
+										<label>
+											<input type="radio" name="trip_type" id="f_rad_roundtrip" value="option2">
+											Round Trip
+										</label>
+									</div>
+								</div>
+
 							</div>
 							<div class="container-fluid" style="margin-top: 30px;">
 								<div class="row">
 									<div class="col-xs-9 col-xs-push-2">
 										<form role="form">
-											<div class="form-group">
+											<div class="form-group f_trip_type" id="f_trip_type_oneway">
 												<label for="">Depart Date</label>
 												<input type="text" class="form-control s_flight_time_input" id="f_depart_date_only" placeholder=""><span class="clock_32"></span>
 											</div>
-											<div class="form-group">
+											<div class="form-group f_trip_type hidden" id="f_trip_type_roundtrip">
 												<label for="">Return Date</label>
 												<input type="text" class="form-control s_flight_time_input" id="f_return_date_only" placeholder=""><span class="clock_32"></span>
 											</div>
@@ -136,6 +151,17 @@
 											format:'d.m.Y',
  											minDate:'0',//yesterday is minimum date(for today use 0 or -1970/01/01)
  										});
+										</script>
+										<script>
+										$('[name="trip_type"]').click(function() {
+										   if($('#f_rad_oneway').is(':checked')){ 
+										   		$('#f_trip_type_oneway').removeClass('hidden');
+										   		$('#f_trip_type_roundtrip').addClass('hidden');
+										   }else{
+										   		$('#f_trip_type_roundtrip').removeClass('hidden');
+										   		$('#f_trip_type_oneway').removeClass('hidden');
+										   }
+										});
 										</script>
 									</div>
 								</div>
@@ -356,11 +382,11 @@
 												<input type="text" class="form-control s_city_dest_input" id="departFrom" placeholder=""><span class="house_32"></span>
 												<table class="table table-bordered table-striped">
 													<tbody class="f_table_search" id="searchContent">
-															<style>
-															.f_table_search > tr:active > td {
-																background-color: #E8CD02 !important;
-															}
-															</style>
+														<style>
+														.f_table_search > tr:active > td {
+															background-color: #E8CD02 !important;
+														}
+														</style>
 													</tbody>
 												</table>
 
@@ -533,23 +559,23 @@
 	</div>
 </section>
 <script>
-	$('body').on('keyup','#departFrom',function()
-	{
-		$keyword = $('#departFrom').val();
-		$data = "";
-		$.ajax({
-			type: 'GET',
-			url: '{{URL::route('allAirport')}}',
-			data: {
-				'keyword' : $keyword
-			},
-			success: function(response){
-				$.each(response , function(i,resp)
-				{
-					$data = $data + "<tr id='row_"+resp.
-				});
-			}
-		})
-	});
+$('body').on('keyup','#departFrom',function()
+{
+	$keyword = $('#departFrom').val();
+	$data = "";
+	$.ajax({
+		type: 'GET',
+		url: '{{URL::route('allAirport')}}',
+		data: {
+			'keyword' : $keyword
+		},
+		success: function(response){
+			$.each(response , function(i,resp)
+			{
+				$data = $data + "<tr id='row_"+resp.
+			});
+		}
+	})
+});
 </script>
 @stop
