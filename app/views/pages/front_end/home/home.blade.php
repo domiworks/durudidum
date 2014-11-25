@@ -353,7 +353,16 @@
 										<form role="form">
 											<div class="form-group">
 												<label for="">Depart From</label>
-												<input type="text" class="form-control s_city_dest_input" id="" placeholder=""><span class="house_32"></span>
+												<input type="text" class="form-control s_city_dest_input" id="departFrom" placeholder=""><span class="house_32"></span>
+												<table class="table table-bordered table-striped">
+													<tbody class="f_table_search" id="searchContent">
+															<style>
+															.f_table_search > tr:active > td {
+																background-color: #E8CD02 !important;
+															}
+															</style>
+													</tbody>
+												</table>
 
 											</div>
 											<div class="form-group">
@@ -509,7 +518,6 @@
 					$(this).closest('.s_quick_search').children('#'+ id +'').removeClass('hidden');
 				});
 				</script>
-
 			</div>
 		</div>
 	</div>
@@ -524,4 +532,24 @@
 		</div>
 	</div>
 </section>
+<script>
+	$('body').on('keyup','#departFrom',function()
+	{
+		$keyword = $('#departFrom').val();
+		$data = "";
+		$.ajax({
+			type: 'GET',
+			url: '{{URL::route('allAirport')}}',
+			data: {
+				'keyword' : $keyword
+			},
+			success: function(response){
+				$.each(response , function(i,resp)
+				{
+					$data = $data + "<tr id='row_"+resp.
+				});
+			}
+		})
+	});
+</script>
 @stop
