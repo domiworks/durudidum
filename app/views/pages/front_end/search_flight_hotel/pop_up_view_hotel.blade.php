@@ -29,8 +29,14 @@
 							@include('pages.front_end.search_flight_hotel.tab_hotel_photos')
 						</div>
 						<div role="tabpanel" class="tab-pane" id="f_t_3">d</div>
-						<div role="tabpanel" class="tab-pane" id="f_t_4">e</div>
-						<div role="tabpanel" class="tab-pane" id="f_t_5">f</div>
+
+						<div role="tabpanel" class="tab-pane" id="f_t_4">
+							@include('pages.front_end.search_flight_hotel.tab_hotel_reviews')
+						</div>
+
+						<div role="tabpanel" class="tab-pane" id="f_t_5">
+							@include('pages.front_end.search_flight_hotel.tab_hotel_room_rate')
+						</div>
 					</div>
 
 					<script>
