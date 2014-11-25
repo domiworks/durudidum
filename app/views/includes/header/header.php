@@ -11,7 +11,7 @@
 			<div class="col-md-6">
 				<ul class="s_nav">
 					<li>
-						<a href="#">Tickets</a>
+						<a href="#" class="s_a_active">Tickets</a>
 					</li>
 					<li>
 						<a href="#">Services</a>

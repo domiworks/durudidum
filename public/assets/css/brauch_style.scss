@@ -345,7 +345,7 @@
 	.s_quick_search_form {
 		border: 1px solid #23d0e7;
 
-		.s_cell{
+		.s_cell_1-3{
 			padding-bottom: 14px;
 			position: relative;
 			float: left;
@@ -446,10 +446,19 @@
  	font-size: 12px;
  	font-family: hnreg;
  }
+ .s_rating {
+ 	display: block;
+ }
 
  .s_maskapai_name, .s_flight_hour {
  	font-size: 14px;
  	font-family: hnbold;
  	line-height: 32px;
  	display: inline-block;
+ }
+
+ .nopad {
+ 	padding-top: 0px !important; 
+ 	padding-right: 0px !important; 
+ 	padding-left: 0px !important; 
  }

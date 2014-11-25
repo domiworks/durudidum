@@ -34,17 +34,23 @@
 				<div class="s_quick_search">
 					<ul class="s_quick_search_menu">
 						<li>
-							<a href="">Fligth</a>
+							<a href="javascript:void(0)" id="f_0">Fligth</a>
 						</li>
 						<li>
-							<a href="">Hotel</a>
+							<a href="javascript:void(0)" id="f_1">Hotel</a>
 						</li>
 						<li class="s_quick_active">
-							<a href="" >Flight + Hotel</a>
+							<a href="javascript:void(0)" id="f_2">Flight + Hotel</a>
 						</li>
 					</ul>
-					<div class="s_quick_search_form">
-						<div class="s_cell">
+					<div class="s_quick_search_form hidden" id="f_0"> 
+						00
+					</div>
+					<div class="s_quick_search_form hidden" id="f_1">
+						01
+					</div>
+					<div class="s_quick_search_form" id="f_2">
+						<div class="s_cell_1-3">
 							<div class="s_title">
 								<span class="s_number">
 									01
@@ -72,7 +78,7 @@
 							</div>
 
 						</div>
-						<div class="s_cell">
+						<div class="s_cell_1-3">
 							<span class="s_seprtr s_left"></span>
 							<span class="s_seprtr s_right"></span>
 							<div class="s_title">
@@ -97,50 +103,50 @@
 											</div>
 										</form>
 										<script>
-											jQuery('#f_depart_date').datetimepicker({
-											 lang:'en',
-											 i18n:{
-											  de:{
-											   months:[
-											    'January','February','March','April',
-											    'May','June','July','August',
-											    'September','October','November','December',
-											   ],
-											   dayOfWeek:[
-											    "Sun", "Mon", "Tue", "Wed", 
-											    "Thur", "Fri", "Sat",
-											   ]
-											  }
-											 },
-											 timepicker:false,
-											 format:'d.m.Y',
+										jQuery('#f_depart_date').datetimepicker({
+											lang:'en',
+											i18n:{
+												de:{
+													months:[
+													'January','February','March','April',
+													'May','June','July','August',
+													'September','October','November','December',
+													],
+													dayOfWeek:[
+													"Sun", "Mon", "Tue", "Wed", 
+													"Thur", "Fri", "Sat",
+													]
+												}
+											},
+											timepicker:false,
+											format:'d.m.Y',
  											minDate:'0',//yesterday is minimum date(for today use 0 or -1970/01/01)
-											});
-											jQuery('#f_return_date').datetimepicker({
-											 lang:'en',
-											 i18n:{
-											  de:{
-											   months:[
-											    'January','February','March','April',
-											    'May','June','July','August',
-											    'September','October','November','December',
-											   ],
-											   dayOfWeek:[
-											    "Sun", "Mon", "Tue", "Wed", 
-											    "Thur", "Fri", "Sat",
-											   ]
-											  }
-											 },
-											 timepicker:false,
-											 format:'d.m.Y',
+ 										});
+										jQuery('#f_return_date').datetimepicker({
+											lang:'en',
+											i18n:{
+												de:{
+													months:[
+													'January','February','March','April',
+													'May','June','July','August',
+													'September','October','November','December',
+													],
+													dayOfWeek:[
+													"Sun", "Mon", "Tue", "Wed", 
+													"Thur", "Fri", "Sat",
+													]
+												}
+											},
+											timepicker:false,
+											format:'d.m.Y',
  											minDate:'0',//yesterday is minimum date(for today use 0 or -1970/01/01)
-											});
+ 										});
 										</script>
 									</div>
 								</div>
 							</div>
 						</div>
-						<div class="s_cell">
+						<div class="s_cell_1-3">
 							<div class="s_title">
 								<span class="s_number">
 									03
@@ -177,9 +183,23 @@
 									</div>
 								</div>
 								<div class="row">
-									<div class="col-xs-9 col-xs-push-2">
+									<div class="col-xs-3 col-xs-push-2">
 										<form role="form">
 											<div class="form-group">
+												<label for="">Rooms</label>
+												<select class="form-control"> 
+													<option>1</option>
+													<option>2</option>
+													<option>3</option>
+													<option>4</option>
+												</select>
+											</div>
+										</form>
+									</div>
+									<div class="col-xs-6 col-xs-push-2">
+										<form role="form">
+											<div class="form-group">
+												<label for="">&nbsp;</label>
 												<button class="btn btn-success col-xs-12">
 													Find Your Ticket
 												</button>
@@ -191,6 +211,15 @@
 						</div>
 					</div>
 				</div>
+				<script>
+					$('body').on('click','.s_quick_search_menu > li > a', function(){
+						var id = $(this).attr('id');
+						$(this).parent().addClass('s_quick_active');
+						$(this).parent().siblings().removeClass('s_quick_active');
+						$(this).closest('.s_quick_search').children('.s_quick_search_form').addClass('hidden');
+						$(this).closest('.s_quick_search').children('#'+ id +'').removeClass('hidden');
+					});
+				</script>
 
 			</div>
 		</div>
