@@ -45,9 +45,17 @@ Route::group(array('prefix' => 'test'), function()
 	{
 		return View::make('pages.front_end.booking_form.booking_hotel');
 	});
+	Route::get('/booking_flight_hotel', function()
+	{
+		return View::make('pages.front_end.booking_form.booking_flight_hotel');
+	});
 	Route::get('/booking_review_hotel', function()
 	{
 		return View::make('pages.front_end.booking_form.booking_review_hotel');
+	});
+	Route::get('/booking_review_flight_hotel', function()
+	{
+		return View::make('pages.front_end.booking_form.booking_review_flight_hotel');
 	});
 	Route::get('/payment_hotel', function()
 	{
