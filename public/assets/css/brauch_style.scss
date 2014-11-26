@@ -525,3 +525,19 @@
  	padding-right: 0px !important; 
  	padding-left: 0px !important; 
  }
+
+ .f_search_result_node {
+ 	background-color: #fff;
+	@include box-shadow(0px, 0px, 5px, 1px, rgba(53,53,53,0.25));
+
+ 	.f_search_title {
+ 		background-color: #363531;
+ 		height: 42px;
+ 		width: 100%;
+ 		line-height: 42px;
+ 		font-family: hnbold;
+ 		color: #fff;
+ 		text-align: center;
+ 		display: block;
+ 	}
+ }
