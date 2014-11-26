@@ -44,37 +44,59 @@ $_SESSION["Payment_Amount"]= 1000;
                             </div>
                             <span>Rincian Harga</span>
                             <table class="table priceSummaryTable">
-                                <tbody><tr>
-                                    <td>Citilink (Dewasa) <span class="noPass">x1</span>:</td>
-                                    <td><strong>Rp</strong></td>
-                                    <td class="priceContent hargaDewasa"><strong>646.700</strong></td>
-                                </tr>
-                                <tr>
-                                    <td>Bagasi CGK - DPS:</td>
-                                    <td><strong>Rp</strong></td>
-                                    <td class="priceContent"><strong>0</strong></td>
-                                </tr>
-                                <tr style="display: none;" id="totalBaggageFeeContainer">
-                                    <td>Harga Bagasi:</td>
-                                    <td><strong>Rp</strong></td>
-                                    <td class="priceContent" id="totalBaggageFee">0</td>
-                                </tr>
-                                <tr style="display: none;" id="transitServicePriceDetail">
-                                    <td>Transit Service:</td>
-                                    <td><strong>Rp</strong></td>
-                                    <td class="priceContent" id="totalTransitServiceFee">0</td>
-                                </tr>
-                                <tr>
-                                    <td class="paymentFeelabel">Convenience Fee:</td>
-                                    <td><strong>Rp</strong></td>
-                                    <td class="priceContent paymentFee"><strong>-965</strong></td>
-                                </tr>
-                            </tbody></table>
+                                <tbody>
+                                    <tr>
+                                        <td>Garuda Indonesia (Dewasa) <span class="noPass">x2</span>:</td>
+                                        <td><strong>Rp</strong></td>
+                                        <td class="priceContent hargaDewasa"><strong>646.700</strong></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Bagasi CGK - DPS:</td>
+                                        <td><strong>Rp</strong></td>
+                                        <td class="priceContent"><strong>0</strong></td>
+                                    </tr>
+                                    <tr style="display: none;" id="totalBaggageFeeContainer">
+                                        <td>Harga Bagasi:</td>
+                                        <td><strong>Rp</strong></td>
+                                        <td class="priceContent" id="totalBaggageFee">0</td>
+                                    </tr>
+                                    <tr style="display: none;" id="transitServicePriceDetail">
+                                        <td>Transit Service:</td>
+                                        <td><strong>Rp</strong></td>
+                                        <td class="priceContent" id="totalTransitServiceFee">0</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="paymentFeelabel">Convenience Fee:</td>
+                                        <td><strong>Rp</strong></td>
+                                        <td class="priceContent paymentFee"><strong>0</strong></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Fave Hotel - Deluxe Guest Room King or 2 Double Beds <span class="noPass">x1</span>:</td>
+                                        <td><strong>Rp</strong></td>
+                                        <td class="priceContent hargaDewasa"><strong>1.147.471</strong></td>
+                                    </tr>
+                                    <tr style="display: none;" id="totalBaggageFeeContainer">
+                                        <td>Harga Bagasi:</td>
+                                        <td><strong>Rp</strong></td>
+                                        <td class="priceContent" id="totalBaggageFee">0</td>
+                                    </tr>
+                                    <tr style="display: none;" id="transitServicePriceDetail">
+                                        <td>Transit Service:</td>
+                                        <td><strong>Rp</strong></td>
+                                        <td class="priceContent" id="totalTransitServiceFee">0</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="paymentFeelabel">Convenience Fee:</td>
+                                        <td><strong>Rp</strong></td>
+                                        <td class="priceContent paymentFee"><strong>0</strong></td>
+                                    </tr>
+                                </tbody>
+                            </table>
                             <table class="priceTotalTable">
                                 <tbody><tr>
                                     <td class="grandTotalLabel">Total:
                                     </td>
-                                    <td class="grandTotal priceContent">Rp 645.735</td>
+                                    <td class="grandTotal priceContent">Rp 1.794.171</td>
                                 </tr>
                             </tbody></table>
                         </div>
@@ -132,6 +154,30 @@ $_SESSION["Payment_Amount"]= 1000;
                                 Mrs. tasvdhjawkd absdamw (dewasa)
                             </li>
                         </ul>
+                        <h2>Rincian Penginapan</h2>
+                        <h3>Fragrance Hotel - Ruby</h3>
+                        <table>
+                            <tbody><tr>
+                                <td style="width: 120px;">Durasi:</td>
+                                <td class="receiptContent">2 malam.</td>
+                            </tr>
+                            <tr>
+                                <td>Check-In:</td>
+                                <td class="receiptContent">Sel, 25 Nov 2014</td>
+                            </tr>
+                            <tr>
+                                <td>Check-Out:</td>
+                                <td class="receiptContent">Kam, 27 Nov 2014</td>
+                            </tr>
+                            <tr>
+                                <td>Tipe Kamar:</td>
+                                <td class="receiptContent">Double or Twin SUPERIOR</td>
+                            </tr>
+                            <tr>
+                                <td>Jumlah Kamar:</td>
+                                <td class="receiptContent">1 kamar</td>
+                            </tr>
+                        </tbody></table>
                     </div>
                 </div>
             </div>

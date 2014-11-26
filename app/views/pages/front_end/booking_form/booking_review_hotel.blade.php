@@ -100,7 +100,9 @@
                                 menyetujui Syarat dan Ketentuan serta 
                                 Kebijakan Privasi dari Traveloka.com</div>
                             <div class="confirmationButton">
+								<a href="http://localhost/durudidum_new/public/test/payment_flight_hotel">
                                <button class="btn btn-danger" id="goToPayment">Lanjut ke Pembayaran</button>
+							   </a>
                             </div>
                         </div>
                     </div>
@@ -116,13 +118,16 @@
                 <div id="right-review">
 				
                     <div id="review_submit_right" class="paymentSubmitItem">
+					
                         <h2>Lanjut ke Pembayaran</h2>
                         <div class="termsAgreeText">
                             Dengan mengklik tombol di bawah, Anda menyetujui
                             <a target="_blank" href="#">Syarat &amp; Ketentuan</a> dan <br>
                             <a target="_blank" href="#">Kebijakan Privasi</a> Traveloka.com
                         </div>
+						<a href="http://localhost/durudidum_new/public/test/payment_flight_hotel">
                         <button class="btn btn-danger" id="goToPayment">Lanjut ke Pembayaran</button>
+						</a>
                     </div>
 					
 					<div class="tv-bg-gray clearfix tvHotelBookingPrice">

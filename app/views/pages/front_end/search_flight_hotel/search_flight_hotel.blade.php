@@ -1,7 +1,6 @@
 @extends('layouts.front_end.front_layout')
 @section('content')
-<section>
-
+<section>	
 	<div class="s_big_infoboard">
 		<div class="container">
 			<div class="row"> 
@@ -31,37 +30,50 @@
 						<span class="f_search_title">
 							Round Trip
 						</span>
-						<div>
-							<div class="s_col_1-3">
-								<span>
-									IATA Asal (JKT)
-								</span>
-								<span>
-									Kota Asal (Jakarta, Indonesia)
-								</span>
+						<div class="container-fluid">
+							<div class="row">
+								<div class="col-xs-4">
+									<span style="font-family: hnreg; font-size: 18px; display: block;">
+										From
+									</span>
+									<span style="font-family: hnbold; font-size: 60px; display: block;">
+										CGK
+									</span>
+									<span style="font-family: hnbold; font-size: 16px; display: block;">
+										Jakarta
+									</span>
+									<span style="font-family: hnreg; font-size: 16px; display: block;">
+										Indonesia
+									</span>
+								</div>
+								<div class="col-xs-4" style="text-align: center;">
+									<img src="{{asset('assets/img/round_trip.png')}}" class="s_mt_30 s_mauto" width="133" height="133">
+								</div>
+								<div class="col-xs-4">
+									<span style="font-family: hnreg; font-size: 18px; display: block;">
+										To
+									</span>
+									<span style="font-family: hnbold; font-size: 60px; display: block;">
+										DPS
+									</span>
+									<span style="font-family: hnbold; font-size: 16px; display: block;">
+										Bali
+									</span>
+									<span style="font-family: hnreg; font-size: 16px; display: block;">
+										Indonesia
+									</span>
+								</div>
 							</div>
-							<div class="s_col_1-3" style="text-align: center;">
-
-								<img src="{{asset('assets/img/round_trip.png')}}" class="s_mt_30 s_mauto" width="133" height="133">
-								<span>
-									Waktu Pergi (24 Dec 2014)
-								</span>
-								<span>
-									Waktu Pulang (24 Jan 2015)
-								</span>
+							<div class="row">
+								<div class="col-xs-12" style="margin-top: 20px; margin-bottom: 30px;">
+									<span>
+										Waktu Pergi (29 Nov 2014)
+									</span>
+									<span>
+										Waktu Pulang (5 Dec 2014)
+									</span>
+								</div>
 							</div>
-							<div class="s_col_1-3">
-								<span>
-									IATA Tujuan (LAX)
-								</span>
-								<span>
-									Kota Tujuan (Los Angeles, USA)
-								</span>
-							</div>
-
-							
-							
-							
 						</div>
 					</div>
 
@@ -98,7 +110,28 @@
 
 
 
-<div class="container">
+<div class="container" style="margin-top: 30px;">
+	<div class="row">
+	<div class="col-md-4 ">
+		<button clicked="clicked" type="button" class="btn btn-success" style="width: 100%;">
+			By Price
+		</button>
+		</div>
+	<div class="col-md-4 ">
+		<button type="button" class="col-md-4 btn btn-success" style="width: 100%;">
+			By Rating
+		</button>
+		
+		</div>
+	<div class="col-md-4 ">
+		<button type="button" class="col-md-4 btn btn-success active" style="width: 100%;" aria-pressed="true">
+			By Expert 
+		</button>
+		
+		</div>
+	</div>
+</div>
+	<div class="container">
 	<div class="row">
 		<div class="col-md-12">
 			<table class="table table-hover">
@@ -116,28 +149,58 @@
 					</tr>
 				</thead>
 				<tbody>
-					<?php for($i =0; $i < 3; $i++){
-						?>
-						<tr>
+					<tr style="background-color: #fff;">
 							<td>
-								<img src="" width="114" height="114" class="s_hotel_pic pull-left" data-toggle="modal" data-target=".pop_up_view_hotel">
+								<img src="{{asset('assets/img/hotel1.jpg')}}" width="114" height="114" class="s_hotel_pic pull-left" data-toggle="modal" data-target=".pop_up_view_hotel">
 								<div>
-									<span class="s_hotel_name" data-toggle="modal" data-target=".pop_up_view_hotel">Nama Hotel</span>
-									<span class="s_hotel_city">Nama Kota, Negara</span>
+									<span class="s_hotel_name" data-toggle="modal" data-target=".pop_up_view_hotel">Fave Hotel</span>
+									<span class="s_hotel_city">Bali, Indonesia</span>
 									<button class="btn btn-primary btn-sm" style="display: block;" data-toggle="modal" data-target=".pop_up_view_hotel">Change Room</button>
 								</div>
 							</td>
 							<td>
 								<div style="overflow: hidden;" data-toggle="modal" data-target=".pop_up_view_flight">
 									<div class="s_flight_sched_row">
-										<img src="" width="32" height="32" class="s_maskapai_pic pull-left">
-										<span class="s_maskapai_name">Nama Maskapai</span>
-										<span class="s_flight_hour">00:00 - 00:00</span>
+										<img src="{{asset('assets/img/garuda1.jpg')}}" width="32" height="32" class="s_maskapai_pic pull-left">
+										<span class="s_maskapai_name">Garuda Indonesia</span>
+										<span class="s_flight_hour">10:30 - 12:30 / 29-11-2014</span>
 									</div>
 									<div class="s_flight_sched_row">
-										<img src="" width="32" height="32" class="s_maskapai_pic pull-left">
-										<span class="s_maskapai_name">Nama Maskapai</span>
-										<span class="s_flight_hour">00:00 - 00:00</span>
+										<img src="{{asset('assets/img/garuda1.jpg')}}" width="32" height="32" class="s_maskapai_pic pull-left">
+										<span class="s_maskapai_name">Garuda Indonesia</span>
+										<span class="s_flight_hour">08:00 - 10:00 / 5-12-2014</span>
+									</div>
+								</div>
+								<button class="btn btn-primary btn-sm" style="display: block; margin-left: 47px;">Change Flights</button>
+							</td> 
+							<td>
+								<a href="http://localhost/durudidum_new/public/test/booking_flight_hotel">
+								<button class="btn btn-warning">
+									Book 
+								</button> 
+								</a>
+							</td> 
+						</tr>
+						<tr style="background-color: #fff;">
+							<td>
+								<img src="{{asset('assets/img/hotel2.jpg')}}" width="114" height="114" class="s_hotel_pic pull-left" data-toggle="modal" data-target=".pop_up_view_hotel">
+								<div>
+									<span class="s_hotel_name" data-toggle="modal" data-target=".pop_up_view_hotel">Amaris Hotel</span>
+									<span class="s_hotel_city">Bali, Indonesia</span>
+									<button class="btn btn-primary btn-sm" style="display: block;" data-toggle="modal" data-target=".pop_up_view_hotel">Change Room</button>
+								</div>
+							</td>
+							<td>
+								<div style="overflow: hidden;" data-toggle="modal" data-target=".pop_up_view_flight">
+									<div class="s_flight_sched_row">
+										<img src="{{asset('assets/img/garuda1.jpg')}}" width="32" height="32" class="s_maskapai_pic pull-left">
+										<span class="s_maskapai_name">Garuda Indonesia</span>
+										<span class="s_flight_hour">10:30 - 12:30 / 29-11-2014</span>
+									</div>
+									<div class="s_flight_sched_row">
+										<img src="{{asset('assets/img/garuda1.jpg')}}" width="32" height="32" class="s_maskapai_pic pull-left">
+										<span class="s_maskapai_name">Garuda Indonesia</span>
+										<span class="s_flight_hour">09:00 - 11:00 / 5-12-2014</span>
 									</div>
 								</div>
 								<button class="btn btn-primary btn-sm" style="display: block; margin-left: 47px;">Change Flights</button>
@@ -148,9 +211,36 @@
 								</button> 
 							</td> 
 						</tr>
-						<?php
-					}?>
-					
+						<tr style="background-color: #fff;">
+							<td>
+								<img src="{{asset('assets/img/hotel3.jpg')}}" width="114" height="114" class="s_hotel_pic pull-left" data-toggle="modal" data-target=".pop_up_view_hotel">
+								<div>
+									<span class="s_hotel_name" data-toggle="modal" data-target=".pop_up_view_hotel">Tune Hotel</span>
+									<span class="s_hotel_city">Bali, Indonesia</span>
+									<button class="btn btn-primary btn-sm" style="display: block;" data-toggle="modal" data-target=".pop_up_view_hotel">Change Room</button>
+								</div>
+							</td>
+							<td>
+								<div style="overflow: hidden;" data-toggle="modal" data-target=".pop_up_view_flight">
+									<div class="s_flight_sched_row">
+										<img src="{{asset('assets/img/garuda1.jpg')}}" width="32" height="32" class="s_maskapai_pic pull-left">
+										<span class="s_maskapai_name">Garuda Indonesia</span>
+										<span class="s_flight_hour">8:30 - 10:30 / 29-11-2014</span>
+									</div>
+									<div class="s_flight_sched_row">
+										<img src="{{asset('assets/img/garuda1.jpg')}}" width="32" height="32" class="s_maskapai_pic pull-left">
+										<span class="s_maskapai_name">Garuda Indonesia</span>
+										<span class="s_flight_hour">10:30 - 12:30 / 5-12-2014</span>
+									</div>
+								</div>
+								<button class="btn btn-primary btn-sm" style="display: block; margin-left: 47px;">Change Flights</button>
+							</td> 
+							<td>
+								<button class="btn btn-warning">
+									Book 
+								</button> 
+							</td> 
+						</tr>
 				</tbody>
 			</table>
 		</div>

@@ -11,8 +11,9 @@ use Carbon\Carbon;
 |
 */
 Route::get('/tes', function (){
-	$keyword = "Kuta";
-	$result = WanderEvent::where('nama_area','=',$keyword)->get();
+	$keyword = "ba";
+	$keyword = Input::get('keyword');
+		$result = City::where('nama_kota','LIKE','%'.$keyword.'%')->orWhere('nama_area','LIKE','%'.$keyword.'%')->get();
 	
 	echo $result;
 });
@@ -25,6 +26,8 @@ Route::group(array('prefix' => 'test'), function()
 		return View::make('pages.front_end.home.home');
 	});
 	// search_flight_hotel
+	Route::get('/view_search_flight_home', ['as' => 'view.search_flight_hotel' , 'uses' => 'search_flight_hotel_controller@view']);
+	
 	Route::get('/search_flight_hotel', function()
 	{
 		return View::make('pages.front_end.search_flight_hotel.search_flight_hotel');
@@ -42,9 +45,17 @@ Route::group(array('prefix' => 'test'), function()
 	{
 		return View::make('pages.front_end.booking_form.booking_hotel');
 	});
+	Route::get('/booking_flight_hotel', function()
+	{
+		return View::make('pages.front_end.booking_form.booking_flight_hotel');
+	});
 	Route::get('/booking_review_hotel', function()
 	{
 		return View::make('pages.front_end.booking_form.booking_review_hotel');
+	});
+	Route::get('/booking_review_flight_hotel', function()
+	{
+		return View::make('pages.front_end.booking_form.booking_review_flight_hotel');
 	});
 	Route::get('/payment_hotel', function()
 	{
@@ -54,12 +65,10 @@ Route::group(array('prefix' => 'test'), function()
 	{
 		return View::make('pages.front_end.payment.payment_flight');
 	});
-	Route::get('/payment_order', function()
+	Route::get('/payment_flight_hotel', function()
 	{
-		return View::make('pages.front_end.payment.payment_order');
+		return View::make('pages.front_end.payment.payment_flight_hotel');
 	});
-	Route::get('/payment_cancel', function()
-	{
-		return View::make('pages.front_end.payment.payment_cancel');
-	});
+	Route::get('/getAirport', ['as' => 'allAirport', 'uses' => 'AirporstsController@getAllAirport']);
+	Route::get('/getCity', ['as' => 'allCities', 'uses' => 'CitiesController@getAllCity']);
 });
