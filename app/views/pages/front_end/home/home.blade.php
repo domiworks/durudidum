@@ -548,6 +548,7 @@
 <script>
 	$('body').on('keyup','#departFrom',function()
 	{
+		$('#searchContent').html("");
 		$keyword = $('#departFrom').val();
 		$data = "";
 		$.ajax({
@@ -559,10 +560,17 @@
 			success: function(response){
 				$.each(response , function(i,resp)
 				{
-					$data = $data + "<tr id='row_"+resp.
+					alert(i);
+					$data = $data + "<tr id='row_"+resp.id + "' class='search_row' style='border-bottom: 1px solid #000 !important;' data-dismiss='modal'><td><span style='display: block;'>";
+					$data = $data + "<td>"+resp.nama_bandara+" ( "+resp.kode_bandara + " ) - "+ resp.city.nama_kota;
+					$data = $data + "</td></tr>";
 				});
+				$('#searchContent').html($data);
+			},error: function(xhr, textStatus, errorThrown){
+				alert("readyState: "+xhr.readyState+"\nstatus: "+xhr.status);
+				alert("responseText: "+xhr.responseText);
 			}
-		})
+		},'json');
 	});
 </script>
 @stop
