@@ -13,12 +13,15 @@
 			</div>
 			<div class="row"> 
 				<div class="col-md-3">
-					<div class="f_search_result_node">
+					<div class="f_search_result_node" style="text-align: center;">
 						<span class="f_search_title">
 							Search Type
 						</span>
 						<div>
-							(Flight, Hotel, Flight + Hotel)
+							<img src="{{asset('assets/img/flight_hotel.png')}}" class="s_mt_30" width="133" height="133">
+							<span class="s_mt_20 s_mb_30" style="font-family: hnbold; display: block;">
+								Flight + Hotel
+							</span>
 						</div>
 					</div>
 				</div>
