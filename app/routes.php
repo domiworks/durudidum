@@ -11,13 +11,9 @@ use Carbon\Carbon;
 |
 */
 Route::get('/tes', function (){
-	$keyword = "soe";
-	$result = Airport::where('nama_bandara','LIKE','%'.$keyword.'%')->get();
-		
-	foreach($result as $res)
-	{
-		$res->city = City::find($res->id_kota);
-	}
+	$keyword = "ba";
+	$keyword = Input::get('keyword');
+		$result = City::where('nama_kota','LIKE','%'.$keyword.'%')->orWhere('nama_area','LIKE','%'.$keyword.'%')->get();
 	
 	echo $result;
 });
@@ -60,5 +56,5 @@ Route::group(array('prefix' => 'test'), function()
 		return View::make('pages.front_end.payment.payment_flight');
 	});
 	Route::get('/getAirport', ['as' => 'allAirport', 'uses' => 'AirporstsController@getAllAirport']);
-	
+	Route::get('/getCity', ['as' => 'allCities', 'uses' => 'CitiesController@getAllCity']);
 });

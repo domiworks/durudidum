@@ -60,12 +60,30 @@
 										<form role="form">
 											<div class="form-group">
 												<label for="">Depart From</label>
-												<input type="text" class="form-control s_city_dest_input" id="" placeholder=""><span class="house_32"></span>
+												<input type="text" class="form-control s_city_dest_input" id="departFrom1" placeholder=""><span class="house_32"></span>
+												<table class="table table-bordered table-striped">
+													<tbody class="f_table_search1" id="searchContent1">
+															<style>
+															.f_table_search1 > tr:active > td {
+																background-color: #E8CD02 !important;
+															}
+															</style>
+													</tbody>
+												</table>
 
 											</div>
 											<div class="form-group">
 												<label for="">Arrive In</label>
-												<input type="text" class="form-control s_city_dest_input" id="" placeholder=""><span class="house_32"></span>
+												<input type="text" class="form-control s_city_dest_input" id="arriveIn1" placeholder=""><span class="house_32"></span>
+												<table class="table table-bordered table-striped">
+													<tbody class="f_table_search1A" id="searchContent1A">
+															<style>
+															.f_table_search1A > tr:active > td {
+																background-color: #E8CD02 !important;
+															}
+															</style>
+													</tbody>
+												</table>
 											</div>
 									</div>
 								</div>
@@ -82,15 +100,29 @@
 								<span class="s_caption">
 									Flight Time
 								</span>
+								<div style="width: 140px; float: right;">
+									<div class="radio">
+										<label>
+											<input type="radio" name="trip_type" id="f_rad_oneway" value="option1" checked>
+											One-way
+										</label>
+									</div>
+									<div class="radio">
+										<label>
+											<input type="radio" name="trip_type" id="f_rad_roundtrip" value="option2">
+											Round Trip
+										</label>
+									</div>
+								</div>
 							</div>
 							<div class="container-fluid" style="margin-top: 20px;">
 								<div class="row">
 									<div class="col-xs-9 col-xs-push-2">
-											<div class="form-group">
+											<div class="form-group" id="f_trip_type_oneway">
 												<label for="">Depart Date</label>
 												<input type="text" class="form-control s_flight_time_input" id="f_depart_date" placeholder=""><span class="clock_32"></span>
 											</div>
-											<div class="form-group">
+											<div class="form-group hidden" id="f_trip_type_roundtrip">
 												<label for="">Return Date</label>
 												<input type="text" class="form-control s_flight_time_input" id="f_return_date" placeholder=""><span class="clock_32"></span>
 											</div>
@@ -133,6 +165,17 @@
 											format:'d.m.Y',
  											minDate:'0',//yesterday is minimum date(for today use 0 or -1970/01/01)
  										});
+										</script>
+										<script>
+										$('[name="trip_type"]').click(function() {
+										   if($('#f_rad_oneway').is(':checked')){ 
+										   		$('#f_trip_type_oneway').removeClass('hidden');
+										   		$('#f_trip_type_roundtrip').addClass('hidden');
+										   }else{
+										   		$('#f_trip_type_roundtrip').removeClass('hidden');
+										   		$('#f_trip_type_oneway').removeClass('hidden');
+										   }
+										});
 										</script>
 									</div>
 								</div>
@@ -209,8 +252,17 @@
 									<div class="col-xs-8 col-xs-push-2">
 										<form role="form">
 											<div class="form-group">
-												<label for="">Depart Date</label>
-												<input type="text" class="form-control s_indent_20" id="" placeholder=""><span class="house_32"></span>
+												<label for="">Location</label>
+												<input type="text" class="form-control s_indent_20" id="location" placeholder=""><span class="house_32"></span>
+												<table class="table table-bordered table-striped">
+													<tbody class="f_table_search2" id="searchContent2">
+															<style>
+															.f_table_search2 > tr:active > td {
+																background-color: #E8CD02 !important;
+															}
+															</style>
+													</tbody>
+												</table>
 											</div>
 									</div>
 								</div>
@@ -232,25 +284,6 @@
 									</div>
 									<script>
 									jQuery('#f_checkin_date').datetimepicker({
-										lang:'en',
-										i18n:{
-											de:{
-												months:[
-												'January','February','March','April',
-												'May','June','July','August',
-												'September','October','November','December',
-												],
-												dayOfWeek:[
-												"Sun", "Mon", "Tue", "Wed", 
-												"Thur", "Fri", "Sat",
-												]
-											}
-										},
-										timepicker:false,
-										format:'d.m.Y',
- 											minDate:'0',//yesterday is minimum date(for today use 0 or -1970/01/01)
- 										});
-									jQuery('#f_checkout_date').datetimepicker({
 										lang:'en',
 										i18n:{
 											de:{
@@ -358,7 +391,17 @@
 											</div>
 											<div class="form-group">
 												<label for="">Arrive In</label>
-												<input type="text" class="form-control s_city_dest_input" id="" placeholder=""><span class="house_32"></span>
+												<input type="text" class="form-control s_city_dest_input" id="arriveIn" placeholder=""><span class="house_32"></span>
+												
+												<table class="table table-bordered table-striped">
+													<tbody class="f_table_searchA" id="searchContentA">
+															<style>
+															.f_table_searchA > tr:active > td {
+																background-color: #E8CD02 !important;
+															}
+															</style>
+													</tbody>
+												</table>
 											</div>
 									</div>
 								</div>
@@ -381,14 +424,14 @@
 									<div class="col-xs-9 col-xs-push-2">
 											<div class="form-group">
 												<label for="">Depart Date</label>
-												<input type="text" class="form-control s_flight_time_input" id="f_depart_date" placeholder=""><span class="clock_32"></span>
+												<input type="text" class="form-control s_flight_time_input" id="f_fdepart_date" placeholder=""><span class="clock_32"></span>
 											</div>
 											<div class="form-group">
 												<label for="">Return Date</label>
-												<input type="text" class="form-control s_flight_time_input" id="f_return_date" placeholder=""><span class="clock_32"></span>
+												<input type="text" class="form-control s_flight_time_input" id="f_freturn_date" placeholder=""><span class="clock_32"></span>
 											</div>
 										<script>
-										jQuery('#f_depart_date').datetimepicker({
+										jQuery('#f_fdepart_date').datetimepicker({
 											lang:'en',
 											i18n:{
 												de:{
@@ -407,7 +450,7 @@
 											format:'d.m.Y',
  											minDate:'0',//yesterday is minimum date(for today use 0 or -1970/01/01)
  										});
-										jQuery('#f_return_date').datetimepicker({
+										jQuery('#f_freturn_date').datetimepicker({
 											lang:'en',
 											i18n:{
 												de:{
@@ -512,8 +555,10 @@
 	</div>
 </section>
 <script>
+	var trigger = false;
 	$('body').on('keyup','#departFrom',function()
 	{
+		trigger = false;
 		$('#searchContent').html("");
 		$keyword = $('#departFrom').val();
 		$data = "";
@@ -524,19 +569,214 @@
 				'keyword' : $keyword
 			},
 			success: function(response){
+				$data = "";
 				$.each(response , function(i,resp)
 				{
-					alert(i);
+					
 					$data = $data + "<tr id='row_"+resp.id + "' class='search_row' style='border-bottom: 1px solid #000 !important;' data-dismiss='modal'><td><span style='display: block;'>";
 					$data = $data + "<td>"+resp.nama_bandara+" ( "+resp.kode_bandara + " ) - "+ resp.city.nama_kota;
 					$data = $data + "</td></tr>";
 				});
-				$('#searchContent').html($data);
+				if(trigger == false){
+					$('#searchContent').html($data);
+					//$('#f_table_suggestion_pelanggan').removeClass('hidden');
+					$('#searchContent').removeClass('hidden');
+				}
 			},error: function(xhr, textStatus, errorThrown){
 				alert("readyState: "+xhr.readyState+"\nstatus: "+xhr.status);
 				alert("responseText: "+xhr.responseText);
 			}
 		},'json');
+	});
+	
+	$('body').on('click','#searchContent > tr > td',function(){
+		//alert($(this).text());
+		$('#departFrom').val($(this).text());
+		trigger = true;
+		//$('#f_table_suggestion_pelanggan ').addClass('hidden');
+		$('#searchContent').addClass('hidden');
+	});
+	
+	$('body').on('keyup','#arriveIn',function()
+	{
+		trigger = false;
+		$('#searchContentA').html("");
+		$keyword = $('#arriveIn').val();
+		$data = "";
+		$.ajax({
+			type: 'GET',
+			url: '{{URL::route('allAirport')}}',
+			data: {
+				'keyword' : $keyword
+			},
+			success: function(response){
+				$data = "";
+				$.each(response , function(i,resp)
+				{
+					
+					$data = $data + "<tr id='row_"+resp.id + "' class='search_row' style='border-bottom: 1px solid #000 !important;' data-dismiss='modal'><td><span style='display: block;'>";
+					$data = $data + "<td>"+resp.nama_bandara+" ( "+resp.kode_bandara + " ) - "+ resp.city.nama_kota;
+					$data = $data + "</td></tr>";
+				});
+				if(trigger == false){
+					$('#searchContentA').html($data);
+					//$('#f_table_suggestion_pelanggan').removeClass('hidden');
+					$('#searchContentA').removeClass('hidden');
+				}
+			},error: function(xhr, textStatus, errorThrown){
+				alert("readyState: "+xhr.readyState+"\nstatus: "+xhr.status);
+				alert("responseText: "+xhr.responseText);
+			}
+		},'json');
+	});
+	
+	$('body').on('click','#searchContentA > tr > td',function(){
+		//alert($(this).text());
+		$('#arriveIn').val($(this).text());
+		trigger = true;
+		//$('#f_table_suggestion_pelanggan ').addClass('hidden');
+		$('#searchContentA').addClass('hidden');
+	});
+	
+	$('body').on('keyup','#departFrom1',function()
+	{
+		trigger = false;
+		$('#searchContent1').html("");
+		$keyword = $('#departFrom1').val();
+		$data = "";
+		$.ajax({
+			type: 'GET',
+			url: '{{URL::route('allAirport')}}',
+			data: {
+				'keyword' : $keyword
+			},
+			success: function(response){
+				$data = "";
+				$.each(response , function(i,resp)
+				{
+					
+					$data = $data + "<tr id='row_"+resp.id + "' class='search_row' style='border-bottom: 1px solid #000 !important;' data-dismiss='modal'><td><span style='display: block;'>";
+					$data = $data + "<td>"+resp.nama_bandara+" ( "+resp.kode_bandara + " ) - "+ resp.city.nama_kota;
+					$data = $data + "</td></tr>";
+				});
+				if(trigger == false){
+					$('#searchContent1').html($data);
+					//$('#f_table_suggestion_pelanggan').removeClass('hidden');
+					$('#searchContent1').removeClass('hidden');
+				}
+			},error: function(xhr, textStatus, errorThrown){
+				alert("readyState: "+xhr.readyState+"\nstatus: "+xhr.status);
+				alert("responseText: "+xhr.responseText);
+			}
+		},'json');
+	});
+	
+	$('body').on('click','#searchContent1 > tr > td',function(){
+		//alert($(this).text());
+		$('#departFrom1').val($(this).text());
+		trigger = true;
+		//$('#f_table_suggestion_pelanggan ').addClass('hidden');
+		$('#searchContent1').addClass('hidden');
+	});
+	
+	$('body').on('keyup','#arriveIn1',function()
+	{
+		trigger = false;
+		$('#searchContent1A').html("");
+		$keyword = $('#arriveIn1').val();
+		$data = "";
+		$.ajax({
+			type: 'GET',
+			url: '{{URL::route('allAirport')}}',
+			data: {
+				'keyword' : $keyword
+			},
+			success: function(response){
+				$data = "";
+				$.each(response , function(i,resp)
+				{
+					
+					$data = $data + "<tr id='row_"+resp.id + "' class='search_row' style='border-bottom: 1px solid #000 !important;' data-dismiss='modal'><td><span style='display: block;'>";
+					$data = $data + "<td>"+resp.nama_bandara+" ( "+resp.kode_bandara + " ) - "+ resp.city.nama_kota;
+					$data = $data + "</td></tr>";
+				});
+				if(trigger == false){
+					$('#searchContent1A').html($data);
+					//$('#f_table_suggestion_pelanggan').removeClass('hidden');
+					$('#searchContent1A').removeClass('hidden');
+				}
+			},error: function(xhr, textStatus, errorThrown){
+				alert("readyState: "+xhr.readyState+"\nstatus: "+xhr.status);
+				alert("responseText: "+xhr.responseText);
+			}
+		},'json');
+	});
+	
+	$('body').on('click','#searchContent1A > tr > td',function(){
+		//alert($(this).text());
+		$('#arriveIn1').val($(this).text());
+		trigger = true;
+		//$('#f_table_suggestion_pelanggan ').addClass('hidden');
+		$('#searchContent1A').addClass('hidden');
+	});
+	
+	$('body').on('keyup','#location',function()
+	{
+		trigger = false;
+		$('#searchContent2').html("");
+		$keyword = $('#location').val();
+		$data = "";
+		$.ajax({
+			type: 'GET',
+			url: '{{URL::route('allCities')}}',
+			data: {
+				'keyword' : $keyword
+			},
+			success: function(response){
+				$data = "";
+				$.each(response , function(i,resp)
+				{
+					$area = "";
+					if(resp.nama_area == '-')
+					{
+						$area = "";
+					}else
+					{
+						$area = " , "+resp.nama_area;
+					}
+					$data = $data + "<tr id='row_"+resp.id + "' class='search_row' style='border-bottom: 1px solid #000 !important;' data-dismiss='modal'><td><span style='display: block;'>";
+					$data = $data + "<td>"+resp.nama_kota+$area;
+					$data = $data + "</td></tr>";
+				});
+				if(trigger == false){
+					$('#searchContent2').html($data);
+					//$('#f_table_suggestion_pelanggan').removeClass('hidden');
+					$('#searchContent2').removeClass('hidden');
+				}
+			},error: function(xhr, textStatus, errorThrown){
+				alert("readyState: "+xhr.readyState+"\nstatus: "+xhr.status);
+				alert("responseText: "+xhr.responseText);
+			}
+		},'json');
+	});
+	
+	$('body').on('click','#searchContent2 > tr > td',function(){
+		//alert($(this).text());
+		$('#location').val($(this).text());
+		trigger = true;
+		//$('#f_table_suggestion_pelanggan ').addClass('hidden');
+		$('#searchContent2').addClass('hidden');
+	});
+	
+	$('body').on('click',function(){
+		//alert($(this).text());
+		trigger = true;
+		//$('#f_table_suggestion_pelanggan ').addClass('hidden');
+		$('#searchContent').addClass('hidden');
+		$('#searchContentA').addClass('hidden');
+		$('#searchContent1').addClass('hidden');
+		$('#searchContent1A').addClass('hidden');
+		$('#searchContent2').addClass('hidden');
 	});
 </script>
 @stop
