@@ -54,4 +54,12 @@ Route::group(array('prefix' => 'test'), function()
 	{
 		return View::make('pages.front_end.payment.payment_flight');
 	});
+	Route::get('/payment_order', function()
+	{
+		return View::make('pages.front_end.payment.payment_order');
+	});
+	Route::get('/payment_cancel', function()
+	{
+		return View::make('pages.front_end.payment.payment_cancel');
+	});
 });
