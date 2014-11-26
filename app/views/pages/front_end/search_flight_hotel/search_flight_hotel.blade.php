@@ -13,48 +13,70 @@
 			</div>
 			<div class="row"> 
 				<div class="col-md-3">
-					<span>
-						Jenis Pencarian (Flight, Hotel, Flight + Hotel)
-					</span>
+					<div class="f_search_result_node">
+						<span class="f_search_title">
+							Search Type
+						</span>
+						<div>
+							(Flight, Hotel, Flight + Hotel)
+						</div>
+					</div>
 				</div>
 				<div class="col-md-6">
-					<span>
-						Round Trip (or not)
-					</span>
-					<span>
-						IATA Asal (JKT)
-					</span>
-					<span>
-						Kota Asal (Jakarta, Indonesia)
-					</span>
-					<span>
-						IATA Tujuan (LAX)
-					</span>
-					<span>
-						Kota Tujuan (Los Angeles, USA)
-					</span>
-					<span>
-						Waktu Pergi (24 Dec 2014)
-					</span>
-					<span>
-						Waktu Pulang (24 Jan 2015)
-					</span>
+
+					<div class="f_search_result_node">
+						<span class="f_search_title">
+							Round Trip
+						</span>
+						<div>
+							<span>
+								Round Trip (or not)
+							</span>
+							<span>
+								IATA Asal (JKT)
+							</span>
+							<span>
+								Kota Asal (Jakarta, Indonesia)
+							</span>
+							<span>
+								IATA Tujuan (LAX)
+							</span>
+							<span>
+								Kota Tujuan (Los Angeles, USA)
+							</span>
+							<span>
+								Waktu Pergi (24 Dec 2014)
+							</span>
+							<span>
+								Waktu Pulang (24 Jan 2015)
+							</span>
+						</div>
+					</div>
+
 
 				</div>
-				<div class="col-md-3">
+				<div class="col-md-3" >
 
-					<span>
-						Jumlah Adult (0)
-					</span>
-					<span>
-						Jumlah Kids (0)
-					</span>
-					<span>
-						Jumlah Infants (0)
-					</span>
-					<span>
-						Jumlah Rooms (0)
-					</span>
+					<div class="f_search_result_node">
+						<span class="f_search_title">
+							Passenger
+						</span>
+						<div>
+							<span>
+								Jumlah Adult (0)
+							</span>
+							<span>
+								Jumlah Kids (0)
+							</span>
+							<span>
+								Jumlah Infants (0)
+							</span>
+							<span>
+								Jumlah Rooms (0)
+							</span>
+						</div>
+					</div>
+
 
 				</div>
 			</div>
