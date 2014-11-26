@@ -380,7 +380,17 @@
 											</div>
 											<div class="form-group">
 												<label for="">Arrive In</label>
-												<input type="text" class="form-control s_city_dest_input" id="" placeholder=""><span class="house_32"></span>
+												<input type="text" class="form-control s_city_dest_input" id="arriveIn" placeholder=""><span class="house_32"></span>
+												
+												<table class="table table-bordered table-striped">
+													<tbody class="f_table_searchA" id="searchContentA">
+															<style>
+															.f_table_searchA > tr:active > td {
+																background-color: #E8CD02 !important;
+															}
+															</style>
+													</tbody>
+												</table>
 											</div>
 										</form>
 									</div>
@@ -546,8 +556,10 @@
 	</div>
 </section>
 <script>
+	var trigger = false;
 	$('body').on('keyup','#departFrom',function()
 	{
+		trigger = false;
 		$('#searchContent').html("");
 		$keyword = $('#departFrom').val();
 		$data = "";
@@ -558,19 +570,73 @@
 				'keyword' : $keyword
 			},
 			success: function(response){
+				$data = "";
 				$.each(response , function(i,resp)
 				{
-					alert(i);
+					
 					$data = $data + "<tr id='row_"+resp.id + "' class='search_row' style='border-bottom: 1px solid #000 !important;' data-dismiss='modal'><td><span style='display: block;'>";
 					$data = $data + "<td>"+resp.nama_bandara+" ( "+resp.kode_bandara + " ) - "+ resp.city.nama_kota;
 					$data = $data + "</td></tr>";
 				});
-				$('#searchContent').html($data);
+				if(trigger == false){
+					$('#searchContent').html($data);
+					//$('#f_table_suggestion_pelanggan').removeClass('hidden');
+					$('#searchContent').removeClass('hidden');
+				}
 			},error: function(xhr, textStatus, errorThrown){
 				alert("readyState: "+xhr.readyState+"\nstatus: "+xhr.status);
 				alert("responseText: "+xhr.responseText);
 			}
 		},'json');
+	});
+	
+	$('body').on('click','#searchContent > tr > td',function(){
+		//alert($(this).text());
+		$('#departFrom').val($(this).text());
+		trigger = true;
+		//$('#f_table_suggestion_pelanggan ').addClass('hidden');
+		$('#searchContent').addClass('hidden');
+	});
+	
+	$('body').on('keyup','#arriveIn',function()
+	{
+		trigger = false;
+		$('#searchContentA').html("");
+		$keyword = $('#arriveIn').val();
+		$data = "";
+		$.ajax({
+			type: 'GET',
+			url: '{{URL::route('allAirport')}}',
+			data: {
+				'keyword' : $keyword
+			},
+			success: function(response){
+				$data = "";
+				$.each(response , function(i,resp)
+				{
+					
+					$data = $data + "<tr id='row_"+resp.id + "' class='search_row' style='border-bottom: 1px solid #000 !important;' data-dismiss='modal'><td><span style='display: block;'>";
+					$data = $data + "<td>"+resp.nama_bandara+" ( "+resp.kode_bandara + " ) - "+ resp.city.nama_kota;
+					$data = $data + "</td></tr>";
+				});
+				if(trigger == false){
+					$('#searchContentA').html($data);
+					//$('#f_table_suggestion_pelanggan').removeClass('hidden');
+					$('#searchContentA').removeClass('hidden');
+				}
+			},error: function(xhr, textStatus, errorThrown){
+				alert("readyState: "+xhr.readyState+"\nstatus: "+xhr.status);
+				alert("responseText: "+xhr.responseText);
+			}
+		},'json');
+	});
+	
+	$('body').on('click','#searchContentA > tr > td',function(){
+		//alert($(this).text());
+		$('#arriveIn').val($(this).text());
+		trigger = true;
+		//$('#f_table_suggestion_pelanggan ').addClass('hidden');
+		$('#searchContentA').addClass('hidden');
 	});
 </script>
 @stop
