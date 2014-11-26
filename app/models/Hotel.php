@@ -3,7 +3,22 @@
 
 class Hotel extends Eloquent
 {
-	protected $table = 'hotels';
+	// public $timestamps = true;
+	protected $table = 'hotels';	
 	
-	protected $fillable = ['nama', 'tipe_kamar', 'folder_gallery_path','harga_per_kamar_per_malam','kapasitas_kamar','sisa_kamar','fasilitas','id_area'];
+	protected $fillable = ['nama',
+							'alamat',
+							'telepon',
+							'jumlah_bintang',
+							'waktu_check_in',
+							'waktu_check_out',							
+							'folder_gallery_path',
+							'hotel_detail',
+							'keterangan',
+							'kebijakan_pembatalan',
+							'fasilitas_dasar',
+							'fasilitas_lain',
+							'id_area',
+							'review_terbaik',
+							'maps_path'];
 }
