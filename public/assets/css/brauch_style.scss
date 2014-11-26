@@ -69,6 +69,15 @@
    .s_indent_20 {
 		text-indent: 20px;
    }
+   .s_mt_30 {
+		margin-top: 30px;
+   }
+   .s_mt_20 {
+		margin-top: 20px;
+   }
+   .s_mb_30 {
+		margin-bottom: 30px;
+   }
 
 /* ==========================================================================
    Pop up
@@ -529,6 +538,7 @@
  .f_search_result_node {
  	background-color: #fff;
 	@include box-shadow(0px, 0px, 5px, 1px, rgba(53,53,53,0.25));
+	overflow: hidden;
 
  	.f_search_title {
  		background-color: #363531;
