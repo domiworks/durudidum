@@ -3,7 +3,7 @@
 	<head>
 		@include('includes.head_html.head_html')
 	</head>
-	<body>
+	<body style="background-color: #fbfbfb;">
 		@include('includes.header.header_book')
 			
 		
