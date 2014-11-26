@@ -31,37 +31,50 @@
 						<span class="f_search_title">
 							Round Trip
 						</span>
-						<div>
-							<div class="s_col_1-3">
-								<span>
-									IATA Asal (JKT)
-								</span>
-								<span>
-									Kota Asal (Jakarta, Indonesia)
-								</span>
+						<div class="container-fluid">
+							<div class="row">
+								<div class="col-xs-4">
+									<span style="font-family: hnreg; font-size: 18px; display: block;">
+										From
+									</span>
+									<span style="font-family: hnbold; font-size: 60px; display: block;">
+										JKT
+									</span>
+									<span style="font-family: hnbold; font-size: 16px; display: block;">
+										Jakarta
+									</span>
+									<span style="font-family: hnreg; font-size: 16px; display: block;">
+										Indonesia
+									</span>
+								</div>
+								<div class="col-xs-4" style="text-align: center;">
+									<img src="{{asset('assets/img/round_trip.png')}}" class="s_mt_30 s_mauto" width="133" height="133">
+								</div>
+								<div class="col-xs-4">
+									<span style="font-family: hnreg; font-size: 18px; display: block;">
+										From
+									</span>
+									<span style="font-family: hnbold; font-size: 60px; display: block;">
+										LAX
+									</span>
+									<span style="font-family: hnbold; font-size: 16px; display: block;">
+										Los Angeles
+									</span>
+									<span style="font-family: hnreg; font-size: 16px; display: block;">
+										USA
+									</span>
+								</div>
 							</div>
-							<div class="s_col_1-3" style="text-align: center;">
-
-								<img src="{{asset('assets/img/round_trip.png')}}" class="s_mt_30 s_mauto" width="133" height="133">
-								<span>
-									Waktu Pergi (24 Dec 2014)
-								</span>
-								<span>
-									Waktu Pulang (24 Jan 2015)
-								</span>
+							<div class="row">
+								<div class="col-xs-12" style="margin-top: 20px; margin-bottom: 30px;">
+									<span>
+										Waktu Pergi (24 Dec 2014)
+									</span>
+									<span>
+										Waktu Pulang (24 Jan 2015)
+									</span>
+								</div>
 							</div>
-							<div class="s_col_1-3">
-								<span>
-									IATA Tujuan (LAX)
-								</span>
-								<span>
-									Kota Tujuan (Los Angeles, USA)
-								</span>
-							</div>
-
-							
-							
-							
 						</div>
 					</div>
 
@@ -118,7 +131,7 @@
 				<tbody>
 					<?php for($i =0; $i < 3; $i++){
 						?>
-						<tr>
+						<tr style="background-color: #fff;">
 							<td>
 								<img src="" width="114" height="114" class="s_hotel_pic pull-left" data-toggle="modal" data-target=".pop_up_view_hotel">
 								<div>
