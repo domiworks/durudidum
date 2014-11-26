@@ -30,6 +30,28 @@ hr {
   text-indent: 20px;
 }
 
+/* line 72, E:/xampp/htdocs/wandercase/public/assets/css/brauch_style.scss */
+.s_mt_30 {
+  margin-top: 30px;
+}
+
+/* line 75, E:/xampp/htdocs/wandercase/public/assets/css/brauch_style.scss */
+.s_mt_20 {
+  margin-top: 20px;
+}
+
+/* line 78, E:/xampp/htdocs/wandercase/public/assets/css/brauch_style.scss */
+.s_mb_30 {
+  margin-bottom: 30px;
+}
+
+/* line 82, E:/xampp/htdocs/wandercase/public/assets/css/brauch_style.scss */
+.s_mauto {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
 /* ==========================================================================
    Pop up
    ========================================================================== */
@@ -43,7 +65,7 @@ hr {
 	left: 0px;
 	overflow: auto;
 }*/
-/* line 86, E:/xampp/htdocs/wandercase/public/assets/css/brauch_style.scss */
+/* line 101, E:/xampp/htdocs/wandercase/public/assets/css/brauch_style.scss */
 .s_tbl {
   width: 100%;
   height: 100%;
@@ -53,7 +75,7 @@ hr {
   vertical-align: middle;
 }
 
-/* line 94, E:/xampp/htdocs/wandercase/public/assets/css/brauch_style.scss */
+/* line 109, E:/xampp/htdocs/wandercase/public/assets/css/brauch_style.scss */
 .s_cell {
   display: table-cell;
   vertical-align: middle;
@@ -62,7 +84,7 @@ hr {
 /* ==========================================================================
    Icons
    ========================================================================== */
-/* line 103, E:/xampp/htdocs/wandercase/public/assets/css/brauch_style.scss */
+/* line 118, E:/xampp/htdocs/wandercase/public/assets/css/brauch_style.scss */
 .clock_32 {
   width: 32px;
   height: 32px;
@@ -74,7 +96,7 @@ hr {
   margin-left: 1px;
 }
 
-/* line 114, E:/xampp/htdocs/wandercase/public/assets/css/brauch_style.scss */
+/* line 129, E:/xampp/htdocs/wandercase/public/assets/css/brauch_style.scss */
 .house_32 {
   width: 32px;
   height: 32px;
@@ -89,7 +111,7 @@ hr {
 /* ==========================================================================
    Style
    ========================================================================== */
-/* line 129, E:/xampp/htdocs/wandercase/public/assets/css/brauch_style.scss */
+/* line 144, E:/xampp/htdocs/wandercase/public/assets/css/brauch_style.scss */
 html, body {
   font-family: "Helvetica Neue", 'hnreg', sans-serif;
   -webkit-text-size-adjust: 100%;
@@ -97,12 +119,12 @@ html, body {
   color: #3f3f3f;
 }
 
-/* line 137, E:/xampp/htdocs/wandercase/public/assets/css/brauch_style.scss */
+/* line 152, E:/xampp/htdocs/wandercase/public/assets/css/brauch_style.scss */
 a {
   text-decoration: none !important;
 }
 
-/* line 141, E:/xampp/htdocs/wandercase/public/assets/css/brauch_style.scss */
+/* line 156, E:/xampp/htdocs/wandercase/public/assets/css/brauch_style.scss */
 header {
   width: 100%;
   height: 90px;
@@ -113,7 +135,7 @@ header {
   box-shadow: 0px 0px 5px 1px #efefef;
 }
 
-/* line 148, E:/xampp/htdocs/wandercase/public/assets/css/brauch_style.scss */
+/* line 163, E:/xampp/htdocs/wandercase/public/assets/css/brauch_style.scss */
 .header_logo {
   background: url("../img/header_logo.svg") no-repeat;
   background-size: 200px 24px;
@@ -123,21 +145,21 @@ header {
   line-height: 90px;
 }
 
-/* line 156, E:/xampp/htdocs/wandercase/public/assets/css/brauch_style.scss */
+/* line 171, E:/xampp/htdocs/wandercase/public/assets/css/brauch_style.scss */
 .s_nav {
   text-align: center;
 }
-/* line 158, E:/xampp/htdocs/wandercase/public/assets/css/brauch_style.scss */
+/* line 173, E:/xampp/htdocs/wandercase/public/assets/css/brauch_style.scss */
 .s_nav * {
   font-family: hnbold;
   list-style-type: none;
   font-size: 16px;
 }
-/* line 164, E:/xampp/htdocs/wandercase/public/assets/css/brauch_style.scss */
+/* line 179, E:/xampp/htdocs/wandercase/public/assets/css/brauch_style.scss */
 .s_nav li {
   display: inline-block;
 }
-/* line 167, E:/xampp/htdocs/wandercase/public/assets/css/brauch_style.scss */
+/* line 182, E:/xampp/htdocs/wandercase/public/assets/css/brauch_style.scss */
 .s_nav li a {
   color: #3f3f3f;
   line-height: 90px;
@@ -151,11 +173,11 @@ header {
   -webkit-box-sizing: border-box;
   /* Safari */
 }
-/* line 177, E:/xampp/htdocs/wandercase/public/assets/css/brauch_style.scss */
+/* line 192, E:/xampp/htdocs/wandercase/public/assets/css/brauch_style.scss */
 .s_nav li:hover {
   display: inline-block;
 }
-/* line 180, E:/xampp/htdocs/wandercase/public/assets/css/brauch_style.scss */
+/* line 195, E:/xampp/htdocs/wandercase/public/assets/css/brauch_style.scss */
 .s_nav li:hover a {
   line-height: 90px;
   height: 90px;
@@ -169,7 +191,7 @@ header {
   /* Safari */
   border-bottom: 6px #c8e052 solid;
 }
-/* line 191, E:/xampp/htdocs/wandercase/public/assets/css/brauch_style.scss */
+/* line 206, E:/xampp/htdocs/wandercase/public/assets/css/brauch_style.scss */
 .s_nav .s_a_active {
   line-height: 90px;
   height: 90px;
@@ -184,20 +206,20 @@ header {
   border-bottom: 6px #c8e052 solid;
 }
 
-/* line 203, E:/xampp/htdocs/wandercase/public/assets/css/brauch_style.scss */
+/* line 218, E:/xampp/htdocs/wandercase/public/assets/css/brauch_style.scss */
 .s_nav_log {
   text-align: right;
 }
-/* line 205, E:/xampp/htdocs/wandercase/public/assets/css/brauch_style.scss */
+/* line 220, E:/xampp/htdocs/wandercase/public/assets/css/brauch_style.scss */
 .s_nav_log * {
   font-family: hnbold;
   list-style-type: none;
 }
-/* line 210, E:/xampp/htdocs/wandercase/public/assets/css/brauch_style.scss */
+/* line 225, E:/xampp/htdocs/wandercase/public/assets/css/brauch_style.scss */
 .s_nav_log li {
   display: inline-block;
 }
-/* line 213, E:/xampp/htdocs/wandercase/public/assets/css/brauch_style.scss */
+/* line 228, E:/xampp/htdocs/wandercase/public/assets/css/brauch_style.scss */
 .s_nav_log li a {
   color: #3f3f3f;
   line-height: 90px;
@@ -211,11 +233,11 @@ header {
   -webkit-box-sizing: border-box;
   /* Safari */
 }
-/* line 223, E:/xampp/htdocs/wandercase/public/assets/css/brauch_style.scss */
+/* line 238, E:/xampp/htdocs/wandercase/public/assets/css/brauch_style.scss */
 .s_nav_log li:hover {
   display: inline-block;
 }
-/* line 226, E:/xampp/htdocs/wandercase/public/assets/css/brauch_style.scss */
+/* line 241, E:/xampp/htdocs/wandercase/public/assets/css/brauch_style.scss */
 .s_nav_log li:hover a {
   line-height: 90px;
   height: 90px;
@@ -229,7 +251,7 @@ header {
   /* Safari */
   border-bottom: 6px #c8e052 solid;
 }
-/* line 237, E:/xampp/htdocs/wandercase/public/assets/css/brauch_style.scss */
+/* line 252, E:/xampp/htdocs/wandercase/public/assets/css/brauch_style.scss */
 .s_nav_log .s_a_active {
   line-height: 90px;
   height: 90px;
@@ -244,7 +266,7 @@ header {
   border-bottom: 6px #c8e052 solid;
 }
 
-/* line 252, E:/xampp/htdocs/wandercase/public/assets/css/brauch_style.scss */
+/* line 267, E:/xampp/htdocs/wandercase/public/assets/css/brauch_style.scss */
 .s_big_scenery {
   width: 100%;
   height: 572px;
@@ -257,7 +279,7 @@ header {
   background-size: cover;
 }
 
-/* line 263, E:/xampp/htdocs/wandercase/public/assets/css/brauch_style.scss */
+/* line 278, E:/xampp/htdocs/wandercase/public/assets/css/brauch_style.scss */
 .s_logo_only_white {
   width: 100px;
   height: 100px;
@@ -268,7 +290,7 @@ header {
   margin-right: auto;
 }
 
-/* line 273, E:/xampp/htdocs/wandercase/public/assets/css/brauch_style.scss */
+/* line 288, E:/xampp/htdocs/wandercase/public/assets/css/brauch_style.scss */
 .s_tagline {
   width: 100%;
   text-align: center;
@@ -278,7 +300,7 @@ header {
   line-height: 40px;
 }
 
-/* line 282, E:/xampp/htdocs/wandercase/public/assets/css/brauch_style.scss */
+/* line 297, E:/xampp/htdocs/wandercase/public/assets/css/brauch_style.scss */
 .s_quick_search {
   width: 100%;
   height: auto;
@@ -289,34 +311,34 @@ header {
   background: #fff;
   overflow: hidden;
 }
-/* line 289, E:/xampp/htdocs/wandercase/public/assets/css/brauch_style.scss */
+/* line 304, E:/xampp/htdocs/wandercase/public/assets/css/brauch_style.scss */
 .s_quick_search .s_quick_search_menu {
   padding: 0px;
   overflow: hidden;
   margin-bottom: 0px;
 }
-/* line 294, E:/xampp/htdocs/wandercase/public/assets/css/brauch_style.scss */
+/* line 309, E:/xampp/htdocs/wandercase/public/assets/css/brauch_style.scss */
 .s_quick_search .s_quick_search_menu .s_quick_active {
   border: 1px solid #23d0e7  !important;
 }
-/* line 295, E:/xampp/htdocs/wandercase/public/assets/css/brauch_style.scss */
+/* line 310, E:/xampp/htdocs/wandercase/public/assets/css/brauch_style.scss */
 .s_quick_search .s_quick_search_menu .s_quick_active * {
   color: #fff;
   background-color: #23d0e7;
 }
-/* line 303, E:/xampp/htdocs/wandercase/public/assets/css/brauch_style.scss */
+/* line 318, E:/xampp/htdocs/wandercase/public/assets/css/brauch_style.scss */
 .s_quick_search .s_quick_search_menu * {
   text-transform: uppercase;
   list-style-type: none;
   font-family: hnreg;
 }
-/* line 308, E:/xampp/htdocs/wandercase/public/assets/css/brauch_style.scss */
+/* line 323, E:/xampp/htdocs/wandercase/public/assets/css/brauch_style.scss */
 .s_quick_search .s_quick_search_menu li {
   display: block;
   float: left;
   font-size: 16px;
 }
-/* line 314, E:/xampp/htdocs/wandercase/public/assets/css/brauch_style.scss */
+/* line 329, E:/xampp/htdocs/wandercase/public/assets/css/brauch_style.scss */
 .s_quick_search .s_quick_search_menu li:first-child {
   border-left: 1px solid #dcdcdc;
   border-top: 1px solid #dcdcdc;
@@ -328,7 +350,7 @@ header {
   /* Safari */
   width: 33%;
 }
-/* line 321, E:/xampp/htdocs/wandercase/public/assets/css/brauch_style.scss */
+/* line 336, E:/xampp/htdocs/wandercase/public/assets/css/brauch_style.scss */
 .s_quick_search .s_quick_search_menu li:nth-child(2) {
   border-left: 1px solid #dcdcdc;
   border-right: 1px solid #dcdcdc;
@@ -341,7 +363,7 @@ header {
   /* Safari */
   width: 34%;
 }
-/* line 329, E:/xampp/htdocs/wandercase/public/assets/css/brauch_style.scss */
+/* line 344, E:/xampp/htdocs/wandercase/public/assets/css/brauch_style.scss */
 .s_quick_search .s_quick_search_menu li:nth-child(3) {
   border-right: 1px solid #dcdcdc;
   border-top: 1px solid #dcdcdc;
@@ -353,7 +375,7 @@ header {
   /* Safari */
   width: 33%;
 }
-/* line 337, E:/xampp/htdocs/wandercase/public/assets/css/brauch_style.scss */
+/* line 352, E:/xampp/htdocs/wandercase/public/assets/css/brauch_style.scss */
 .s_quick_search .s_quick_search_menu li a {
   color: #3f3f3f;
   height: 73px;
@@ -362,17 +384,17 @@ header {
   width: 100%;
   display: block;
 }
-/* line 348, E:/xampp/htdocs/wandercase/public/assets/css/brauch_style.scss */
+/* line 363, E:/xampp/htdocs/wandercase/public/assets/css/brauch_style.scss */
 .s_quick_search .s_quick_search_form {
   border: 1px solid #23d0e7;
 }
-/* line 351, E:/xampp/htdocs/wandercase/public/assets/css/brauch_style.scss */
+/* line 366, E:/xampp/htdocs/wandercase/public/assets/css/brauch_style.scss */
 .s_quick_search .s_quick_search_form .s_cell_1-3 {
   padding-bottom: 14px;
   position: relative;
   float: left;
 }
-/* line 355, E:/xampp/htdocs/wandercase/public/assets/css/brauch_style.scss */
+/* line 370, E:/xampp/htdocs/wandercase/public/assets/css/brauch_style.scss */
 .s_quick_search .s_quick_search_form .s_cell_1-3:first-child {
   box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -381,8 +403,9 @@ header {
   /* Safari */
   width: 33%;
   display: block;
+  margin-top: 16px;
 }
-/* line 360, E:/xampp/htdocs/wandercase/public/assets/css/brauch_style.scss */
+/* line 376, E:/xampp/htdocs/wandercase/public/assets/css/brauch_style.scss */
 .s_quick_search .s_quick_search_form .s_cell_1-3:nth-child(2) {
   box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -391,8 +414,9 @@ header {
   /* Safari */
   width: 34%;
   display: block;
+  margin-top: 16px;
 }
-/* line 365, E:/xampp/htdocs/wandercase/public/assets/css/brauch_style.scss */
+/* line 382, E:/xampp/htdocs/wandercase/public/assets/css/brauch_style.scss */
 .s_quick_search .s_quick_search_form .s_cell_1-3:nth-child(3) {
   box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -401,13 +425,14 @@ header {
   /* Safari */
   width: 33%;
   display: block;
+  margin-top: 16px;
 }
-/* line 371, E:/xampp/htdocs/wandercase/public/assets/css/brauch_style.scss */
+/* line 389, E:/xampp/htdocs/wandercase/public/assets/css/brauch_style.scss */
 .s_quick_search .s_quick_search_form .s_cell_1-3 .s_title {
   width: 100%;
   overflow: hidden;
 }
-/* line 375, E:/xampp/htdocs/wandercase/public/assets/css/brauch_style.scss */
+/* line 393, E:/xampp/htdocs/wandercase/public/assets/css/brauch_style.scss */
 .s_quick_search .s_quick_search_form .s_cell_1-3 .s_title .s_number {
   font-family: hnbold;
   font-size: 36px;
@@ -415,7 +440,7 @@ header {
   height: 43px;
   float: left;
 }
-/* line 382, E:/xampp/htdocs/wandercase/public/assets/css/brauch_style.scss */
+/* line 400, E:/xampp/htdocs/wandercase/public/assets/css/brauch_style.scss */
 .s_quick_search .s_quick_search_form .s_cell_1-3 .s_title .s_caption {
   height: 43px;
   float: left;
@@ -423,7 +448,7 @@ header {
   margin-top: 8px;
   font-size: 16px;
 }
-/* line 389, E:/xampp/htdocs/wandercase/public/assets/css/brauch_style.scss */
+/* line 407, E:/xampp/htdocs/wandercase/public/assets/css/brauch_style.scss */
 .s_quick_search .s_quick_search_form .s_cell_1-3 .s_title .s_caption:before {
   content: "";
   width: 21px;
@@ -433,7 +458,7 @@ header {
   background-color: #23d0e7;
   margin-top: 28px;
 }
-/* line 400, E:/xampp/htdocs/wandercase/public/assets/css/brauch_style.scss */
+/* line 418, E:/xampp/htdocs/wandercase/public/assets/css/brauch_style.scss */
 .s_quick_search .s_quick_search_form .s_cell_1-3 .s_seprtr {
   width: 1px;
   height: 200px;
@@ -442,21 +467,21 @@ header {
   position: absolute;
   top: 23px;
 }
-/* line 407, E:/xampp/htdocs/wandercase/public/assets/css/brauch_style.scss */
+/* line 425, E:/xampp/htdocs/wandercase/public/assets/css/brauch_style.scss */
 .s_quick_search .s_quick_search_form .s_cell_1-3 .s_seprtr.s_left {
   left: 0px;
 }
-/* line 411, E:/xampp/htdocs/wandercase/public/assets/css/brauch_style.scss */
+/* line 429, E:/xampp/htdocs/wandercase/public/assets/css/brauch_style.scss */
 .s_quick_search .s_quick_search_form .s_cell_1-3 .s_seprtr.s_right {
   right: 0px;
 }
-/* line 416, E:/xampp/htdocs/wandercase/public/assets/css/brauch_style.scss */
+/* line 434, E:/xampp/htdocs/wandercase/public/assets/css/brauch_style.scss */
 .s_quick_search .s_quick_search_form .s_cell_1-2 {
   padding-bottom: 14px;
   position: relative;
   float: left;
 }
-/* line 420, E:/xampp/htdocs/wandercase/public/assets/css/brauch_style.scss */
+/* line 438, E:/xampp/htdocs/wandercase/public/assets/css/brauch_style.scss */
 .s_quick_search .s_quick_search_form .s_cell_1-2:first-child {
   box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -465,8 +490,9 @@ header {
   /* Safari */
   width: 50%;
   display: block;
+  margin-top: 16px;
 }
-/* line 425, E:/xampp/htdocs/wandercase/public/assets/css/brauch_style.scss */
+/* line 445, E:/xampp/htdocs/wandercase/public/assets/css/brauch_style.scss */
 .s_quick_search .s_quick_search_form .s_cell_1-2:nth-child(2) {
   box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -475,13 +501,14 @@ header {
   /* Safari */
   width: 50%;
   display: block;
+  margin-top: 16px;
 }
-/* line 431, E:/xampp/htdocs/wandercase/public/assets/css/brauch_style.scss */
+/* line 452, E:/xampp/htdocs/wandercase/public/assets/css/brauch_style.scss */
 .s_quick_search .s_quick_search_form .s_cell_1-2 .s_title {
   width: 100%;
   overflow: hidden;
 }
-/* line 435, E:/xampp/htdocs/wandercase/public/assets/css/brauch_style.scss */
+/* line 456, E:/xampp/htdocs/wandercase/public/assets/css/brauch_style.scss */
 .s_quick_search .s_quick_search_form .s_cell_1-2 .s_title .s_number {
   font-family: hnbold;
   font-size: 36px;
@@ -489,7 +516,7 @@ header {
   height: 43px;
   float: left;
 }
-/* line 442, E:/xampp/htdocs/wandercase/public/assets/css/brauch_style.scss */
+/* line 463, E:/xampp/htdocs/wandercase/public/assets/css/brauch_style.scss */
 .s_quick_search .s_quick_search_form .s_cell_1-2 .s_title .s_caption {
   height: 43px;
   float: left;
@@ -497,7 +524,7 @@ header {
   margin-top: 8px;
   font-size: 16px;
 }
-/* line 449, E:/xampp/htdocs/wandercase/public/assets/css/brauch_style.scss */
+/* line 470, E:/xampp/htdocs/wandercase/public/assets/css/brauch_style.scss */
 .s_quick_search .s_quick_search_form .s_cell_1-2 .s_title .s_caption:before {
   content: "";
   width: 21px;
@@ -507,7 +534,7 @@ header {
   background-color: #23d0e7;
   margin-top: 28px;
 }
-/* line 460, E:/xampp/htdocs/wandercase/public/assets/css/brauch_style.scss */
+/* line 481, E:/xampp/htdocs/wandercase/public/assets/css/brauch_style.scss */
 .s_quick_search .s_quick_search_form .s_cell_1-2 .s_seprtr {
   width: 1px;
   height: 200px;
@@ -516,21 +543,21 @@ header {
   position: absolute;
   top: 23px;
 }
-/* line 467, E:/xampp/htdocs/wandercase/public/assets/css/brauch_style.scss */
+/* line 488, E:/xampp/htdocs/wandercase/public/assets/css/brauch_style.scss */
 .s_quick_search .s_quick_search_form .s_cell_1-2 .s_seprtr.s_left {
   left: 0px;
 }
-/* line 471, E:/xampp/htdocs/wandercase/public/assets/css/brauch_style.scss */
+/* line 492, E:/xampp/htdocs/wandercase/public/assets/css/brauch_style.scss */
 .s_quick_search .s_quick_search_form .s_cell_1-2 .s_seprtr.s_right {
   right: 0px;
 }
 
-/* line 480, E:/xampp/htdocs/wandercase/public/assets/css/brauch_style.scss */
+/* line 501, E:/xampp/htdocs/wandercase/public/assets/css/brauch_style.scss */
 .s_city_dest_input {
   text-indent: 20px;
 }
 
-/* line 483, E:/xampp/htdocs/wandercase/public/assets/css/brauch_style.scss */
+/* line 504, E:/xampp/htdocs/wandercase/public/assets/css/brauch_style.scss */
 .s_flight_time_input {
   text-indent: 20px;
 }
@@ -538,7 +565,7 @@ header {
 /* ==========================================================================
    Search Flight Hotel
    ========================================================================== */
-/* line 492, E:/xampp/htdocs/wandercase/public/assets/css/brauch_style.scss */
+/* line 513, E:/xampp/htdocs/wandercase/public/assets/css/brauch_style.scss */
 .s_flight_sched_row {
   width: 100%;
   height: auto;
@@ -546,30 +573,30 @@ header {
   margin-bottom: 10px;
 }
 
-/* line 499, E:/xampp/htdocs/wandercase/public/assets/css/brauch_style.scss */
+/* line 520, E:/xampp/htdocs/wandercase/public/assets/css/brauch_style.scss */
 .s_hotel_pic, .s_maskapai_pic {
   margin-right: 15px;
 }
 
-/* line 503, E:/xampp/htdocs/wandercase/public/assets/css/brauch_style.scss */
+/* line 524, E:/xampp/htdocs/wandercase/public/assets/css/brauch_style.scss */
 .s_hotel_name {
   font-size: 18px;
   font-family: hnbold;
   display: block;
 }
 
-/* line 508, E:/xampp/htdocs/wandercase/public/assets/css/brauch_style.scss */
+/* line 529, E:/xampp/htdocs/wandercase/public/assets/css/brauch_style.scss */
 .s_hotel_city {
   font-size: 12px;
   font-family: hnreg;
 }
 
-/* line 512, E:/xampp/htdocs/wandercase/public/assets/css/brauch_style.scss */
+/* line 533, E:/xampp/htdocs/wandercase/public/assets/css/brauch_style.scss */
 .s_rating {
   display: block;
 }
 
-/* line 516, E:/xampp/htdocs/wandercase/public/assets/css/brauch_style.scss */
+/* line 537, E:/xampp/htdocs/wandercase/public/assets/css/brauch_style.scss */
 .s_maskapai_name, .s_flight_hour {
   font-size: 14px;
   font-family: hnbold;
@@ -577,21 +604,22 @@ header {
   display: inline-block;
 }
 
-/* line 523, E:/xampp/htdocs/wandercase/public/assets/css/brauch_style.scss */
+/* line 544, E:/xampp/htdocs/wandercase/public/assets/css/brauch_style.scss */
 .nopad {
   padding-top: 0px !important;
   padding-right: 0px !important;
   padding-left: 0px !important;
 }
 
-/* line 529, E:/xampp/htdocs/wandercase/public/assets/css/brauch_style.scss */
+/* line 550, E:/xampp/htdocs/wandercase/public/assets/css/brauch_style.scss */
 .f_search_result_node {
   background-color: #fff;
   -moz-box-shadow: 0px 0px 5px 1px rgba(53, 53, 53, 0.25);
   -webkit-box-shadow: 0px 0px 5px 1px rgba(53, 53, 53, 0.25);
   box-shadow: 0px 0px 5px 1px rgba(53, 53, 53, 0.25);
+  overflow: hidden;
 }
-/* line 533, E:/xampp/htdocs/wandercase/public/assets/css/brauch_style.scss */
+/* line 555, E:/xampp/htdocs/wandercase/public/assets/css/brauch_style.scss */
 .f_search_result_node .f_search_title {
   background-color: #363531;
   height: 42px;
@@ -600,5 +628,40 @@ header {
   font-family: hnbold;
   color: #fff;
   text-align: center;
+  display: block;
+}
+
+/* line 567, E:/xampp/htdocs/wandercase/public/assets/css/brauch_style.scss */
+.s_col_1-3 {
+  float: left;
+}
+/* line 570, E:/xampp/htdocs/wandercase/public/assets/css/brauch_style.scss */
+.s_col_1-3:first-child {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  /*Firefox 1-3*/
+  -webkit-box-sizing: border-box;
+  /* Safari */
+  width: 33%;
+  display: block;
+}
+/* line 575, E:/xampp/htdocs/wandercase/public/assets/css/brauch_style.scss */
+.s_col_1-3:nth-child(2) {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  /*Firefox 1-3*/
+  -webkit-box-sizing: border-box;
+  /* Safari */
+  width: 34%;
+  display: block;
+}
+/* line 580, E:/xampp/htdocs/wandercase/public/assets/css/brauch_style.scss */
+.s_col_1-3:nth-child(3) {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  /*Firefox 1-3*/
+  -webkit-box-sizing: border-box;
+  /* Safari */
+  width: 33%;
   display: block;
 }

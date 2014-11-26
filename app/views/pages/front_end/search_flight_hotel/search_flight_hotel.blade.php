@@ -13,12 +13,15 @@
 			</div>
 			<div class="row"> 
 				<div class="col-md-3">
-					<div class="f_search_result_node">
+					<div class="f_search_result_node" style="text-align: center;">
 						<span class="f_search_title">
 							Search Type
 						</span>
 						<div>
-							(Flight, Hotel, Flight + Hotel)
+							<img src="{{asset('assets/img/flight_hotel.png')}}" class="s_mt_30" width="133" height="133">
+							<span class="s_mt_20 s_mb_30" style="font-family: hnbold; display: block;">
+								Flight + Hotel
+							</span>
 						</div>
 					</div>
 				</div>
@@ -29,27 +32,36 @@
 							Round Trip
 						</span>
 						<div>
-							<span>
-								Round Trip (or not)
-							</span>
-							<span>
-								IATA Asal (JKT)
-							</span>
-							<span>
-								Kota Asal (Jakarta, Indonesia)
-							</span>
-							<span>
-								IATA Tujuan (LAX)
-							</span>
-							<span>
-								Kota Tujuan (Los Angeles, USA)
-							</span>
-							<span>
-								Waktu Pergi (24 Dec 2014)
-							</span>
-							<span>
-								Waktu Pulang (24 Jan 2015)
-							</span>
+							<div class="s_col_1-3">
+								<span>
+									IATA Asal (JKT)
+								</span>
+								<span>
+									Kota Asal (Jakarta, Indonesia)
+								</span>
+							</div>
+							<div class="s_col_1-3" style="text-align: center;">
+
+								<img src="{{asset('assets/img/round_trip.png')}}" class="s_mt_30 s_mauto" width="133" height="133">
+								<span>
+									Waktu Pergi (24 Dec 2014)
+								</span>
+								<span>
+									Waktu Pulang (24 Jan 2015)
+								</span>
+							</div>
+							<div class="s_col_1-3">
+								<span>
+									IATA Tujuan (LAX)
+								</span>
+								<span>
+									Kota Tujuan (Los Angeles, USA)
+								</span>
+							</div>
+
+							
+							
+							
 						</div>
 					</div>
 

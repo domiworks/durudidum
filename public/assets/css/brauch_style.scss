@@ -69,6 +69,21 @@
    .s_indent_20 {
 		text-indent: 20px;
    }
+   .s_mt_30 {
+		margin-top: 30px;
+   }
+   .s_mt_20 {
+		margin-top: 20px;
+   }
+   .s_mb_30 {
+		margin-bottom: 30px;
+   }
+
+   .s_mauto {
+   	margin-left: auto;
+	margin-right: auto;
+	display: block;
+   }
 
 /* ==========================================================================
    Pop up
@@ -356,16 +371,19 @@
 				@include box-sizing(border-box);
 				width: 33%;
 				display: block;
+margin-top: 16px;
 			}
 			&:nth-child(2) {
 				@include box-sizing(border-box);
 				width: 34%;
 				display: block;
+margin-top: 16px;
 			}
 			&:nth-child(3) {
 				@include box-sizing(border-box);
 				width: 33%;
 				display: block;
+margin-top: 16px;
 			}
  
 			.s_title {
@@ -421,11 +439,14 @@
 				@include box-sizing(border-box);
 				width: 50%;
 				display: block;
+				margin-top: 16px;
+
 			}
 			&:nth-child(2) {
 				@include box-sizing(border-box);
 				width: 50%;
 				display: block;
+				margin-top: 16px;
 			}
  
 			.s_title {
@@ -529,6 +550,7 @@
  .f_search_result_node {
  	background-color: #fff;
 	@include box-shadow(0px, 0px, 5px, 1px, rgba(53,53,53,0.25));
+	overflow: hidden;
 
  	.f_search_title {
  		background-color: #363531;
@@ -541,3 +563,23 @@
  		display: block;
  	}
  }
+
+.s_col_1-3 {
+	float: left;
+
+	&:first-child {
+		@include box-sizing(border-box);
+		width: 33%;
+		display: block;
+	}
+	&:nth-child(2) {
+		@include box-sizing(border-box);
+		width: 34%;
+		display: block;
+	}
+	&:nth-child(3) {
+		@include box-sizing(border-box);
+		width: 33%;
+		display: block;
+	}
+}
