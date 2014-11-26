@@ -67,7 +67,6 @@
 												<label for="">Arrive In</label>
 												<input type="text" class="form-control s_city_dest_input" id="" placeholder=""><span class="house_32"></span>
 											</div>
-										</form>
 									</div>
 								</div>
 							</div>
@@ -87,7 +86,6 @@
 							<div class="container-fluid" style="margin-top: 30px;">
 								<div class="row">
 									<div class="col-xs-9 col-xs-push-2">
-										<form role="form">
 											<div class="form-group">
 												<label for="">Depart Date</label>
 												<input type="text" class="form-control s_flight_time_input" id="f_depart_date" placeholder=""><span class="clock_32"></span>
@@ -96,7 +94,6 @@
 												<label for="">Return Date</label>
 												<input type="text" class="form-control s_flight_time_input" id="f_return_date" placeholder=""><span class="clock_32"></span>
 											</div>
-										</form>
 										<script>
 										jQuery('#f_depart_date').datetimepicker({
 											lang:'en',
@@ -153,33 +150,26 @@
 							<div class="container-fluid" style="margin-top: 30px;">
 								<div class="row">
 									<div class="col-xs-3 col-xs-push-2">
-										<form role="form">
 											<div class="form-group">
 												<label for="">Adults</label>
 												<input type="text" class="form-control" id="" placeholder="">
 											</div>
-										</form>
 									</div>
 									<div class="col-xs-3 col-xs-push-2">
-										<form role="form">
 											<div class="form-group">
 												<label for="">Kids</label>
 												<input type="text" class="form-control" id="" placeholder="">
 											</div>
-										</form>
 									</div>
 									<div class="col-xs-3 col-xs-push-2">
-										<form role="form">
 											<div class="form-group">
 												<label for="">Infants</label>
 												<input type="text" class="form-control" id="" placeholder="">
 											</div>
-										</form>
 									</div>
 								</div>
 								<div class="row">
 									<div class="col-xs-3 col-xs-push-2">
-										<form role="form">
 											<div class="form-group">
 												<label for="">Rooms</label>
 												<select class="form-control"> 
@@ -189,17 +179,15 @@
 													<option>4</option>
 												</select>
 											</div>
-										</form>
 									</div>
 									<div class="col-xs-6 col-xs-push-2">
-										<form role="form">
 											<div class="form-group">
 												<label for="">&nbsp;</label>
+											</form>
 												<button class="btn btn-success col-xs-12">
 													Find Your Ticket
 												</button>
 											</div>
-										</form>
 									</div>
 								</div>
 							</div>
@@ -224,7 +212,6 @@
 												<label for="">Depart Date</label>
 												<input type="text" class="form-control s_indent_20" id="" placeholder=""><span class="house_32"></span>
 											</div>
-										</form>
 									</div>
 								</div>
 								<div class="row">
@@ -298,33 +285,26 @@
 							<div class="container-fluid" style="margin-top: 30px;">
 								<div class="row">
 									<div class="col-xs-3 col-xs-push-2">
-										<form role="form">
 											<div class="form-group">
 												<label for="">Adults</label>
 												<input type="text" class="form-control" id="" placeholder="">
 											</div>
-										</form>
 									</div>
 									<div class="col-xs-3 col-xs-push-2">
-										<form role="form">
 											<div class="form-group">
 												<label for="">Kids</label>
 												<input type="text" class="form-control" id="" placeholder="">
 											</div>
-										</form>
 									</div>
 									<div class="col-xs-3 col-xs-push-2">
-										<form role="form">
 											<div class="form-group">
 												<label for="">Infants</label>
 												<input type="text" class="form-control" id="" placeholder="">
 											</div>
-										</form>
 									</div>
 								</div>
 								<div class="row">
 									<div class="col-xs-3 col-xs-push-2">
-										<form role="form">
 											<div class="form-group">
 												<label for="">Rooms</label>
 												<select class="form-control"> 
@@ -334,17 +314,15 @@
 													<option>4</option>
 												</select>
 											</div>
-										</form>
 									</div>
 									<div class="col-xs-6 col-xs-push-2">
-										<form role="form">
 											<div class="form-group">
 												<label for="">&nbsp;</label>
+										</form>
 												<button class="btn btn-success col-xs-12">
 													Find Your Ticket
 												</button>
 											</div>
-										</form>
 									</div>
 								</div>
 							</div>
@@ -382,7 +360,6 @@
 												<label for="">Arrive In</label>
 												<input type="text" class="form-control s_city_dest_input" id="" placeholder=""><span class="house_32"></span>
 											</div>
-										</form>
 									</div>
 								</div>
 							</div>
@@ -402,7 +379,6 @@
 							<div class="container-fluid" style="margin-top: 30px;">
 								<div class="row">
 									<div class="col-xs-9 col-xs-push-2">
-										<form role="form">
 											<div class="form-group">
 												<label for="">Depart Date</label>
 												<input type="text" class="form-control s_flight_time_input" id="f_depart_date" placeholder=""><span class="clock_32"></span>
@@ -411,7 +387,6 @@
 												<label for="">Return Date</label>
 												<input type="text" class="form-control s_flight_time_input" id="f_return_date" placeholder=""><span class="clock_32"></span>
 											</div>
-										</form>
 										<script>
 										jQuery('#f_depart_date').datetimepicker({
 											lang:'en',
@@ -468,33 +443,26 @@
 							<div class="container-fluid" style="margin-top: 30px;">
 								<div class="row">
 									<div class="col-xs-3 col-xs-push-2">
-										<form role="form">
 											<div class="form-group">
 												<label for="">Adults</label>
 												<input type="text" class="form-control" id="" placeholder="">
 											</div>
-										</form>
 									</div>
 									<div class="col-xs-3 col-xs-push-2">
-										<form role="form">
 											<div class="form-group">
 												<label for="">Kids</label>
 												<input type="text" class="form-control" id="" placeholder="">
 											</div>
-										</form>
 									</div>
 									<div class="col-xs-3 col-xs-push-2">
-										<form role="form">
 											<div class="form-group">
 												<label for="">Infants</label>
 												<input type="text" class="form-control" id="" placeholder="">
 											</div>
-										</form>
 									</div>
 								</div>
 								<div class="row">
 									<div class="col-xs-3 col-xs-push-2">
-										<form role="form">
 											<div class="form-group">
 												<label for="">Rooms</label>
 												<select class="form-control"> 
@@ -504,17 +472,15 @@
 													<option>4</option>
 												</select>
 											</div>
-										</form>
 									</div>
 									<div class="col-xs-6 col-xs-push-2">
-										<form role="form">
 											<div class="form-group">
 												<label for="">&nbsp;</label>
+										</form>
 												<button class="btn btn-success col-xs-12">
 													Find Your Ticket
 												</button>
 											</div>
-										</form>
 									</div>
 								</div>
 							</div>
