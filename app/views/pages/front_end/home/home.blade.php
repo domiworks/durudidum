@@ -226,8 +226,8 @@
 
 
 										<div class="form-group">
-											<label for="">Return Date</label>
-											<input type="text" class="form-control s_indent_20" id="f_checkout_date" placeholder=""><span class="clock_32"></span>
+											<label for="">Night Stay</label>
+											<input type="text" class="form-control" id="f_checkout_date" placeholder=""></span>
 										</div>
 									</div>
 									<script>
@@ -279,7 +279,7 @@
 									02
 								</span>
 								<span class="s_caption">
-									Passenger Ticket
+									Order Detail
 								</span>
 							</div>
 							<div class="container-fluid" style="margin-top: 30px;">
