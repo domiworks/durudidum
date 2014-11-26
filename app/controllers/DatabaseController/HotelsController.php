@@ -12,8 +12,20 @@ class HotelsController extends \BaseController
 	
 	public function getAllHotel()
 	{
-		$hotel = Hotel::where()->get();
-		
-		return null;
+		$hotel = Hotel::all();
+		if(count($hotel) != 0)
+		{
+			foreach($hotel as $key)
+			{
+				$area = DB::table('cities')->where('id', '=', $key->id_area)->first();
+				$key->area = $area->id; 
+			}
+			return $hotel;
+		}
+		else
+		{
+			return "";
+		}		
+				
 	}
 }
