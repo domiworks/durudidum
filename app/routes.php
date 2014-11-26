@@ -55,6 +55,10 @@ Route::group(array('prefix' => 'test'), function()
 	{
 		return View::make('pages.front_end.payment.payment_flight');
 	});
+	Route::get('/payment_flight_hotel', function()
+	{
+		return View::make('pages.front_end.payment.payment_flight_hotel');
+	});
 	Route::get('/getAirport', ['as' => 'allAirport', 'uses' => 'AirporstsController@getAllAirport']);
 	Route::get('/getCity', ['as' => 'allCities', 'uses' => 'CitiesController@getAllCity']);
 });
