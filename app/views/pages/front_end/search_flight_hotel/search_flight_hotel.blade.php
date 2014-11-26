@@ -174,7 +174,7 @@
 								<button class="btn btn-primary btn-sm" style="display: block; margin-left: 47px;">Change Flights</button>
 							</td> 
 							<td>
-								<a href="http://localhost/durudidum_new/public/test/payment_flight_hotel">
+								<a href="http://localhost/durudidum_new/public/test/booking_flight_hotel">
 								<button class="btn btn-warning">
 									Book 
 								</button> 

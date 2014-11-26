@@ -6,13 +6,6 @@
 	<div class="container">
 		<div class="row-fluid" style="padding-top:20px;">
 
-			timeline
-		</div>
-
-	</div>
-	<div class="container">
-		<div class="row-fluid" style="padding-top:20px;">
-
 
 			<div class="alert alert-success" role="alert">Harga telah dikonfirmasi. Periksa kembali pemesanan Anda lalu tekan tombol Lanjut ke Pembayaran</div>
 			<div class="col-md-8" >
@@ -22,27 +15,50 @@
 					<div class="col-md-12" style="margin-bottom:5px;">Penerbangan: <span>Senin, 24 Nov 2014</span></div>
 
 					<div class="col-md-12">
-						<table style="border-left:3px solid;">
+						<table>
 							<tr>
-
+								<td></td>
 								<td colspan="3"><span>Jakarta(CKG)</span></td>
 							</tr>
 							<tr>
-
-								<td rowspan="2">logo2</td>
-								<td rowspan="2">XX</td>
-								<td>14:45|Senin</td>
+								<td>|</td>
+								<td rowspan="2"> </td>
+								<td rowspan="2"> </td>
+								<td>10:30</td>
 
 							</tr>
 							<tr>
-
-								<td>16:45|Senin</td>
+								<td>|</td>
+								<td>12:30</td>
 							</tr>
 						</table>
-						<table style="border-left:3px solid;">
+						<table>
 							<tr>
-
+								<td></td>
 								<td colspan="3"><span>Bali / Denpasar (DPS)</span></td>
+							</tr>
+						</table>
+						<table>
+							<tr>
+								<td></td>
+								<td colspan="3"><span>Bali / Denpasar (DPS)</span></td>
+							</tr>
+							<tr>
+								<td>|</td>
+								<td rowspan="2"> </td>
+								<td rowspan="2"> </td>
+								<td>08:00</td>
+
+							</tr>
+							<tr>
+								<td>|</td>
+								<td>10:00</td>
+							</tr>
+						</table>
+						<table>
+							<tr>
+								<td></td>
+								<td colspan="3"><span>Jakarta (CKG)</span></td>
 							</tr>
 						</table>
 					</div>
@@ -53,9 +69,9 @@
 						<h3>Rincian Penerbangan</h3>
 						<table>
 							<tr>
-								<td>Lion Air (Dewasa) <span class="noPass">x1</span>:</td>
+								<td>Garuda Indonesia (Dewasa) <span class="noPass">x2</span>:</td>
 								<td><strong>Rp</strong></td>
-								<td><strong>525.100</strong></td>
+								<td><strong>1.050.200</strong></td>
 							</tr>
 							<tr >
 								<td>Harga Bagasi:</td>
@@ -76,7 +92,7 @@
 						<table>
 							<tr>
 								<td>Total:</td>
-								<td >Rp 525.100</td>
+								<td >Rp 1.050.200</td>
 							</tr>
 						</table>
 						<p>
@@ -126,7 +142,7 @@
 							</div>
 							<div class="contentContainer">
 								<h3>
-									<span class="hotelNameDisplay">Tresor Tavern</span>
+									<span class="hotelNameDisplay">Fave Hotel</span>
 									<span class="hotelStarRating"></span>
 								</h3>
 								<div class="hotelRefundableDisplay clearfix" style="display: none;">
@@ -150,11 +166,11 @@
 								<table>
 									<tbody><tr class="checkIn">
 										<th>Check-in:</th>
-										<td class="checkInDate">Jum, 27 Mar 2015</td>
+										<td class="checkInDate">Jum, 29 Nov 2014</td>
 									</tr>
 									<tr class="checkOut">
 										<th>Check-out</th>
-										<td class="checkOutDate">Sab, 28 Mar 2015</td>
+										<td class="checkOutDate">Sab, 5 Dec 2014</td>
 									</tr>
 									<tr class="duration">
 										<th>Durasi:</th>
@@ -162,7 +178,7 @@
 									</tr>
 									<tr class="guests">
 										<th>Tamu:</th>
-										<td class="guestsList">hahaha</td>
+										<td class="guestsList">user1</td>
 									</tr>
 								</tbody></table>
 							</div>
@@ -203,7 +219,9 @@
 									menyetujui Syarat dan Ketentuan serta 
 									Kebijakan Privasi dari Traveloka.com</div>
 									<div class="confirmationButton">
+										<a href="http://localhost/durudidum_new/public/test/payment_flight_hotel">
 										<button class="btn btn-danger" id="goToPayment">Lanjut ke Pembayaran</button>
+										</a>
 									</div>
 								</div>
 							</div>
@@ -228,7 +246,9 @@
 									<a target="_blank" href="#">Syarat &amp; Ketentuan</a> dan <br>
 									<a target="_blank" href="#">Kebijakan Privasi</a> Traveloka.com
 								</div>
+								<a href="http://localhost/durudidum_new/public/test/payment_flight_hotel">
 								<button class="btn btn-danger" id="goToPayment">Lanjut ke Pembayaran</button>
+								</a>
 							</div>
 						</div>
 

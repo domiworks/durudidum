@@ -46,7 +46,7 @@ $_SESSION["Payment_Amount"]= 1000;
                             <table class="table priceSummaryTable">
                                 <tbody>
                                     <tr>
-                                        <td>Garuda Indonesia (Dewasa) <span class="noPass">x1</span>:</td>
+                                        <td>Garuda Indonesia (Dewasa) <span class="noPass">x2</span>:</td>
                                         <td><strong>Rp</strong></td>
                                         <td class="priceContent hargaDewasa"><strong>646.700</strong></td>
                                     </tr>

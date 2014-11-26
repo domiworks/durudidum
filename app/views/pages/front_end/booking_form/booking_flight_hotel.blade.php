@@ -5,14 +5,6 @@
 <section>
 	<div class="container">
 		<div class="row" style="">
-			<div class="col-md-12">
-				timeline
-			</div>
-		</div>
-	</div>
-
-	<div class="container">
-		<div class="row" style="">
 			<form class="form-horizontal">
 
 
@@ -24,19 +16,19 @@
 							<div class="form-group">
 								<label class="col-md-3 control-label">Nama</label>
 								<div class="col-md-7">
-									<input class="form-control" type="text"   />
+									<input class="form-control" type="text" value="user1"   />
 								</div>
 							</div>
 							<div class="form-group">
 								<label class="col-md-3 control-label">Phone Number</label>
 								<div class="col-md-7">
-									<input class="form-control" type="text"   />
+									<input class="form-control" type="text" value="0227345373"   />
 								</div>
 							</div>
 							<div class="form-group">
 								<label class="col-md-3 control-label">Alamat Email</label>
 								<div class="col-md-7">
-									<input class="form-control" type="text"   />
+									<input class="form-control" type="text" value="test@test.com"   />
 								</div>
 							</div>
 						</div>
@@ -50,22 +42,21 @@
 							<div class="form-group col-md-4">
 								<label class="col-md-3">Titel</label>
 								<label  class="col-md-1">:</label>
-								<input class="col-md-3" type="text"   />
+								<input class="col-md-5" type="text" value="Tuan"   />
 							</div>
 							<div class="form-group col-md-8">
 								<label class="col-md-5">Nama sesuai KTP/SIM/Passport</label>
 								<label  class="col-md-1">:</label>
-								<input class="col-md-6" type="text"   />
+								<input class="col-md-6" type="text"  value="user1"  />
 							</div>
 							<div class="form-group col-md-12">
-								<label class="col-md-3">Bagasi ke <span></span></label>
+								<label class="col-md-3">Bagasi<span></span></label>
 								<label  class="col-md-1">:</label>
 								<select class="col-md-5" type="text" value="">
-									<option>torototot</option>
-									<option>torototot</option>
-									<option>torototot</option>
-									<option>torototot</option>
-									<option>torototot</option>
+									<option>15kg(Free)</option>
+									<option>20kg(Rp.50.000)</option>
+									<option>25kg(Rp.75.000)</option>
+									<option>30kg(Rp.100.000)</option>
 								</select>
 							</div>
 						</div>
@@ -75,7 +66,6 @@
 
 
 					<br>
-					<p style="text-align:right;"><input type="submit" class="btn btn-info"   /></p>
 
 					<h1>Pemesanan Hotel</h1>
 					
@@ -86,22 +76,22 @@
 						<div class="form-group col-md-12">
 							<label class="col-md-3">Nama</label>
 							<label  class="col-md-1">:</label>
-							<input class="col-md-5" type="text"   />
+							<input class="col-md-5" type="text" value="user1"  />
 						</div>
 						<div class="form-group col-md-12">
 							<label class="col-md-3">Nomor telepon</label>
 							<label  class="col-md-1">:</label>
-							<input class="col-md-4" type="text"  />
+							<input class="col-md-4" type="text" value="0227345373"  />
 						</div>
 						<div class="form-group col-md-12">
 							<label class="col-md-3">Alamat email</label>
 							<label  class="col-md-1">:</label>
-							<input class="col-md-5" type="text"  />
+							<input class="col-md-5" type="text" value="test@test.com" />
 						</div>
 						<div class="form-group col-md-12">
 							<label class="col-md-3">Nama Lengkap Tamu</label>
 							<label  class="col-md-1">:</label>
-							<input class="col-md-5" type="text"  />
+							<input class="col-md-5" type="text" value="user1"  />
 							<div class="checkbox col-md-3">
 								<label>
 									<input type="checkbox"> Sama dengan pemesan
@@ -140,7 +130,9 @@
 
 							</div>
 							<div class="col-md-7">
-								<p style="text-align:right;"><input type="submit" class="btn btn-info"   /></p>
+								
+								<p style="text-align:right;"><a href="http://localhost/durudidum_new/public/test/booking_review_flight_hotel"><input type="button" class="btn btn-info" value="submit"   /></a></p>
+
 							</div>
 						</div>
 
@@ -155,41 +147,64 @@
 			<div class="col-md-4">
 				<div class="col-md-12" style="margin-bottom:10px;">
 					<h3>Rincian Penerbangan</h3>
-					<div class="col-md-12">Penerbangan: <span>Senin, 24 Nov 2014</span></div>
+					<div class="col-md-12">Penerbangan: <span>29 Nov 2014</span></div>
 					<div class="col-md-12">
 						<table>
 							<tr>
-								<td>0</td>
+								<td></td>
 								<td colspan="3"><span>Jakarta(CKG)</span></td>
 							</tr>
 							<tr>
 								<td>|</td>
-								<td rowspan="2">logo2</td>
-								<td rowspan="2">XX</td>
-								<td>14:45|Senin</td>
+								<td rowspan="2"> </td>
+								<td rowspan="2"> </td>
+								<td>10:30</td>
 
 							</tr>
 							<tr>
 								<td>|</td>
-								<td>16:45|Senin</td>
+								<td>12:30</td>
 							</tr>
 						</table>
 						<table>
 							<tr>
-								<td>0</td>
+								<td></td>
 								<td colspan="3"><span>Bali / Denpasar (DPS)</span></td>
+							</tr>
+						</table>
+						<table>
+							<tr>
+								<td></td>
+								<td colspan="3"><span>Bali / Denpasar (DPS)</span></td>
+							</tr>
+							<tr>
+								<td>|</td>
+								<td rowspan="2"> </td>
+								<td rowspan="2"> </td>
+								<td>08:00</td>
+
+							</tr>
+							<tr>
+								<td>|</td>
+								<td>10:00</td>
+							</tr>
+						</table>
+						<table>
+							<tr>
+								<td></td>
+								<td colspan="3"><span>Jakarta (CKG)</span></td>
 							</tr>
 						</table>
 					</div>
 					<p style="color:#aaa;font-size=10px;">Semua waktu adalah waktu lokal bandara</p>
 				</div>
 				<div class="col-md-12" style="margin-bottom:10px;">
-					<h3>Rincian Penerbangan</h3>
+					<h3>Rincian Biaya Penerbangan</h3>
 					<table>
 						<tr>
-							<td>Lion Air (Dewasa) <span class="noPass">x1</span>:</td>
+							<td>Garuda Indonesia (Dewasa) <span class="noPass">x2</span>:</td>
 							<td><strong>Rp</strong></td>
-							<td><strong>525.100</strong></td>
+							<td><strong>1.050.200</strong></td>
 						</tr>
 						<tr id="totalBaggageFeeContainer">
 							<td>Harga Bagasi:</td>
@@ -210,7 +225,7 @@
 					<table>
 						<tr>
 							<td>Total:</td>
-							<td >Rp 525.100</td>
+							<td >Rp 1.050.200</td>
 						</tr>
 					</table>
 					<p>
@@ -222,10 +237,10 @@
 					<div class="tv-bg-gray tvHotelBookingDetail">
 						<h2>Rincian Pemesanan</h2>
 						<div class="clearfix tvHotelBookingImageName">
-							<div class="bookedHotelImage" load-src="https://images.travelnow.com/hotels/7000000/6490000/6485600/6485514/6485514_5_t.jpg" style="width: 70px; height: 70px; position: relative; overflow: hidden; background-color: rgb(67, 67, 67);"><img class="tv-loading-sign" src="https://asset.traveloka.com/assets/images/misc/loading3-300001.gif" style="width: 18px; height: 18px; position: absolute; left: 26px; top: 26px; max-width: none;"><img src="https://images.travelnow.com/hotels/7000000/6490000/6485600/6485514/6485514_5_t.jpg" style="position: absolute; left: 0px; top: 0px; width: 70px; height: 70px; max-width: none; background-color: rgb(0, 0, 0);"><img src="https://images.travelnow.com/hotels/7000000/6490000/6485600/6485514/6485514_5_t.jpg" style="position: absolute; left: 0px; top: 0px; width: 70px; height: 70px; max-width: none; background-color: rgb(0, 0, 0);"></div>
+							<div class="bookedHotelImage" load-src="{{asset('assets/img/hotel1.jpg')}}" style="width: 70px; height: 70px; position: relative; overflow: hidden; background-color: rgb(67, 67, 67);"><img class="tv-loading-sign" src="https://asset.traveloka.com/assets/images/misc/loading3-300001.gif" style="width: 18px; height: 18px; position: absolute; left: 26px; top: 26px; max-width: none;"><img src="https://images.travelnow.com/hotels/7000000/6490000/6485600/6485514/6485514_5_t.jpg" style="position: absolute; left: 0px; top: 0px; width: 70px; height: 70px; max-width: none; background-color: rgb(0, 0, 0);"><img src="https://images.travelnow.com/hotels/7000000/6490000/6485600/6485514/6485514_5_t.jpg" style="position: absolute; left: 0px; top: 0px; width: 70px; height: 70px; max-width: none; background-color: rgb(0, 0, 0);"></div>
 							<div class="hotelName" style="width: 200px; float: left;">
 								<h3>
-									<span class="hotelNameDisplay">Tresor Tavern</span>
+									<span class="hotelNameDisplay">Fave Hotel</span>
 									<span class="hotelRatingDisplay">
 
 									</div></span>
