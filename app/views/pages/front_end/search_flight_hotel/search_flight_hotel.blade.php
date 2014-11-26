@@ -55,7 +55,7 @@
 
 
 				</div>
-				<div class="col-md-3">
+				<div class="col-md-3" >
 
 					<div class="f_search_result_node">
 						<span class="f_search_title">
