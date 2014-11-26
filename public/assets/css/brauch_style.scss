@@ -66,6 +66,24 @@
 
    $fontcol: #3f3f3f;
 
+   .s_indent_20 {
+		text-indent: 20px;
+   }
+   .s_mt_30 {
+		margin-top: 30px;
+   }
+   .s_mt_20 {
+		margin-top: 20px;
+   }
+   .s_mb_30 {
+		margin-bottom: 30px;
+   }
+
+   .s_mauto {
+   	margin-left: auto;
+	margin-right: auto;
+	display: block;
+   }
 
 /* ==========================================================================
    Pop up
@@ -353,16 +371,82 @@
 				@include box-sizing(border-box);
 				width: 33%;
 				display: block;
+margin-top: 16px;
 			}
 			&:nth-child(2) {
 				@include box-sizing(border-box);
 				width: 34%;
 				display: block;
+margin-top: 16px;
 			}
 			&:nth-child(3) {
 				@include box-sizing(border-box);
 				width: 33%;
 				display: block;
+margin-top: 16px;
+			}
+ 
+			.s_title {
+				width: 100%;
+				overflow: hidden;
+
+				.s_number {
+					font-family: hnbold;
+					font-size: 36px;
+					margin-left: 29px;
+					height: 43px;
+					float: left;
+				}
+				.s_caption {
+					height: 43px;
+					float: left;
+					margin-left: 8px;
+					margin-top: 8px;
+					font-size: 16px;
+
+					&:before {
+						content: "";
+						@include dimension(21px, 3px);
+						display: block;
+						position: absolute;
+						background-color: #23d0e7;
+						margin-top: 28px;
+					}
+				}
+			}
+
+			.s_seprtr {
+				@include dimension(1px, 200px);
+				display: block;
+				background-color: #dcdcdc;
+				position: absolute;
+				top: 23px;
+
+				&.s_left {
+					left: 0px;
+				}
+
+				&.s_right {
+					right: 0px;
+				}
+			}
+		}
+		.s_cell_1-2{
+			padding-bottom: 14px;
+			position: relative;
+			float: left;
+			&:first-child {
+				@include box-sizing(border-box);
+				width: 50%;
+				display: block;
+				margin-top: 16px;
+
+			}
+			&:nth-child(2) {
+				@include box-sizing(border-box);
+				width: 50%;
+				display: block;
+				margin-top: 16px;
 			}
  
 			.s_title {
@@ -462,3 +546,40 @@
  	padding-right: 0px !important; 
  	padding-left: 0px !important; 
  }
+
+ .f_search_result_node {
+ 	background-color: #fff;
+	@include box-shadow(0px, 0px, 5px, 1px, rgba(53,53,53,0.25));
+	overflow: hidden;
+
+ 	.f_search_title {
+ 		background-color: #363531;
+ 		height: 42px;
+ 		width: 100%;
+ 		line-height: 42px;
+ 		font-family: hnbold;
+ 		color: #fff;
+ 		text-align: center;
+ 		display: block;
+ 	}
+ }
+
+.s_col_1-3 {
+	float: left;
+
+	&:first-child {
+		@include box-sizing(border-box);
+		width: 33%;
+		display: block;
+	}
+	&:nth-child(2) {
+		@include box-sizing(border-box);
+		width: 34%;
+		display: block;
+	}
+	&:nth-child(3) {
+		@include box-sizing(border-box);
+		width: 33%;
+		display: block;
+	}
+}

@@ -5,49 +5,90 @@
 	<div class="s_big_infoboard">
 		<div class="container">
 			<div class="row"> 
+				<div class="col-md-12">
+					<h1 style="font-family: oslite; color: #165978">
+						Search Result
+					</h1>
+				</div>
+			</div>
+			<div class="row"> 
 				<div class="col-md-3">
-					<span>
-						Jenis Pencarian (Flight, Hotel, Flight + Hotel)
-					</span>
+					<div class="f_search_result_node" style="text-align: center;">
+						<span class="f_search_title">
+							Search Type
+						</span>
+						<div>
+							<img src="{{asset('assets/img/flight_hotel.png')}}" class="s_mt_30" width="133" height="133">
+							<span class="s_mt_20 s_mb_30" style="font-family: hnbold; display: block;">
+								Flight + Hotel
+							</span>
+						</div>
+					</div>
 				</div>
 				<div class="col-md-6">
-					<span>
-						Round Trip (or not)
-					</span>
-					<span>
-						IATA Asal (JKT)
-					</span>
-					<span>
-						Kota Asal (Jakarta, Indonesia)
-					</span>
-					<span>
-						IATA Tujuan (LAX)
-					</span>
-					<span>
-						Kota Tujuan (Los Angeles, USA)
-					</span>
-					<span>
-						Waktu Pergi (24 Dec 2014)
-					</span>
-					<span>
-						Waktu Pulang (24 Jan 2015)
-					</span>
+
+					<div class="f_search_result_node">
+						<span class="f_search_title">
+							Round Trip
+						</span>
+						<div>
+							<div class="s_col_1-3">
+								<span>
+									IATA Asal (JKT)
+								</span>
+								<span>
+									Kota Asal (Jakarta, Indonesia)
+								</span>
+							</div>
+							<div class="s_col_1-3" style="text-align: center;">
+
+								<img src="{{asset('assets/img/round_trip.png')}}" class="s_mt_30 s_mauto" width="133" height="133">
+								<span>
+									Waktu Pergi (24 Dec 2014)
+								</span>
+								<span>
+									Waktu Pulang (24 Jan 2015)
+								</span>
+							</div>
+							<div class="s_col_1-3">
+								<span>
+									IATA Tujuan (LAX)
+								</span>
+								<span>
+									Kota Tujuan (Los Angeles, USA)
+								</span>
+							</div>
+
+							
+							
+							
+						</div>
+					</div>
+
 
 				</div>
-				<div class="col-md-3">
+				<div class="col-md-3" >
 
-					<span>
-						Jumlah Adult (0)
-					</span>
-					<span>
-						Jumlah Kids (0)
-					</span>
-					<span>
-						Jumlah Infants (0)
-					</span>
-					<span>
-						Jumlah Rooms (0)
-					</span>
+					<div class="f_search_result_node">
+						<span class="f_search_title">
+							Passenger
+						</span>
+						<div>
+							<span>
+								Jumlah Adult (0)
+							</span>
+							<span>
+								Jumlah Kids (0)
+							</span>
+							<span>
+								Jumlah Infants (0)
+							</span>
+							<span>
+								Jumlah Rooms (0)
+							</span>
+						</div>
+					</div>
+
 
 				</div>
 			</div>

@@ -19,15 +19,13 @@ class CreateHotelsTable extends Migration {
 			$table->string('nama');
 			$table->string('alamat');
 			$table->string('telepon');
-			$table->string('jumlah_bintang');
+			$table->integer('jumlah_bintang');
 			$table->time('waktu_check_in');
 			$table->time('waktu_check_out');
 			$table->string('folder_gallery_path');
 			$table->longText('hotel_detail');
 			$table->longText('keterangan');
 			$table->longText('kebijakan_pembatalan');
-			$table->integer('kapasitas_kamar');
-			$table->integer('sisa_kamar');
 			$table->string('fasilitas_dasar')->nullable();
 			$table->string('fasilitas_lain')->nullable();
 			$table->integer('id_area')->unsigned();
