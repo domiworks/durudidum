@@ -46,7 +46,7 @@ $_SESSION["Payment_Amount"]= 1000;
                             <table class="table priceSummaryTable">
                                 <tbody>
                                     <tr>
-                                        <td>Citilink (Dewasa) <span class="noPass">x1</span>:</td>
+                                        <td>Garuda Indonesia (Dewasa) <span class="noPass">x1</span>:</td>
                                         <td><strong>Rp</strong></td>
                                         <td class="priceContent hargaDewasa"><strong>646.700</strong></td>
                                     </tr>
@@ -68,10 +68,10 @@ $_SESSION["Payment_Amount"]= 1000;
                                     <tr>
                                         <td class="paymentFeelabel">Convenience Fee:</td>
                                         <td><strong>Rp</strong></td>
-                                        <td class="priceContent paymentFee"><strong>-965</strong></td>
+                                        <td class="priceContent paymentFee"><strong>0</strong></td>
                                     </tr>
                                     <tr>
-                                        <td>Fragrance Hotel - Ruby, Double or Twin SUPERIOR <span class="noPass">x1</span>:</td>
+                                        <td>Fave Hotel - Deluxe Guest Room King or 2 Double Beds <span class="noPass">x1</span>:</td>
                                         <td><strong>Rp</strong></td>
                                         <td class="priceContent hargaDewasa"><strong>1.147.471</strong></td>
                                     </tr>
@@ -88,7 +88,7 @@ $_SESSION["Payment_Amount"]= 1000;
                                     <tr>
                                         <td class="paymentFeelabel">Convenience Fee:</td>
                                         <td><strong>Rp</strong></td>
-                                        <td class="priceContent paymentFee"><strong>-954</strong></td>
+                                        <td class="priceContent paymentFee"><strong>0</strong></td>
                                     </tr>
                                 </tbody>
                             </table>
@@ -96,7 +96,7 @@ $_SESSION["Payment_Amount"]= 1000;
                                 <tbody><tr>
                                     <td class="grandTotalLabel">Total:
                                     </td>
-                                    <td class="grandTotal priceContent">Rp 645.735</td>
+                                    <td class="grandTotal priceContent">Rp 1.794.171</td>
                                 </tr>
                             </tbody></table>
                         </div>
