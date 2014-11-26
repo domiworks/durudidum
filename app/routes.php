@@ -26,6 +26,8 @@ Route::group(array('prefix' => 'test'), function()
 		return View::make('pages.front_end.home.home');
 	});
 	// search_flight_hotel
+	Route::get('/view_search_flight_home', ['as' => 'view.search_flight_hotel' , 'uses' => 'search_flight_hotel_controller@view']);
+	
 	Route::get('/search_flight_hotel', function()
 	{
 		return View::make('pages.front_end.search_flight_hotel.search_flight_hotel');

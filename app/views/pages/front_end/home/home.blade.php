@@ -34,7 +34,7 @@
 				<div class="s_quick_search">
 					<ul class="s_quick_search_menu">
 						<li>
-							<a href="javascript:void(0)" id="f_0">Fligth</a>
+							<a href="javascript:void(0)" id="f_0">Flight</a>
 						</li>
 						<li>
 							<a href="javascript:void(0)" id="f_1">Hotel</a>
@@ -195,7 +195,7 @@
 									<div class="col-xs-3 col-xs-push-2">
 											<div class="form-group">
 												<label for="">Adults</label>
-												<input type="text" class="form-control" id="" placeholder="">
+												<input type="text" class="form-control" id="" value="1">
 											</div>
 									</div>
 									<div class="col-xs-3 col-xs-push-2">
@@ -353,7 +353,7 @@
 												<label for="">&nbsp;</label>
 										</form>
 												<button class="btn btn-success col-xs-12">
-													Find Your Ticket
+													Find Your Ticket<!--hotel-->
 												</button>
 											</div>
 									</div>
@@ -377,6 +377,7 @@
 										<form role="form">
 											<div class="form-group">
 												<label for="">Depart From</label>
+												<input type="hidden" id="depart_flight_hotel">
 												<input type="text" class="form-control s_city_dest_input" id="departFrom" placeholder=""><span class="house_32"></span>
 												<table class="table table-bordered table-striped">
 													<tbody class="f_table_search" id="searchContent">
@@ -391,6 +392,7 @@
 											</div>
 											<div class="form-group">
 												<label for="">Arrive In</label>
+												<input type="hidden" id="arrive_flight_hotel">
 												<input type="text" class="form-control s_city_dest_input" id="arriveIn" placeholder=""><span class="house_32"></span>
 												
 												<table class="table table-bordered table-striped">
@@ -488,19 +490,19 @@
 									<div class="col-xs-3 col-xs-push-2">
 											<div class="form-group">
 												<label for="">Adults</label>
-												<input type="text" class="form-control" id="" placeholder="">
+												<input type="text" class="form-control" id="f_adults" placeholder="" value="1">
 											</div>
 									</div>
 									<div class="col-xs-3 col-xs-push-2">
 											<div class="form-group">
 												<label for="">Kids</label>
-												<input type="text" class="form-control" id="" placeholder="">
+												<input type="text" class="form-control" id="f_kids" placeholder="">
 											</div>
 									</div>
 									<div class="col-xs-3 col-xs-push-2">
 											<div class="form-group">
 												<label for="">Infants</label>
-												<input type="text" class="form-control" id="" placeholder="">
+												<input type="text" class="form-control" id="f_infants" placeholder="">
 											</div>
 									</div>
 								</div>
@@ -508,7 +510,7 @@
 									<div class="col-xs-3 col-xs-push-2">
 											<div class="form-group">
 												<label for="">Rooms</label>
-												<select class="form-control"> 
+												<select class="form-control" id="f_rooms"> 
 													<option>1</option>
 													<option>2</option>
 													<option>3</option>
@@ -520,8 +522,8 @@
 											<div class="form-group">
 												<label for="">&nbsp;</label>
 										</form>
-												<button class="btn btn-success col-xs-12">
-													Find Your Ticket
+												<button class="btn btn-success col-xs-12" id="find_flight_hotel">
+													Find Your Ticket <!-- flight and hotel -->
 												</button>
 											</div>
 									</div>
@@ -555,6 +557,32 @@
 	</div>
 </section>
 <script>
+	<!-- click button flight and hotel -->
+	$('body').on('click', '#find_flight_hotel', function(){
+		var id_depart = $('#depart_flight_hotel').val(); //id depart
+		var id_arrive = $('#arrive_flight_hotel').val(); //id arrive
+		var depart_date = $('#f_fdepart_date').val(); //depart date
+		var return_date = $('#f_freturn_date').val(); //return date
+		var adults = $('#f_adults').val(); //banyak adults
+		var kids = $('#f_kids').val(); //banyak kids
+		var infants = $('#f_infants').val(); //banyak infants		
+		var rooms = $('#f_rooms option:selected' ).text(); //banyak rooms
+		
+		// session_start();
+		// $_SESSION['id_depart']=id_depart;
+		// $_SESSION['id_arrive']=id_arrive;
+		// $_SESSION['depart_date']=depart_date;
+		// $_SESSION['return_date']=return_date;
+		// $_SESSION['adults']=adults;
+		// $_SESSION['kids']=kids;
+		// $_SESSION['infants']=infants;
+		// $_SESSION['rooms']=rooms;
+						
+		//window.location = "http://localhost/durudidum_new/public/test/search_flight_hotel?"+"id_depart="+id_depart+"&id_arrive="+id_arrive+"&depart_date="+depart_date+"&return_date="+return_date+"&adults="+adults+"&kids="+kids+"&infants="+infants+"&rooms="+rooms;
+		window.location = "http://localhost/durudidum_new/public/test/search_flight_hotel";
+	});
+	
+
 	var trigger = false;
 	$('body').on('keyup','#departFrom',function()
 	{
@@ -575,7 +603,8 @@
 					
 					$data = $data + "<tr id='row_"+resp.id + "' class='search_row' style='border-bottom: 1px solid #000 !important;' data-dismiss='modal'><td><span style='display: block;'>";
 					$data = $data + "<td>"+resp.nama_bandara+" ( "+resp.kode_bandara + " ) - "+ resp.city.nama_kota;
-					$data = $data + "</td></tr>";
+					$data = $data + "</td><input type='hidden' value='"+resp.id+"' />";
+					$data = $data + "</tr>";
 				});
 				if(trigger == false){
 					$('#searchContent').html($data);
@@ -591,6 +620,8 @@
 	
 	$('body').on('click','#searchContent > tr > td',function(){
 		//alert($(this).text());
+		//alert($(this).next().val());
+		$('#depart_flight_hotel').val($(this).next().val());
 		$('#departFrom').val($(this).text());
 		trigger = true;
 		//$('#f_table_suggestion_pelanggan ').addClass('hidden');
@@ -616,7 +647,8 @@
 					
 					$data = $data + "<tr id='row_"+resp.id + "' class='search_row' style='border-bottom: 1px solid #000 !important;' data-dismiss='modal'><td><span style='display: block;'>";
 					$data = $data + "<td>"+resp.nama_bandara+" ( "+resp.kode_bandara + " ) - "+ resp.city.nama_kota;
-					$data = $data + "</td></tr>";
+					$data = $data + "</td><input type='hidden' value='"+resp.id+"' />";
+					$data = $data + "</tr>";
 				});
 				if(trigger == false){
 					$('#searchContentA').html($data);
@@ -632,6 +664,8 @@
 	
 	$('body').on('click','#searchContentA > tr > td',function(){
 		//alert($(this).text());
+		//alert($(this).next().val());
+		$('#arrive_flight_hotel').val($(this).next().val());
 		$('#arriveIn').val($(this).text());
 		trigger = true;
 		//$('#f_table_suggestion_pelanggan ').addClass('hidden');
