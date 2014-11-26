@@ -79,6 +79,12 @@
 		margin-bottom: 30px;
    }
 
+   .s_mauto {
+   	margin-left: auto;
+	margin-right: auto;
+	display: block;
+   }
+
 /* ==========================================================================
    Pop up
    ========================================================================== */
@@ -365,16 +371,19 @@
 				@include box-sizing(border-box);
 				width: 33%;
 				display: block;
+margin-top: 16px;
 			}
 			&:nth-child(2) {
 				@include box-sizing(border-box);
 				width: 34%;
 				display: block;
+margin-top: 16px;
 			}
 			&:nth-child(3) {
 				@include box-sizing(border-box);
 				width: 33%;
 				display: block;
+margin-top: 16px;
 			}
  
 			.s_title {
@@ -430,11 +439,14 @@
 				@include box-sizing(border-box);
 				width: 50%;
 				display: block;
+				margin-top: 16px;
+
 			}
 			&:nth-child(2) {
 				@include box-sizing(border-box);
 				width: 50%;
 				display: block;
+				margin-top: 16px;
 			}
  
 			.s_title {
@@ -551,3 +563,23 @@
  		display: block;
  	}
  }
+
+.s_col_1-3 {
+	float: left;
+
+	&:first-child {
+		@include box-sizing(border-box);
+		width: 33%;
+		display: block;
+	}
+	&:nth-child(2) {
+		@include box-sizing(border-box);
+		width: 34%;
+		display: block;
+	}
+	&:nth-child(3) {
+		@include box-sizing(border-box);
+		width: 33%;
+		display: block;
+	}
+}

@@ -32,27 +32,36 @@
 							Round Trip
 						</span>
 						<div>
-							<span>
-								Round Trip (or not)
-							</span>
-							<span>
-								IATA Asal (JKT)
-							</span>
-							<span>
-								Kota Asal (Jakarta, Indonesia)
-							</span>
-							<span>
-								IATA Tujuan (LAX)
-							</span>
-							<span>
-								Kota Tujuan (Los Angeles, USA)
-							</span>
-							<span>
-								Waktu Pergi (24 Dec 2014)
-							</span>
-							<span>
-								Waktu Pulang (24 Jan 2015)
-							</span>
+							<div class="s_col_1-3">
+								<span>
+									IATA Asal (JKT)
+								</span>
+								<span>
+									Kota Asal (Jakarta, Indonesia)
+								</span>
+							</div>
+							<div class="s_col_1-3" style="text-align: center;">
+
+								<img src="{{asset('assets/img/round_trip.png')}}" class="s_mt_30 s_mauto" width="133" height="133">
+								<span>
+									Waktu Pergi (24 Dec 2014)
+								</span>
+								<span>
+									Waktu Pulang (24 Jan 2015)
+								</span>
+							</div>
+							<div class="s_col_1-3">
+								<span>
+									IATA Tujuan (LAX)
+								</span>
+								<span>
+									Kota Tujuan (Los Angeles, USA)
+								</span>
+							</div>
+
+							
+							
+							
 						</div>
 					</div>
 

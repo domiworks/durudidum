@@ -54,7 +54,7 @@
 									City Destination
 								</span>
 							</div>
-							<div class="container-fluid" style="margin-top: 30px;">
+							<div class="container-fluid" style="margin-top: 20px;">
 								<div class="row">
 									<div class="col-xs-9 col-xs-push-2">
 										<form role="form">
@@ -73,8 +73,8 @@
 
 						</div>
 						<div class="s_cell_1-3">
-							<span class="s_seprtr s_left"></span>
-							<span class="s_seprtr s_right"></span>
+							<!-- <span class="s_seprtr s_left"></span>
+							<span class="s_seprtr s_right"></span> -->
 							<div class="s_title">
 								<span class="s_number">
 									02
@@ -83,7 +83,7 @@
 									Flight Time
 								</span>
 							</div>
-							<div class="container-fluid" style="margin-top: 30px;">
+							<div class="container-fluid" style="margin-top: 20px;">
 								<div class="row">
 									<div class="col-xs-9 col-xs-push-2">
 											<div class="form-group">
@@ -147,7 +147,7 @@
 									Passenger Ticket
 								</span>
 							</div>
-							<div class="container-fluid" style="margin-top: 30px;">
+							<div class="container-fluid" style="margin-top: 20px;">
 								<div class="row">
 									<div class="col-xs-3 col-xs-push-2">
 											<div class="form-group">
@@ -204,7 +204,7 @@
 									City Destination
 								</span>
 							</div>
-							<div class="container-fluid" style="margin-top: 30px;">
+							<div class="container-fluid" style="margin-top: 20px;">
 								<div class="row">
 									<div class="col-xs-8 col-xs-push-2">
 										<form role="form">
@@ -282,7 +282,7 @@
 									Order Detail
 								</span>
 							</div>
-							<div class="container-fluid" style="margin-top: 30px;">
+							<div class="container-fluid" style="margin-top: 20px;">
 								<div class="row">
 									<div class="col-xs-3 col-xs-push-2">
 											<div class="form-group">
@@ -338,7 +338,7 @@
 									City Destination
 								</span>
 							</div>
-							<div class="container-fluid" style="margin-top: 30px;">
+							<div class="container-fluid" style="margin-top: 20px;">
 								<div class="row">
 									<div class="col-xs-9 col-xs-push-2">
 										<form role="form">
@@ -366,8 +366,8 @@
 
 						</div>
 						<div class="s_cell_1-3">
-							<span class="s_seprtr s_left"></span>
-							<span class="s_seprtr s_right"></span>
+							<!-- <span class="s_seprtr s_left"></span>
+							<span class="s_seprtr s_right"></span> -->
 							<div class="s_title">
 								<span class="s_number">
 									02
@@ -376,7 +376,7 @@
 									Flight Time
 								</span>
 							</div>
-							<div class="container-fluid" style="margin-top: 30px;">
+							<div class="container-fluid" style="margin-top: 20px;">
 								<div class="row">
 									<div class="col-xs-9 col-xs-push-2">
 											<div class="form-group">
@@ -440,7 +440,7 @@
 									Passenger Ticket
 								</span>
 							</div>
-							<div class="container-fluid" style="margin-top: 30px;">
+							<div class="container-fluid" style="margin-top: 20px;">
 								<div class="row">
 									<div class="col-xs-3 col-xs-push-2">
 											<div class="form-group">
