@@ -3,8 +3,9 @@ use Carbon\Carbon;
 
 class CitiesController extends \BaseController 
 {
-	public function getAllCity($keyword)
+	public function getAllCity()
 	{
+		$keyword = Input::get('keyword');
 		$result = City::where('nama_kota','LIKE','%'.$keyword.'%')->orWhere('nama_area','LIKE','%'.$keyword.'%')->get();
 		
 		return $result;

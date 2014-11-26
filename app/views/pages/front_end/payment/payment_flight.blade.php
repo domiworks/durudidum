@@ -1,6 +1,10 @@
 @extends('layouts.front_end.book_layout')
 @section('content')
+<?php
+session_start();
+$_SESSION["Payment_Amount"]= 1000;
 
+ ?>
 
 <section>
     <div class="container">
@@ -78,16 +82,32 @@
 
                     </div>
                     <div class="col-md-6">
+					
                         <div id="paymentSubmitCntr">
                             <div id="via_TRANSFER_submit" class="paymentSubmitItem">
-                                <span class="subtitle">Klik "Bayar Melalui Transfer" jika Anda benar memilih pembayaran via Transfer. Lakukan transfer sebelum batas waktu.</span>
+                                <span class="subtitle">Klik "Bayar".</span>
                                 <div class="termsAgreeText">Dengan klik tombol "Bayar", Anda telah setuju dengan <a target="_blank" href="#">Syarat &amp; Ketentuan</a> dan <a target="_blank" href="#">Kebijakan Privasi</a>.</div>
-                                <button id="payNowTransferBtn" class="btn btn-danger">Bayar</button>
+                                <form method="POST" action="https://www.sandbox.paypal.com/cgi-bin/webscr">
+								<input type='hidden' name='business' value='cool.of.to2-facilitator@gmail.com'>
+								<input type='hidden' name='cmd' value='_xclick'>
+
+								<input type='hidden' name='item_name' value='Penerbangan Jakarta-Bali'>
+								<input type='hidden' name='item_number' value='1'>
+								<input type='hidden' name='amount' value='150'>
+
+								<input type='hidden' name='no_shipping' value='1'>
+								<input type='hidden' name='currency_code' value='USD'>
+								<input type='hidden' name='handling' value='0'>
+								<input type='hidden' name='cancel_return' value='http://localhost:1000/wandercase/public/test/payment_cancel'>
+								<input type='hidden' name='return' value='http://localhost:1000/wandercase/public/test/payment_order?token=123'>
+								<input type="submit" id="payNowTransferBtn" class="btn btn-danger" value="Bayar"/>
+								</form>
                             </div>
 
 
-                        </div>
+                        </div> 
 
+						
                     </div>
                 </div>
             </div>
