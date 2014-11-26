@@ -7,7 +7,13 @@ class DatabaseSeeder extends Seeder {
         $this->call('CitiesTableSeeder');
         $this->call('AirportTableSeeder');
         $this->call('EventTableSeeder');
-
+        $this->call('FlightTableSeeder');		
+        $this->call('HotelTableSeeder');
+        $this->call('HotelRoomTableSeeder');
+        $this->call('HotelReviewTableSeeder');
+        $this->call('HotelOrderTableSeeder');
+		
+		
         $this->command->info('table seeded!');
     }
 
@@ -419,7 +425,7 @@ class DatabaseSeeder extends Seeder {
 					array(
 						'tipe_kamar' => 'standard room',
 						'kapasitas_kamar' => 2,
-						'harga_per_kamar_per_malam' => 800000,
+						'harga_per_kamar_malam' => 800000,
 						'sisa_kamar' => 1,
 						'id_hotel' => 1
 					)
@@ -428,7 +434,7 @@ class DatabaseSeeder extends Seeder {
 					array(
 						'tipe_kamar' => 'superior room',
 						'kapasitas_kamar' => 2,
-						'harga_per_kamar_per_malam' => 850000,
+						'harga_per_kamar_malam' => 850000,
 						'sisa_kamar' => 2,
 						'id_hotel' => 2
 					)
@@ -437,7 +443,7 @@ class DatabaseSeeder extends Seeder {
 					array(
 						'tipe_kamar' => 'deluxe room',
 						'kapasitas_kamar' => 3,
-						'harga_per_kamar_per_malam' => 1400000,
+						'harga_per_kamar_malam' => 1400000,
 						'sisa_kamar' => 3,
 						'id_hotel' => 3
 					)
@@ -446,7 +452,7 @@ class DatabaseSeeder extends Seeder {
 					array(
 						'tipe_kamar' => 'junior suite room',
 						'kapasitas_kamar' => 2,
-						'harga_per_kamar_per_malam' => 1200000,
+						'harga_per_kamar_malam' => 1200000,
 						'sisa_kamar' => 4,
 						'id_hotel' => 4
 					)
@@ -455,7 +461,7 @@ class DatabaseSeeder extends Seeder {
 					array(
 						'tipe_kamar' => 'suite room ',
 						'kapasitas_kamar' => 2,
-						'harga_per_kamar_per_malam' => 1300000,
+						'harga_per_kamar_malam' => 1300000,
 						'sisa_kamar' => 5,
 						'id_hotel' => 5
 					)
@@ -464,7 +470,7 @@ class DatabaseSeeder extends Seeder {
 					array(
 						'tipe_kamar' => 'standard room',
 						'kapasitas_kamar' => 2,
-						'harga_per_kamar_per_malam' => 900000,
+						'harga_per_kamar_malam' => 900000,
 						'sisa_kamar' => 6,
 						'id_hotel' => 6
 					)
@@ -473,7 +479,7 @@ class DatabaseSeeder extends Seeder {
 					array(
 						'tipe_kamar' => 'superior room',
 						'kapasitas_kamar' => 5,
-						'harga_per_kamar_per_malam' => 1700000,
+						'harga_per_kamar_malam' => 1700000,
 						'sisa_kamar' => 7,
 						'id_hotel' => 7
 					)
@@ -482,7 +488,7 @@ class DatabaseSeeder extends Seeder {
 					array(
 						'tipe_kamar' => 'deluxe room',
 						'kapasitas_kamar' => 3,
-						'harga_per_kamar_per_malam' => 1500000,
+						'harga_per_kamar_malam' => 1500000,
 						'sisa_kamar' => 8,
 						'id_hotel' => 8
 					)
@@ -491,7 +497,7 @@ class DatabaseSeeder extends Seeder {
 					array(
 						'tipe_kamar' => 'junior suite room',
 						'kapasitas_kamar' => 2,
-						'harga_per_kamar_per_malam' => 1800000,
+						'harga_per_kamar_malam' => 1800000,
 						'sisa_kamar' => 9,
 						'id_hotel' => 9
 					)
@@ -500,7 +506,7 @@ class DatabaseSeeder extends Seeder {
 					array(
 						'tipe_kamar' => 'suite room',
 						'kapasitas_kamar' => 2,
-						'harga_per_kamar_per_malam' => 2000000,
+						'harga_per_kamar_malam' => 2000000,
 						'sisa_kamar' => 10,
 						'id_hotel' => 10
 					)
