@@ -9,4 +9,11 @@ class HotelsController extends \BaseController
 		
 		return $result;
 	}
+	
+	public function getAllHotel()
+	{
+		$hotel = Hotel::where()->get();
+		
+		return null;
+	}
 }
