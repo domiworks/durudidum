@@ -3,7 +3,7 @@ use Carbon\Carbon;
 
 class EventsController extends \BaseController 
 {
-	public function getFlightsInDate($area)
+	public function getAllEvents($area)
 	{
 		$result = Event::where('nama_area','=',$keyword)->get();
 		
