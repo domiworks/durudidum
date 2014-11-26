@@ -75,7 +75,7 @@
                     <div class="col-md-6">
                         <div id="paymentSubmitCntr">
                             <div id="via_TRANSFER_submit" class="paymentSubmitItem">
-                                <span class="subtitle">Klik "Bayar Melalui Transfer" jika Anda benar memilih pembayaran via Transfer. Lakukan transfer sebelum batas waktu.</span>
+                                <span class="subtitle">Klik "Bayar".</span>
                                 <div class="termsAgreeText">Dengan klik tombol "Bayar", Anda telah setuju dengan <a target="_blank" href="#">Syarat &amp; Ketentuan</a> dan <a target="_blank" href="#">Kebijakan Privasi</a>.</div>
                                 <button id="payNowTransferBtn" class="btn btn-danger">Bayar</button>
                             </div>
